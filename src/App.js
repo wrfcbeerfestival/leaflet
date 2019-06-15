@@ -9,6 +9,30 @@ import {
   Redirect,
 } from "react-router-dom";
 import Swipe from 'react-easy-swipe';
+import pageOrder from './pageOrder'
+import { runInThisContext } from 'vm';
+
+const findPage = (pageName) => {
+  const selectedPage = pageOrder.find((page) => {
+    return page.name === pageName;
+  })
+  if (selectedPage) {
+    return selectedPage.component;
+  }
+}
+
+const getPage = (currentPage, forward) => {
+  let currentPageIndex;
+  const selectedPage = pageOrder.find((page, index) => {
+    if (page.name === currentPage) {
+      currentPageIndex = index;
+      return true;
+    };
+  })
+
+  return forward ? pageOrder[currentPageIndex + 1]: pageOrder[currentPageIndex-1];
+}
+
 
 const SwipeablePage = class extends React.Component {
   triggerToNextPage = false;
@@ -20,19 +44,17 @@ const SwipeablePage = class extends React.Component {
   }
   onSwipeEnd() {
     if (this.triggerToNextPage) {
-      if (Number(this.props.match.params.page) < 10) {
-        const url = `/${Number(this.props.match.params.page) + 1}`;
-        console.info(url)
-        return this.props.history.push(url);
+      const nextPage = getPage(this.props.match.url, true);
+      if (nextPage) {
+        return this.props.history.push(nextPage.name);
       }
     }
 
     if (this.triggerToPreviousPage) {
-      if (Number(this.props.match.params.page) > 1) {
-        const url = `/${Number(this.props.match.params.page) - 1}`;
-        return this.props.history.push(url);
+      const previousPage = getPage(this.props.match.url);
+      if (previousPage) {
+        return this.props.history.push(previousPage.name);
       }
-      return this.props.history.push(this.props.backPage);
     }
   }
 
@@ -45,136 +67,15 @@ const SwipeablePage = class extends React.Component {
     }
   }
   render() {
+    const ComponentToRender = findPage(this.props.match.url);
+    if (!ComponentToRender) {
+      // this.props.history.push('/home');
+      return null;
+    }
+
     return (<Swipe className="page" onSwipeMove={this.onSwipeMove} onSwipeEnd={this.onSwipeEnd}>
     <section>
-      { this.props.match.params.page === '3' &&
-      <ul>
-        <li>
-          top
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-          {this.props.match.params.page}
-        </li>
-        <li>
-         bottom
-        </li>
-      </ul>
-  }
-    { this.props.match.params.page }
+      { <ComponentToRender /> }
     </section>
     </Swipe>)
   }
@@ -193,7 +94,7 @@ const App = () => {
                 timeout={300}
               >
                 <Switch location={location}>
-                  <Route path="/:page" render={(props) => (<SwipeablePage {...props}>First Page</SwipeablePage>)} />
+                  <Route path="/:page" render={(props) => (<SwipeablePage {...props}></SwipeablePage>)} />
                   <Route render={() => <div>Not Found</div>} />
                 </Switch>
               </CSSTransition>

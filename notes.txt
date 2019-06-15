@@ -1,0 +1,1 @@
+Need to make sure people get redirect to homepage, if they go to the wrong page
