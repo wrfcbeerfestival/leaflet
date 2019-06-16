@@ -4,7 +4,7 @@ export default () => {
   return <section>
     <h1>Beer festival chairman - Jon McClennon</h1>
     <div>
-      <img width="80%" height="200px" src="/jon-mcclennon.jpg" />
+      <img className="image--full" src="/jon-mcclennon.jpg" />
     </div>
     <p>Welcome to the end of the leaflet! Hopefully you’ve had a good flick through and have been impressed by the range of Beers and Ciders. Every year we say it’s the best selection, but somehow it gets better. This being our 6th event, we continue to grow not just in our selections of Beer and Cider, but in other aspects of the festival. Our 7’s tournament looks to be our biggest yet.</p>
     <p>Last year I wrote a small introduction calling myself a Salmon. As you can guess a year on and I haven’t lived that down. Instead let's introduce some new faces of the WRFC family. Mr Ryan Dalton and his team. You may have noticed our clubhouse looks a bit different and that is due to their fine work. Here is a few words from Ryan;

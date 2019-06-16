@@ -14,9 +14,11 @@ export default class extends React.Component {
     // Maybe need to remove swipe? Or have an alert
     // Need a go back to list at the top?
     if (this.triggerToNextPage) {
+      return this.props.history.push(this.props.returnUrl);
     }
 
     if (this.triggerToPreviousPage) {
+      return this.props.history.push(this.props.returnUrl);
     }
   }
 
@@ -30,9 +32,10 @@ export default class extends React.Component {
   }
   render() {
     return (<Swipe className="page" onSwipeMove={this.onSwipeMove} onSwipeEnd={this.onSwipeEnd}>
-    <section>
-      { <Brewery data={getBreweryDetails(this.props.match.params.brewery)} /> }
-    </section>
+      <section>
+        {<Brewery data={getBreweryDetails(this.props.match.params.brewery)} />}
+        <div className="back__button" onClick={ () => { this.props.history.goBack()}}>View all breweries</div>
+      </section>
     </Swipe>)
   }
 }

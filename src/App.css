@@ -1,44 +1,17 @@
 
-.App {
+.image--full {
+  width: 100%;
+  height: auto;
+}
+
+.back__button {
+  width: 200px;
+  margin: 0 auto;
+  background-color: lightblue;
+  font-family: monospace;
+  padding: 12px;
   text-align: center;
-  background-color: red;
-  height: 100vh;
-  width: 100vw;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-/* .page {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0
-}
-
-.fill {
-
-} */
-
 .fade-enter {
   opacity: 0.01;
   position: absolute;
@@ -78,30 +51,77 @@
   box-sizing: border-box;
   background-image: url('/homepage.jpeg');
   background-clip: border-box;
-  position: relative;
 }
 
 .beer-hero-text {
   width: 100%;
-  margin: 0 auto;
-  display: block;
+  font-size: 24px;
   text-align: center;
   color: white;
   text-transform: uppercase;
   height: 100%;
+  background: rgb(0,0,0, 0.7);
+  background: rgba(0,0,0, 0.7);
   display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace; 
 }
+
+.brewery__title {
+  font-size: 24px;
+  text-align: center;
+  line-height: 48px;
+}
+
+.brewery__desc {
+  margin: 0 8px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.brewery__instructions {
+  background-color: lightblue;
+  padding: 12px;
+  text-align: center;
+  margin: 12px 0;
+  font-family: monospace;
+}
+
+.brewer__items {
+
+}
+
+
 
 .product {
   background-color: white;
   margin: 12px 8px;
+  padding-bottom: 8px;
+  border-bottom: solid 1px lightgrey;
+}
+
+.product__extra {
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .product__header {
   display: flex;
   justify-content: space-between;
   height: 44px;
+  line-height: 44px;
 }
 .product__header-title {
-  width: 50%;
+  width: 60%;
+}
+.product__rating {
+  line-height: 55px;
+}
+.product__rating-icon {
+  width: 22px;
+  height: 22px;
+}
+.product__rating-icon--empty {
+  opacity: 0.6;
 }

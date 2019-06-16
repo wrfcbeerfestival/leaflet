@@ -1,4 +1,5 @@
 import React from "react";
+import './Reset.css';
 import './App.css';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import {
@@ -22,7 +23,7 @@ const App = () => {
                 timeout={300}
               >
                 <Switch location={location}>
-                  <Route path="/brewery/:brewery" render={(props) => (<BreweryContainer {...props} />)} />
+                  <Route path="/brewery/:brewery" render={(props) => (<BreweryContainer returnUrl="/beer" {...props} />)} />
                   <Route path="/:page" render={(props) => (<StandardContainer {...props} />)} />
                   <Route render={() => <div>Not Found</div>} />
                 </Switch>
