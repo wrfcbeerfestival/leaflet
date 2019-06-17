@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/leaflet/home/static/css/main.09f7899a.chunk.css",
+    "main.js": "/leaflet/home/static/js/main.77f1b065.chunk.js",
+    "main.js.map": "/leaflet/home/static/js/main.77f1b065.chunk.js.map",
+    "runtime~main.js": "/leaflet/home/static/js/runtime~main.f045add4.js",
+    "runtime~main.js.map": "/leaflet/home/static/js/runtime~main.f045add4.js.map",
+    "static/css/2.3c1ddb0a.chunk.css": "/leaflet/home/static/css/2.3c1ddb0a.chunk.css",
+    "static/js/2.e89ce1b9.chunk.js": "/leaflet/home/static/js/2.e89ce1b9.chunk.js",
+    "static/js/2.e89ce1b9.chunk.js.map": "/leaflet/home/static/js/2.e89ce1b9.chunk.js.map",
+    "index.html": "/leaflet/home/index.html",
+    "precache-manifest.1f3bd3173c8ee3aee5fa1f93b67e4279.js": "/leaflet/home/precache-manifest.1f3bd3173c8ee3aee5fa1f93b67e4279.js",
+    "service-worker.js": "/leaflet/home/service-worker.js",
+    "static/css/2.3c1ddb0a.chunk.css.map": "/leaflet/home/static/css/2.3c1ddb0a.chunk.css.map",
+    "static/css/main.09f7899a.chunk.css.map": "/leaflet/home/static/css/main.09f7899a.chunk.css.map",
+    "static/media/empty-beer.svg": "/leaflet/home/static/media/empty-beer.88b4fb36.svg",
+    "static/media/filled-beer.svg": "/leaflet/home/static/media/filled-beer.a7a2fb84.svg"
+  }
+}
