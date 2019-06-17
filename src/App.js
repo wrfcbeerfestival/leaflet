@@ -3,7 +3,7 @@ import './Reset.css';
 import './App.css';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div>
       <Router>
-        <Route render={({ location }) => (
+        <Route basename="/" render={({ location }) => (
           <div className="fill">
             <TransitionGroup>
               <CSSTransition
@@ -23,8 +23,8 @@ const App = () => {
                 timeout={300}
               >
                 <Switch location={location}>
-                  <Route path="/leaflet/brewery/:brewery" render={(props) => (<BreweryContainer returnUrl="/beer" {...props} />)} />
-                  <Route path="/leaflet/:page" render={(props) => (<StandardContainer {...props} />)} />
+                  <Route path="/brewery/:brewery" render={(props) => (<BreweryContainer returnUrl="/beer" {...props} />)} />
+                  <Route path="/:page" render={(props) => (<StandardContainer {...props} />)} />
                   <Route render={() => <div>Not Found</div>} />
                 </Switch>
               </CSSTransition>

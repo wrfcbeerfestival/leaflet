@@ -4,16 +4,16 @@ import BeerList from './Pages/BeerList';
 import CiderList from './Pages/CiderList';
 
 const mainPageOrdering =  [{
-  name: '/leaflet/home',
+  name: '/home',
   component: HomePage
 }, {
-  name: '/leaflet/chairman',
+  name: '/chairman',
   component: BeerFestChairman
 }, {
-  name: '/leaflet/beer',
+  name: '/beer',
   component: BeerList
 }, {
-  name: '/leaflet/cider',
+  name: '/cider',
   component: CiderList
 }]
 
