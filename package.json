@@ -2,6 +2,7 @@
   "name": "wrfcbeerfestival-leaflet",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://wrfcbeerfestival.github.io/home",
   "dependencies": {
     "history": "^4.9.0",
     "react": "^16.8.6",
@@ -36,6 +37,7 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^3.3.1"
+    "cypress": "^3.3.1",
+    "gh-pages": "^2.0.1"
   }
 }
