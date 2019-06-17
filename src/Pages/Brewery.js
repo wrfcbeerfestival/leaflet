@@ -56,7 +56,7 @@ export default class extends React.Component {
       <section>
         <h1 className="brewery__title">{data.name}</h1>
         <p className="brewery__desc">{data.description}</p>
-        <p className="brewery__instructions">Tap the beer name to see more. Tap the beer icon to rate each beer.</p>
+        <p className="instructions">Tap the beer name to see more. Tap the beer icon to rate each beer.</p>
         <div className="brewery__items">
           {items}
         </div>
