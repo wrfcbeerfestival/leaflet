@@ -11,6 +11,7 @@ import StandardContainer from './Containers/Standard';
 import BreweryContainer from './Containers/Brewery';
 
 const App = () => {
+  console.info(process.env.NODE_ENV);
   return (
     <div>
       <Router>

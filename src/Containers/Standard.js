@@ -1,5 +1,6 @@
 import React from "react";
 import Swipe from 'react-easy-swipe';
+import { Redirect } from 'react-router-dom';
 import { findPage, getPage } from '../pageOrder'
 export default class extends React.Component {
   triggerToNextPage = false;
@@ -37,8 +38,7 @@ export default class extends React.Component {
     const ComponentToRender = findPage(this.props.match.url);
     console.info(this.props)
     if (!ComponentToRender) {
-      // this.props.history.push('/home');
-      return null;
+      return <Redirect to="/home" />
     }
 
     return (<Swipe className="page" onSwipeMove={this.onSwipeMove} onSwipeEnd={this.onSwipeEnd}>
