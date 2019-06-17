@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 export default () => {
   return <section>
-    <Link to="/brewery/tring">
+    <Link to="/leaflet/brewery/tring">
       <div className="beer-hero beer-hero--1">
         <div className="beer-hero-text">Tring</div>
         </div>
     </Link>
-    <Link to="/brewery/watling-street">
+    <Link to="/leaflet/brewery/watling-street">
       <div className="beer-hero beer-hero--1">
         <div className="beer-hero-text">Watling Street</div>
         </div>

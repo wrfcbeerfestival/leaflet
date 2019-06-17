@@ -55,7 +55,6 @@
 
 .homepage__title {
   font-size: 90px;
-  margin-top: 12px;
   width: 100%;
   background-image: url('/homepage-background.jpg');
   background-size: cover;
@@ -68,7 +67,14 @@
 .homepage__dates {
   font-size: 20px;
   text-align: center;
-  margin-top: 12px;
+  padding: 12px 0;
+  background: #040d77;
+  color: white;
+  font-weight: bold;
+}
+
+.homepage__instructions {
+  margin-top: 0;
 }
 
 .homepage__desc {
