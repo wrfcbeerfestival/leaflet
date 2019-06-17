@@ -11,9 +11,9 @@ import StandardContainer from './Containers/Standard';
 import BreweryContainer from './Containers/Brewery';
 
 const App = () => {
-  console.info(process.env.NODE_ENV);
+  const rootClassName = `app--${process.env.NODE_ENV}`
   return (
-    <div>
+    <div className={rootClassName}>
       <Router>
         <Route basename="/" render={({ location }) => (
           <div className="fill">
