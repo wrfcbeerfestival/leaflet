@@ -2,7 +2,7 @@
   "name": "wrfcbeerfestival-leaflet",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://wrfcbeerfestival.github.io/home",
+  "homepage": "http://wrfcbeerfestival.github.io/leaflet/home",
   "dependencies": {
     "history": "^4.9.0",
     "react": "^16.8.6",

@@ -23,8 +23,8 @@ const App = () => {
                 timeout={300}
               >
                 <Switch location={location}>
-                  <Route path="/brewery/:brewery" render={(props) => (<BreweryContainer returnUrl="/beer" {...props} />)} />
-                  <Route path="/:page" render={(props) => (<StandardContainer {...props} />)} />
+                  <Route path="/leaflet/brewery/:brewery" render={(props) => (<BreweryContainer returnUrl="/beer" {...props} />)} />
+                  <Route path="/leaflet/:page" render={(props) => (<StandardContainer {...props} />)} />
                   <Route render={() => <div>Not Found</div>} />
                 </Switch>
               </CSSTransition>
