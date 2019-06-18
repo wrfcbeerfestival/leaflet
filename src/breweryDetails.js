@@ -1,4 +1,26 @@
 const brewies = {
+  cider: {
+    lilleys: {
+      name: 'Lilleys',
+      image: 'lilleys.jpeg',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      list: [{
+        name: 'Wrens',
+        notes: 'An extra pale malt base provides the ideal clean canvas for the spectacular US big hitters Mosaic, Citra and Simcoe hops. Expect pungent tropical, mango and citrus flavours.',
+        percent: '4',
+      }]
+    },
+    'orchard-pig': {
+      name: 'Orchard Pig',
+      image: 'orchard-pig.jpeg',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      list: [{
+        name: 'Wrens',
+        notes: 'An extra pale malt base provides the ideal clean canvas for the spectacular US big hitters Mosaic, Citra and Simcoe hops. Expect pungent tropical, mango and citrus flavours.',
+        percent: '4',
+      }]
+    },
+  },
   beer: {
     wantsum: {
       name: 'Wantsum',
@@ -204,9 +226,13 @@ const brewies = {
   }
 }
 
-export const getBreweryDetails = (type, name) => {
-  return brewies[type][name];
+export const getBreweryDetails = (name) => {
+  if (brewies.beer[name]) {
+    return { type: 'beer', data: brewies.beer[name]}
+  }
+  return { type: 'cider', data: brewies.cider[name]};
 }
 
 export const getBeerBrewerys = () => brewies.beer;
 
+export const getCiderBrewerys = () => brewies.cider;

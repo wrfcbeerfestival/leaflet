@@ -1,7 +1,8 @@
 import React from 'react';
 import emptyBeer from '../empty-beer.svg';
 import fullBeer from '../filled-beer.svg';
-
+import emptyCider from '../empty-apple.svg';
+import fullCider from '../filled-apple.svg';
 import { setRating, getRating } from '../localstorage';
 
 class Item extends React.Component {
@@ -11,7 +12,7 @@ class Item extends React.Component {
     this.onRatingSelected = this.onRatingSelected.bind(this);
     this.state = {
       isOpen: false,
-      rating: getRating(this.props.id, this.props.name)  
+      rating: getRating(this.props.id, this.props.name)
     }
   }
   onClick() {
@@ -19,7 +20,7 @@ class Item extends React.Component {
   }
 
   onRatingSelected(rating) {
-    setRating(this.props.id, this.props.name, rating);  
+    setRating(this.props.id, this.props.name, rating);
     this.setState({ rating })
   }
 
@@ -34,7 +35,11 @@ class Item extends React.Component {
         <span className="product__rating">
           {[1, 2, 3, 4, 5].map((ratingNumber) => {
             const isEmpty = ratingNumber > rating;
-            return <img key={ratingNumber} className={`product__rating-icon product__rating-icon--${isEmpty ? 'empty': 'full' }`} onClick={() => { this.onRatingSelected(ratingNumber) }} src={isEmpty ? emptyBeer : fullBeer } />
+            let icon = isEmpty ? emptyBeer : fullBeer;
+            if (this.props.type === 'cider') {
+              icon = isEmpty ? emptyCider : fullCider
+            }
+            return <img key={ratingNumber} className={`product__rating-icon product__rating-icon--${isEmpty ? 'empty' : 'full'}`} onClick={() => { this.onRatingSelected(ratingNumber) }} src={icon} />
           })}
         </span>
       </div>
@@ -53,8 +58,9 @@ class Item extends React.Component {
 
 export default class extends React.Component {
   render() {
-    const { data } = this.props;
-    const items = data.list.map((listitem, key) => <Item key={key} {...listitem} id={this.props.id} />);
+    const { data, type, id } = this.props;
+    console.info(this.props)
+    const items = data.list.map((listitem, key) => <Item key={key} {...listitem} id={id} type={type} />);
     return (
       <section>
         <h1 className="brewery__title">{data.name}</h1>

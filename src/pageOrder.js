@@ -2,13 +2,17 @@ import HomePage from './Pages/HomePage';
 import BeerFestChairman from './Pages/BeerFestChairman';
 import BeerList from './Pages/BeerList';
 import CiderList from './Pages/CiderList';
+import Guide from './Pages/Guide';
 
 const mainPageOrdering =  [{
   name: '/home',
   component: HomePage
 }, {
-  name: '/chairman',
+  name: '/beer-fest-chairman',
   component: BeerFestChairman
+},{
+  name: '/guide',
+  component: Guide
 }, {
   name: '/beer',
   component: BeerList
