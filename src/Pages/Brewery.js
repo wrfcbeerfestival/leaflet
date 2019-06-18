@@ -2,6 +2,8 @@ import React from 'react';
 import emptyBeer from '../empty-beer.svg';
 import fullBeer from '../filled-beer.svg';
 
+import { setRating, getRating } from '../localstorage';
+
 class Item extends React.Component {
   constructor(props) {
     super(props);
@@ -9,7 +11,7 @@ class Item extends React.Component {
     this.onRatingSelected = this.onRatingSelected.bind(this);
     this.state = {
       isOpen: false,
-      rating: 0
+      rating: getRating(this.props.id, this.props.name)  
     }
   }
   onClick() {
@@ -17,6 +19,7 @@ class Item extends React.Component {
   }
 
   onRatingSelected(rating) {
+    setRating(this.props.id, this.props.name, rating);  
     this.setState({ rating })
   }
 
@@ -51,7 +54,7 @@ class Item extends React.Component {
 export default class extends React.Component {
   render() {
     const { data } = this.props;
-    const items = data.list.map((listitem, key) => <Item key={key} {...listitem} />);
+    const items = data.list.map((listitem, key) => <Item key={key} {...listitem} id={this.props.id} />);
     return (
       <section>
         <h1 className="brewery__title">{data.name}</h1>
