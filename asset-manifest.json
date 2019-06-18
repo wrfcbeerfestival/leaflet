@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/leaflet/static/css/main.ea4154e9.chunk.css",
-    "main.js": "/leaflet/static/js/main.fbe7c011.chunk.js",
-    "main.js.map": "/leaflet/static/js/main.fbe7c011.chunk.js.map",
+    "main.css": "/leaflet/static/css/main.f46f370f.chunk.css",
+    "main.js": "/leaflet/static/js/main.ef3c587d.chunk.js",
+    "main.js.map": "/leaflet/static/js/main.ef3c587d.chunk.js.map",
     "runtime~main.js": "/leaflet/static/js/runtime~main.005ef40c.js",
     "runtime~main.js.map": "/leaflet/static/js/runtime~main.005ef40c.js.map",
     "static/css/2.3c1ddb0a.chunk.css": "/leaflet/static/css/2.3c1ddb0a.chunk.css",
-    "static/js/2.77f36471.chunk.js": "/leaflet/static/js/2.77f36471.chunk.js",
-    "static/js/2.77f36471.chunk.js.map": "/leaflet/static/js/2.77f36471.chunk.js.map",
+    "static/js/2.ce800df3.chunk.js": "/leaflet/static/js/2.ce800df3.chunk.js",
+    "static/js/2.ce800df3.chunk.js.map": "/leaflet/static/js/2.ce800df3.chunk.js.map",
     "index.html": "/leaflet/index.html",
-    "precache-manifest.857b92cc5e02b075d3e3cd19b14cc239.js": "/leaflet/precache-manifest.857b92cc5e02b075d3e3cd19b14cc239.js",
+    "precache-manifest.dc2b398718f7a06f9200b63726aef99f.js": "/leaflet/precache-manifest.dc2b398718f7a06f9200b63726aef99f.js",
     "service-worker.js": "/leaflet/service-worker.js",
     "static/css/2.3c1ddb0a.chunk.css.map": "/leaflet/static/css/2.3c1ddb0a.chunk.css.map",
-    "static/css/main.ea4154e9.chunk.css.map": "/leaflet/static/css/main.ea4154e9.chunk.css.map",
+    "static/css/main.f46f370f.chunk.css.map": "/leaflet/static/css/main.f46f370f.chunk.css.map",
     "static/media/empty-beer.svg": "/leaflet/static/media/empty-beer.88b4fb36.svg",
     "static/media/filled-beer.svg": "/leaflet/static/media/filled-beer.a7a2fb84.svg"
   }
