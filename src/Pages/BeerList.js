@@ -9,7 +9,7 @@ export default () => {
   const list = Object.keys(breweries).map((key) => {
     const brewery = breweries[key]
     return <Link key={key} to={`/brewery/${key}`}>
-      <div className="beer-hero beer-hero--1" style={{ backgroundImage: `url(/${getImage(brewery.image)})` }}>
+      <div className="beer-hero beer-hero--1" style={{ backgroundImage: `url(${getImage(brewery.image)})` }}>
         <div className="beer-hero-text">{brewery.name}</div>
         </div>
     </Link>
