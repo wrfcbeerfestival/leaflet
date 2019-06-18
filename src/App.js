@@ -19,7 +19,7 @@ const App = () => {
           <div className="fill">
             <TransitionGroup>
               <CSSTransition
-                key={location.key}
+                key={location.pathname}
                 classNames="fade"
                 timeout={300}
               >
