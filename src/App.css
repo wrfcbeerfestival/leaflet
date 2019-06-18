@@ -164,7 +164,27 @@
 .product__rating-icon--empty {
   opacity: 0.6;
 }
+.article__title {
+  font-size: 28px;
+  margin: 8px;
+  font-weight: bold;
+  text-align: center;
+}
 
+.article__content {
+  margin: 0 8px;
+  font-size: 14px;
+  line-height: 18px; 
+}
+.article p {
+  margin: 6px 0;
+}
+
+.article__signature {
+  font-family: cursive;
+  margin: 12px 8px;
+  font-size: 30px;
+}
 .app--production .homepage__title {
   background-image: url('/leaflet/homepage-background.jpg');
 }
