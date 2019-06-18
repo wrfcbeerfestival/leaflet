@@ -1,17 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { getBeerBrewerys } from '../breweryDetails';
+import { getImage } from '../image'
+
 
 export default () => {
+  const breweries = getBeerBrewerys();
+  const list = Object.keys(breweries).map((key) => {
+    const brewery = breweries[key]
+    return <Link key={key} to={`/brewery/${key}`}>
+      <div className="beer-hero beer-hero--1" style={{ backgroundImage: `url(/${getImage(brewery.image)})` }}>
+        <div className="beer-hero-text">{brewery.name}</div>
+        </div>
+    </Link>
+  })
   return <section>
-    <Link to="/brewery/tring">
-      <div className="beer-hero beer-hero--1">
-        <div className="beer-hero-text">Tring</div>
-        </div>
-    </Link>
-    <Link to="/brewery/watling-street">
-      <div className="beer-hero beer-hero--1">
-        <div className="beer-hero-text">Watling Street</div>
-        </div>
-    </Link>
+    { list }
   </section>;
 }

@@ -37,7 +37,7 @@ export default class extends React.Component {
   render() {
     return (<Swipe className="page" onSwipeMove={this.onSwipeMove} onSwipeEnd={this.onSwipeEnd}>
       <section>
-        {<Brewery data={getBreweryDetails(this.props.match.params.brewery)} id={this.props.match.params.brewery} />}
+        {<Brewery data={getBreweryDetails('beer', this.props.match.params.brewery)} id={this.props.match.params.brewery} />}
         <div className="back__button" onClick={ () => { this.props.history.goBack()}}>View all breweries</div>
       </section>
     </Swipe>)

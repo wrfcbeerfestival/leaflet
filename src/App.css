@@ -93,19 +93,20 @@
   height: 200px;
   margin: 12px;
   box-sizing: border-box;
-  background-image: url('/homepage.jpeg');
-  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .beer-hero-text {
   width: 100%;
-  font-size: 24px;
+  font-size: 34px;
   text-align: center;
   color: white;
   text-transform: uppercase;
   height: 100%;
-  background: rgb(0,0,0, 0.7);
-  background: rgba(0,0,0, 0.7);
+  background: rgb(0,0,0, 0.6);
+  background: rgba(0,0,0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,8 +167,4 @@
 
 .app--production .homepage__title {
   background-image: url('/leaflet/homepage-background.jpg');
-}
-
-.app--production .beer-hero {
-  background-image: url('/leaflet/homepage.jpeg');
 }
