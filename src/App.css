@@ -164,6 +164,14 @@
 .product__rating-icon--empty {
   opacity: 0.6;
 }
+
+.product__notes {
+  border: solid 1px lightgrey;
+  width: calc(100% - 8px);
+  padding: 8px;
+  box-sizing: border-box;
+  margin-top: 12px;
+}
 .article__title {
   font-size: 28px;
   margin: 8px;

@@ -3,20 +3,27 @@ import emptyBeer from '../empty-beer.svg';
 import fullBeer from '../filled-beer.svg';
 import emptyCider from '../empty-apple.svg';
 import fullCider from '../filled-apple.svg';
-import { setRating, getRating } from '../localstorage';
+import { setRating, getRating, setNotes, getNotes } from '../localstorage';
 
 class Item extends React.Component {
   constructor(props) {
     super(props);
     this.onClick = this.onClick.bind(this);
     this.onRatingSelected = this.onRatingSelected.bind(this);
+    this.onTextAreaChange = this.onTextAreaChange.bind(this);
     this.state = {
       isOpen: false,
-      rating: getRating(this.props.id, this.props.name)
+      rating: getRating(this.props.id, this.props.name),
+      notes: getNotes(this.props.id, this.props.name)
     }
   }
   onClick() {
     this.setState({ isOpen: !this.state.isOpen });
+  }
+  
+  onTextAreaChange(e) {
+    setNotes(this.props.id, this.props.name, e.target.value);
+    this.setState({ notes: e.target.value})
   }
 
   onRatingSelected(rating) {
@@ -50,6 +57,8 @@ class Item extends React.Component {
         {colour && <span>{colour}</span>}
 
         {notes}
+
+        <textarea placeholder={`Notes for ${name}`} value={this.state.notes} onChange={ (e) => { this.onTextAreaChange(e)}}  className="product__notes" />
       </div>}
     </div>)
   }
@@ -59,7 +68,6 @@ class Item extends React.Component {
 export default class extends React.Component {
   render() {
     const { data, type, id } = this.props;
-    console.info(this.props)
     const items = data.list.map((listitem, key) => <Item key={key} {...listitem} id={id} type={type} />);
     return (
       <section>

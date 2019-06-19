@@ -49,6 +49,34 @@ export const getRating = (brewery, name) => {
   return get(data, `${brewery}.${name}.rating`, 0);
 }
 
-export const setNotes = () => {
+export const getNotes = (brewery, name) => {
+  const data = JSON.parse(localStorage.getItem('wrfc-leaflet'));
+  return get(data, `${brewery}.${name}.notes`, '');
+}
 
+export const setNotes = (brewery, name, notes) => {
+  let data = JSON.parse(localStorage.getItem('wrfc-leaflet'));
+  if (!data) {
+    data = {
+
+    }
+  }
+  if (data[brewery]) {
+    if (data[brewery][name]) {
+      data[brewery][name] = {
+        ...data[brewery][name],
+        notes
+      }
+    } else {
+      data[brewery][name] = {
+        notes
+      }
+    }
+  } else {
+    data[brewery] = {};
+    data[brewery][name] = {
+       notes
+    }
+  }
+  localStorage.setItem('wrfc-leaflet', JSON.stringify(data));
 }
