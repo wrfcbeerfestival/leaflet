@@ -1,21 +1,26 @@
 {
   "files": {
-    "main.css": "/leaflet/static/css/main.5ad1a670.chunk.css",
-    "main.js": "/leaflet/static/js/main.ab20d31a.chunk.js",
-    "main.js.map": "/leaflet/static/js/main.ab20d31a.chunk.js.map",
+    "main.css": "/leaflet/static/css/main.5e9030ce.chunk.css",
+    "main.js": "/leaflet/static/js/main.a7371e25.chunk.js",
+    "main.js.map": "/leaflet/static/js/main.a7371e25.chunk.js.map",
     "runtime~main.js": "/leaflet/static/js/runtime~main.005ef40c.js",
     "runtime~main.js.map": "/leaflet/static/js/runtime~main.005ef40c.js.map",
     "static/css/2.3c1ddb0a.chunk.css": "/leaflet/static/css/2.3c1ddb0a.chunk.css",
-    "static/js/2.60ff6a7f.chunk.js": "/leaflet/static/js/2.60ff6a7f.chunk.js",
-    "static/js/2.60ff6a7f.chunk.js.map": "/leaflet/static/js/2.60ff6a7f.chunk.js.map",
+    "static/js/2.74a27c8f.chunk.js": "/leaflet/static/js/2.74a27c8f.chunk.js",
+    "static/js/2.74a27c8f.chunk.js.map": "/leaflet/static/js/2.74a27c8f.chunk.js.map",
     "index.html": "/leaflet/index.html",
-    "precache-manifest.3b7e01071d2a192ff15965fb4d60c459.js": "/leaflet/precache-manifest.3b7e01071d2a192ff15965fb4d60c459.js",
+    "precache-manifest.3bf6ed8382d166fd4e19ad587ec727b1.js": "/leaflet/precache-manifest.3bf6ed8382d166fd4e19ad587ec727b1.js",
     "service-worker.js": "/leaflet/service-worker.js",
     "static/css/2.3c1ddb0a.chunk.css.map": "/leaflet/static/css/2.3c1ddb0a.chunk.css.map",
-    "static/css/main.5ad1a670.chunk.css.map": "/leaflet/static/css/main.5ad1a670.chunk.css.map",
+    "static/css/main.5e9030ce.chunk.css.map": "/leaflet/static/css/main.5e9030ce.chunk.css.map",
     "static/media/empty-apple.svg": "/leaflet/static/media/empty-apple.f29ea129.svg",
     "static/media/empty-beer.svg": "/leaflet/static/media/empty-beer.88b4fb36.svg",
+    "static/media/facebook.svg": "/leaflet/static/media/facebook.b9173756.svg",
     "static/media/filled-apple.svg": "/leaflet/static/media/filled-apple.0c1cf700.svg",
-    "static/media/filled-beer.svg": "/leaflet/static/media/filled-beer.a7a2fb84.svg"
+    "static/media/filled-beer.svg": "/leaflet/static/media/filled-beer.a7a2fb84.svg",
+    "static/media/filled-gin.svg": "/leaflet/static/media/filled-gin.8aa70dc3.svg",
+    "static/media/home.svg": "/leaflet/static/media/home.af9e72bb.svg",
+    "static/media/instagram.svg": "/leaflet/static/media/instagram.662a4f14.svg",
+    "static/media/twitter.svg": "/leaflet/static/media/twitter.be066898.svg"
   }
 }
