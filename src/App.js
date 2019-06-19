@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import StandardContainer from './Containers/Standard';
 import BreweryContainer from './Containers/Brewery';
+import QuickLinks from './Components/QuickLinks';
 
 const App = () => {
   const rootClassName = `app--${process.env.NODE_ENV}`
@@ -17,6 +18,7 @@ const App = () => {
       <Router>
         <Route basename="/" render={({ location }) => (
           <div className="fill">
+            <QuickLinks />
             <TransitionGroup>
               <CSSTransition
                 key={location.pathname}

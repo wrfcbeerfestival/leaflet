@@ -36,7 +36,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-
+ul, ol {
+	list-style-type: none;
+}
 blockquote, q {
 	quotes: none;
 }

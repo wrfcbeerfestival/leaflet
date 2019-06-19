@@ -1,0 +1,18 @@
+.quicklinks {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1c60c7;
+}
+.quicklinks span {
+  height: 44px;
+    display: inline-block;
+    width: 44px;
+    line-height: 56px;
+    text-align: center;
+}
+.quicklinks img {
+  height: 22px;
+  width: 22px;
+}

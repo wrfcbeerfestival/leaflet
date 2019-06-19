@@ -13,6 +13,11 @@
   text-align: center;
 }
 
+.paragraph {
+  font-size: 14px;
+  line-height: 18px; 
+}
+
 .instructions {
   background-color: lightblue;
   padding: 12px;
@@ -26,7 +31,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  top:44px;
   bottom: 0
   /* transform: scale(1.1); */
 }
@@ -42,7 +47,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  top: 44px;
   bottom: 0
   /* transform: scale(1); */
 }
@@ -68,7 +73,7 @@
   font-size: 20px;
   text-align: center;
   padding: 12px 0;
-  background: #040d77;
+  background-color: #1c60c7;
   color: white;
   font-weight: bold;
 }
@@ -172,7 +177,8 @@
   box-sizing: border-box;
   margin-top: 12px;
 }
-.article__title {
+.article__title,
+.title {
   font-size: 28px;
   margin: 8px;
   font-weight: bold;
@@ -195,4 +201,20 @@
 }
 .app--production .homepage__title {
   background-image: url('/leaflet/homepage-background.jpg');
+}
+
+.contents {
+  margin: 8px;
+}
+
+.contents__item {
+  height: 44px;
+  line-height: 44px;
+}
+.contents__item a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: #1c60c7;
+  text-decoration: underline;
 }
