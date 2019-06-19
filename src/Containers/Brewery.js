@@ -13,9 +13,6 @@ export default class extends React.Component {
     this.onSwipeEnd = this.onSwipeEnd.bind(this);
   }
   onSwipeEnd() {
-    console.info('is this going to this')
-    // Maybe need to remove swipe? Or have an alert
-    // Need a go back to list at the top?
     if (this.triggerToNextPage) {
       return this.props.history.push(this.props.returnUrl);
     }
@@ -26,7 +23,6 @@ export default class extends React.Component {
   }
 
   onSwipeMove(pos) {
-    console.info('is this moving')
     if (pos.x < -Math.abs(MOVEMENT_AMOUNT)) {
       this.triggerToNextPage = true;
     }

@@ -2,6 +2,7 @@ import React from "react";
 import Swipe from 'react-easy-swipe';
 import { Redirect } from 'react-router-dom';
 import { findPage, getPage } from '../pageOrder'
+import SocialMedia from "../Components/SocialMedia";
 
 const MOVEMENT_AMOUNT = 100;
 
@@ -15,8 +16,6 @@ export default class extends React.Component {
     this.onSwipeEnd = this.onSwipeEnd.bind(this);
   }
   onSwipeEnd() {
-    console.info('next', this.triggerToNextPage);
-    console.info('prev', this.triggerToPreviousPage);
     if (this.triggerToNextPage) {
       const nextPage = getPage(this.props.match.url, true);
       if (nextPage) {
@@ -35,7 +34,6 @@ export default class extends React.Component {
   }
 
   onSwipeMove(pos) {
-    console.info(pos.x)
     if (pos.x < -Math.abs(MOVEMENT_AMOUNT)) {
       this.triggerToNextPage = true;
     }
@@ -50,9 +48,10 @@ export default class extends React.Component {
     }
 
     return (<Swipe className="page" onSwipeMove={this.onSwipeMove} onSwipeEnd={this.onSwipeEnd}>
-    <section>
-      { <ComponentToRender /> }
-    </section>
+      <section>
+        {<ComponentToRender.Component {...ComponentToRender.options} />}
+        <SocialMedia />
+      </section>
     </Swipe>)
   }
 }

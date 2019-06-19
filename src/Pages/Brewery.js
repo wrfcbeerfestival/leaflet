@@ -66,14 +66,30 @@ class Item extends React.Component {
 
 
 export default class extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      hideDescription: props.hideDescription
+    }
+    this.onDescriptionClick = this.onDescriptionClick.bind(this);
+  }
+
+  onDescriptionClick() {
+    this.setState({
+      hideDescription: !this.state.hideDescription
+    })
+  }
+
   render() {
-    const { data, type, id } = this.props;
+    const { data, type, id, hideInfo } = this.props;
+    const { hideDescription } = this.state;
     const items = data.list.map((listitem, key) => <Item key={key} {...listitem} id={id} type={type} />);
     return (
       <section>
-        <h1 className="brewery__title">{data.name}</h1>
-        <p className="brewery__desc">{data.description}</p>
-        <p className="instructions">Tap the beer name to see more. Tap the beer icon to rate each beer.</p>
+      <h1 className="brewery__title" onClick={() => { this.onDescriptionClick()}}>{data.name}</h1>
+        { hideDescription ? null : <p className="brewery__desc" >{data.description}</p> }
+        { hideInfo ? null : <p className="instructions">Tap the beer name to see more. Tap the beer icon to rate each beer.</p> }
         <div className="brewery__items">
           {items}
         </div>

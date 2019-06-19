@@ -1,30 +1,4 @@
 
-.image--full {
-  width: 100%;
-  height: auto;
-}
-
-.back__button {
-  width: 200px;
-  margin: 0 auto;
-  background-color: lightblue;
-  font-family: monospace;
-  padding: 12px;
-  text-align: center;
-}
-
-.paragraph {
-  font-size: 14px;
-  line-height: 18px; 
-}
-
-.instructions {
-  background-color: lightblue;
-  padding: 12px;
-  text-align: center;
-  margin: 12px 0;
-  font-family: monospace;
-}
 
 .fade-enter {
   opacity: 0.01;
@@ -93,10 +67,16 @@
   color: white;
 }
 
+.beerlist__desc,
+.ciderlist__desc {
+  margin: 8px;
+  text-align: center;
+}
+
 .beer-hero {
-  width: calc(100% - 24px);
+  width: calc(100% - 16px);
   height: 200px;
-  margin: 12px;
+  margin: 12px 8px;
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-position: center;
@@ -129,13 +109,6 @@
   font-size: 12px;
   line-height: 18px;
 }
-
-
-
-.brewer__items {
-
-}
-
 
 
 .product {
@@ -177,8 +150,7 @@
   box-sizing: border-box;
   margin-top: 12px;
 }
-.article__title,
-.title {
+.article__title {
   font-size: 28px;
   margin: 8px;
   font-weight: bold;

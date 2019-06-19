@@ -4,33 +4,58 @@ import BeerList from './Pages/BeerList';
 import CiderList from './Pages/CiderList';
 import Guide from './Pages/Guide';
 import Contents from './Pages/Contents';
+import Advert from './Pages/Advert';
+import Chairman from './Pages/Chairman';
+import Recruitment from './Pages/Recruitment';
 
-export const mainPageOrdering =  [{
+export const mainPageOrdering = [{
   name: '/home',
   prettyName: 'Cover page',
-  component: HomePage
+  Component: HomePage
 }, {
   name: '/beer-fest-chairman',
-  prettyName: 'Beer Festival Chairman',
-  component: BeerFestChairman
+  prettyName: 'Beer Festival Chairman - Jon McClennon',
+  Component: BeerFestChairman
 },
 {
   name: '/contents',
   prettyName: 'Contents',
-  component: Contents
+  Component: Contents
 },
 {
   name: '/guide',
   prettyName: 'Guide to WRFC Beer & Cider Festival',
-  component: Guide
+  Component: Guide
+}, {
+  name: '/tring-advert',
+  prettyName: 'Tring Advert',
+  options: {
+    image: '/tring-advert.jpg',
+  },
+  Component: Advert
 }, {
   name: '/beer',
   prettyName: 'Beer List',
-  component: BeerList
+  Component: BeerList
 }, {
+  name: '/rugby-club-chairman',
+  prettyName: 'WRFC Chairman - Martin Lee',
+  Component: Chairman
+}, {
+  name: '/recruitment',
+  prettyName: 'Fancy taking up rugby?',
+  Component: Recruitment
+},{
   name: '/cider',
   prettyName: 'Cider List',
-  component: CiderList
+  Component: CiderList
+}, {
+  name: '/wrfc-venue-hire',
+  prettyName: 'WRFC Bar & Coffee House',
+  Component: Advert,
+  options: {
+    image: '/wrfc-venue-hire.jpg'
+  }
 }]
 
 export const findPage = (pageName) => {
@@ -38,7 +63,7 @@ export const findPage = (pageName) => {
     return page.name === pageName;
   })
   if (selectedPage) {
-    return selectedPage.component;
+    return selectedPage;
   }
 }
 
@@ -51,5 +76,5 @@ export const getPage = (currentPage, forward) => {
     };
   })
 
-  return forward ? mainPageOrdering[currentPageIndex + 1]: mainPageOrdering[currentPageIndex-1];
+  return forward ? mainPageOrdering[currentPageIndex + 1] : mainPageOrdering[currentPageIndex - 1];
 }

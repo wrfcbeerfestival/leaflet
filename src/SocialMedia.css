@@ -1,0 +1,22 @@
+.social-media {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+}
+.social-media__title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+.social-media__icons {
+  display: flex;
+  margin-top: 12px;
+  justify-content: space-around;
+}
+.social-media a {
+  height: 44px;
+  display: block;
+}
+.social-media img {
+  height: 22px;
+}

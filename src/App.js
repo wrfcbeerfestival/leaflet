@@ -1,5 +1,6 @@
 import React from "react";
 import './Reset.css';
+import './Site.css';
 import './App.css';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import {
@@ -10,6 +11,7 @@ import {
 import StandardContainer from './Containers/Standard';
 import BreweryContainer from './Containers/Brewery';
 import QuickLinks from './Components/QuickLinks';
+import FullList from './Pages/FullList';
 
 const App = () => {
   const rootClassName = `app--${process.env.NODE_ENV}`
@@ -26,6 +28,7 @@ const App = () => {
                 timeout={300}
               >
                 <Switch location={location}>
+                  <Route path="/brewery/beer/all" render={(props) => (<FullList returnUrl="/beer" {...props} />)} />
                   <Route path="/brewery/:brewery" render={(props) => (<BreweryContainer returnUrl="/beer" {...props} />)} />
                   <Route path="/:page" render={(props) => (<StandardContainer {...props} />)} />
                   <Route render={() => <div>Not Found</div>} />

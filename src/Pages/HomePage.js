@@ -3,7 +3,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { getImage } from '../image';
 export default () => {
-  console.info('new deployment')
   return (
     <div>
       <p className="homepage__dates">Join us: 11th July - 14th July</p>

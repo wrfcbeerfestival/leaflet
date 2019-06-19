@@ -1,6 +1,4 @@
-Need to make sure people get redirect to homepage, if they go to the wrong page
-
-Quick links
+Scroll to top on page change
 
 view all beers with filters text on that page
 

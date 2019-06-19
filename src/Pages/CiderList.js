@@ -15,6 +15,8 @@ export default () => {
     </Link>
   })
   return <section>
+    <h2 className="title">Cider List</h2>
+    <p className="paragraph ciderlist__desc">View our selection of Ciders by brewery.</p>
     { list }
   </section>;
 }

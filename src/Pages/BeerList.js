@@ -14,7 +14,9 @@ export default () => {
         </div>
     </Link>
   })
-  return <section>
+  return <section className="beerlist">
+    <h2 className="title">Beer List</h2>
+    <p className="paragraph beerlist__desc">View our selection of Beers by brewery.</p>
     { list }
   </section>;
 }
