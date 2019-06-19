@@ -18,5 +18,10 @@ export default () => {
     <h2 className="title">Cider List</h2>
     <p className="paragraph ciderlist__desc">View our selection of Ciders by brewery.</p>
     { list }
+    <Link to={`/brewery/cider/all`}>
+      <div className="beer-hero beer-hero--1" style={{ backgroundImage: `url(${getImage('/all-beer.jpg')})` }}>
+        <div className="beer-hero-text">View all</div>
+        </div>
+    </Link>
   </section>;
 }

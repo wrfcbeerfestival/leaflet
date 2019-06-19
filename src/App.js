@@ -28,7 +28,8 @@ const App = () => {
                 timeout={300}
               >
                 <Switch location={location}>
-                  <Route path="/brewery/beer/all" render={(props) => (<FullList returnUrl="/beer" {...props} />)} />
+                  <Route path="/brewery/beer/all" render={(props) => (<FullList returnUrl="/beer" {...props} isBeerList={true} />)} />
+                  <Route path="/brewery/cider/all" render={(props) => (<FullList returnUrl="/cider" {...props} isBeerList={false} />)} />
                   <Route path="/brewery/:brewery" render={(props) => (<BreweryContainer returnUrl="/beer" {...props} />)} />
                   <Route path="/:page" render={(props) => (<StandardContainer {...props} />)} />
                   <Route render={() => <div>Not Found</div>} />

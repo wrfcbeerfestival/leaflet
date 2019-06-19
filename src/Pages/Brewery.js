@@ -85,11 +85,12 @@ export default class extends React.Component {
     const { data, type, id, hideInfo } = this.props;
     const { hideDescription } = this.state;
     const items = data.list.map((listitem, key) => <Item key={key} {...listitem} id={id} type={type} />);
+    const instructions = type === 'beer' ? 'Tap the beer name to see more. Tap the beer icon to rate each beer' : 'Tap the cider name to see more. Tap the apple icon to rate each cider';
     return (
       <section>
       <h1 className="brewery__title" onClick={() => { this.onDescriptionClick()}}>{data.name}</h1>
         { hideDescription ? null : <p className="brewery__desc" >{data.description}</p> }
-        { hideInfo ? null : <p className="instructions">Tap the beer name to see more. Tap the beer icon to rate each beer.</p> }
+        { hideInfo ? null : <p className="instructions">{instructions}</p> }
         <div className="brewery__items">
           {items}
         </div>

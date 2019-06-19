@@ -20,6 +20,7 @@ export default class extends React.Component {
       const nextPage = getPage(this.props.match.url, true);
       if (nextPage) {
         this.triggerToNextPage = false;
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
         return this.props.history.push(nextPage.name);
       }
     }
@@ -28,6 +29,7 @@ export default class extends React.Component {
       this.triggerToPreviousPage = false;
       const previousPage = getPage(this.props.match.url);
       if (previousPage) {
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
         return this.props.history.push(previousPage.name);
       }
     }

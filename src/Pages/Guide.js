@@ -15,11 +15,11 @@ export default () => {
           Tasting - Some things you should look for when drinking
       </p>
         <ol className="article__list">
-          <li>Aroma - Make a mental note of what you can smell.</li>
-          <li>Appearance - The head retention, colour, cloudiness etc.</li>
-          <li>Taste - When tasting, it is recommended that you drink only half of the sample initially. Make a note of the different properties of the beer(bitter / sweet / tart, etc).</li>
-          <li>Mouth feel - What did the beer feel like ? Thick, chewy, silky, fizzy ?</li>
-          <li>Second look(overall) - Finish the sample.Did you note any changes from the first taste to now ? Did the beer breathe differently or did you experience a flavour that was not present during the first swallow ? Many beers(especially ales) are very complex and can’t be fully appreciated with a single taste.</li>
+          <li><b>Aroma</b> - Make a mental note of what you can smell.</li>
+          <li><b>Appearance</b> - The head retention, colour, cloudiness etc.</li>
+          <li><b>Taste</b> - When tasting, it is recommended that you drink only half of the sample initially. Make a note of the different properties of the beer(bitter / sweet / tart, etc).</li>
+          <li><b>Mouth feel</b> - What did the beer feel like ? Thick, chewy, silky, fizzy ?</li>
+          <li><b>Second look(overall)</b> - Finish the sample.Did you note any changes from the first taste to now ? Did the beer breathe differently or did you experience a flavour that was not present during the first swallow ? Many beers(especially ales) are very complex and can’t be fully appreciated with a single taste.</li>
         </ol>
         <p>
           If you need any help, do ask, a lot of the guys here like a good beer / cider and are more than happy to part their wisdom.

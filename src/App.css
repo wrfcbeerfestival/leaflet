@@ -157,6 +157,14 @@
   text-align: center;
 }
 
+.article__list li {
+  margin: 8px 0;
+}
+
+.article__list b {
+  font-weight: bold;
+}
+
 .article__content {
   margin: 0 8px;
   font-size: 14px;
