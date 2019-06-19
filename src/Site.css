@@ -17,6 +17,9 @@
   font-size: 14px;
   line-height: 18px; 
 }
+.paragraph--margin {
+  margin: 8px;
+}
 
 .instructions {
   background-color: lightblue;

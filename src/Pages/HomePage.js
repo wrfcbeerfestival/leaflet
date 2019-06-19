@@ -15,7 +15,7 @@ export default () => {
       </div>
       <p className="homepage__instructions instructions">Swipe from right to left to go to the next page</p>
       <p className="homepage__desc">To call our event a ‘beer festival’ perhaps does ourselves a disservice – we provide so much more than can be summed up in two words. With over 36 real ales of varying styles, strength and taste there is something to suit every palette. Our cider selection goes from strength to strength and the return of perennial favourites such as Bee Sting and Maverick’s Chilli & Ginger alongside some truly unique offerings mean there is something for everyone.</p>
-      <Carousel showThumbs={false} infiniteLoop autoPlay swipeable={false} width="100%">
+      <Carousel showThumbs={false} infiniteLoop autoPlay swipeable={false} dynamicHeight={true} width="100%">
         <div>
           <img src={getImage('/homepage-background.jpg')} />
         </div>
