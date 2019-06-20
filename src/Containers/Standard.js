@@ -49,7 +49,7 @@ export default class extends React.Component {
       return <Redirect to="/home" />
     }
 
-    return (<Swipe className="page" onSwipeMove={this.onSwipeMove} onSwipeEnd={this.onSwipeEnd}>
+    return (<Swipe  allowMouseEvents={true} className="page desktop-max" onSwipeMove={this.onSwipeMove} onSwipeEnd={this.onSwipeEnd}>
       <section>
         {<ComponentToRender.Component {...ComponentToRender.options} />}
         <SocialMedia />

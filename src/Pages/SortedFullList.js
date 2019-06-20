@@ -34,13 +34,13 @@ export default class extends React.Component {
       )
     });
     return (
-      <div>
+      <div className="desktop-max">
         {isBeerList && <p className="instructions">Tap brewery/beer name to see information. Tap the beer icon to rate each beer.</p>}
         {!isBeerList && <p className="instructions">Tap brewery/cider name to see information. Tap the apple icon to rate each cider.</p>}
         {items}
         <div className="back__button" onClick={() => { history.goBack() }}>View all breweries</div>
         {this.state.showClearButton && <div className="clear__button" onClick={() => { this.onClearStorage() }}>Clear all data</div>}
-        <p className="paragraph paragraph--margin" onClick={() => { this.showClearButton(); }}>Want to clear your notes/ratings. Click here to reveal the button</p>
+        <p className="paragraph paragraph--margin clear__toggle" onClick={() => { this.showClearButton(); }}>Want to clear your notes/ratings. Click here to reveal the button</p>
         <SocialMedia />
       </div>
     )

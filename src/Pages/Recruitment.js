@@ -9,7 +9,7 @@ export default () => {
       <h2 className="title">Fancy Taking Up Rugby?</h2>
       <p className="paragraph paragraph--margin">Like to get your kids involved? Want to come out of ‘retirement’? Looking to give yourself a new challenge? No matter the reason we would love to hear from you.</p>
       <p className="paragraph paragraph--margin">At Watford Rugby Club we welcome all players, no matter the age or ability. Senior training sessions have started, running every Tuesday and Thursday 7:15-9pm. MMJ are also recruiting at every age from 6 to 18, for boys and girls.</p>
-      <Carousel showThumbs={false} infiniteLoop autoPlay swipeable={false} dynamicHeight={true} width="100%">
+    <Carousel showThumbs={false} infiniteLoop autoPlay swipeable={false} dynamicHeight={true} width="100%">
         <div>
           <img alt="" src={getImage('/r1.jpg')} />
         </div>
@@ -59,7 +59,9 @@ export default () => {
           <img alt="" src={getImage('/r16.jpg')} />
         </div>
       </Carousel>
-      <p className="paragraph paragraph--margin">So why not go for it and contact <b>Martin Lee, Club Chairman, 07787805262</b>. Or call <b>Simon Bram Club Captain, on 07725 217110.</b></p>
+      <p className="paragraph paragraph--margin">So why not go for it and contact:</p>
+      <p className="paragraph paragraph--margin"><b className="bold">Martin Lee, Club Chairman, 07787805262</b></p>
+      <p className="paragraph paragraph--margin"><b className="bold">Simon Bram, Club Captain, on 07725 217110.</b></p>
       <p className="paragraph paragraph--margin">Address: Watford Rugby Club, Radlett Road, Watford, Herts WD24 4LL</p>
       <p className="paragraph paragraph--margin"><a href="www.watfordrfc.co.uk">Website</a></p>
       

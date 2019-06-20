@@ -231,3 +231,14 @@
   line-height: 24px;
   font-size: 18px;
 }
+
+@media (min-width: 1024px) {
+  #root {
+    background-color: #fbfeff
+  }
+  .desktop-max {
+    background-color: white;
+    width: 768px;
+    margin: 0 auto;
+  }
+}

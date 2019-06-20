@@ -22,11 +22,11 @@ export default class extends React.Component {
   render() {
     const { data, type } = getBreweryDetails(this.props.match.params.brewery);
     return (
-      <section>
+      <section className="desktop-max">
         {<Brewery localStorageCleared={this.state.localStorageCleared} data={data} type={type} id={this.props.match.params.brewery} />}
         <div className="back__button" onClick={ () => { this.props.history.goBack()}}>View all breweries</div>
         { this.state.showClearButton && <div className="clear__button" onClick={() => { this.onClearStorage() }}>Clear data for {data.name}</div>}
-        <p className="paragraph paragraph--margin" onClick={() => { this.showClearButton();}}>Want to your notes/ratings for <b className="bold">{data.name}</b>. Click here to reveal the button</p>
+        <p className="paragraph paragraph--margin clear__toggle" onClick={() => { this.showClearButton();}}>Want to your notes/ratings for <b className="bold">{data.name}</b>. Click here to reveal the button</p>
         <SocialMedia />
       </section>
     )

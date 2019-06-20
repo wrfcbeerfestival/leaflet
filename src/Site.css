@@ -22,6 +22,9 @@
   color: white;
   background-color: crimson;
 }
+.clear__toggle {
+  text-align: center;
+}
 
 .paragraph {
   font-size: 14px;

@@ -1,7 +1,5 @@
 
-Sponsors page
-
-Merch page
+Sponsors page - speak to martin
 
 Styling / split up css
 
