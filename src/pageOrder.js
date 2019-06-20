@@ -91,11 +91,12 @@ export const findPage = (pageName) => {
 
 export const getPage = (currentPage, forward) => {
   let currentPageIndex;
-  const selectedPage = mainPageOrdering.find((page, index) => {
+  mainPageOrdering.find((page, index) => {
     if (page.name === currentPage) {
       currentPageIndex = index;
       return true;
     };
+    return false;
   })
 
   return forward ? mainPageOrdering[currentPageIndex + 1] : mainPageOrdering[currentPageIndex - 1];

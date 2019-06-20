@@ -22,7 +22,7 @@ export default class extends React.Component {
     const itemKeys = Object.keys(isBeerList ? getBeerBrewerys() : getCiderBrewerys());
     const items = itemKeys.map((id) => {
       const { data, type } = getBreweryDetails(id);
-      return <Brewery localStorageCleared={this.state.localStorageCleared} data={data} type={type} id={id} hideDescription={true} hideInfo={true} />
+      return <Brewery key={id} localStorageCleared={this.state.localStorageCleared} data={data} type={type} id={id} hideDescription={true} hideInfo={true} />
     })
     return (
       <div>

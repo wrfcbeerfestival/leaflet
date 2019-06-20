@@ -5,7 +5,7 @@ import emptyCider from '../empty-apple.svg';
 import fullCider from '../filled-apple.svg';
 import { setRating, getRating, setNotes, getNotes } from '../localstorage';
 
-class Item extends React.Component {
+export class Item extends React.Component {
   constructor(props) {
     super(props);
     this.onClick = this.onClick.bind(this);
@@ -56,7 +56,7 @@ class Item extends React.Component {
             if (this.props.type === 'cider') {
               icon = isEmpty ? emptyCider : fullCider
             }
-            return <img key={ratingNumber} className={`product__rating-icon product__rating-icon--${isEmpty ? 'empty' : 'full'}`} onClick={() => { this.onRatingSelected(ratingNumber) }} src={icon} />
+            return <img alt={this.props.type + 'rating'} key={ratingNumber} className={`product__rating-icon product__rating-icon--${isEmpty ? 'empty' : 'full'}`} onClick={() => { this.onRatingSelected(ratingNumber) }} src={icon} />
           })}
         </span>
       </div>
@@ -73,7 +73,6 @@ class Item extends React.Component {
     </div>)
   }
 }
-
 
 export default class extends React.Component {
 

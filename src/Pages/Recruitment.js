@@ -11,52 +11,52 @@ export default () => {
       <p className="paragraph paragraph--margin">At Watford Rugby Club we welcome all players, no matter the age or ability. Senior training sessions have started, running every Tuesday and Thursday 7:15-9pm. MMJ are also recruiting at every age from 6 to 18, for boys and girls.</p>
       <Carousel showThumbs={false} infiniteLoop autoPlay swipeable={false} dynamicHeight={true} width="100%">
         <div>
-          <img src={getImage('/r1.jpg')} />
+          <img alt="" src={getImage('/r1.jpg')} />
         </div>
         <div>
-          <img src={getImage('/r2.jpg')} />
+          <img alt="" src={getImage('/r2.jpg')} />
         </div>
         <div>
-          <img src={getImage('/r3.jpg')} />
+          <img alt="" src={getImage('/r3.jpg')} />
         </div>
         <div>
-          <img src={getImage('/r4.jpg')} />
+          <img alt="" src={getImage('/r4.jpg')} />
         </div>
         <div>
-          <img src={getImage('/r5.jpg')} />
+          <img alt="" src={getImage('/r5.jpg')} />
         </div>
         <div>
-          <img src={getImage('/r6.jpg')} />
+          <img alt="" src={getImage('/r6.jpg')} />
         </div>
         <div>
-          <img src={getImage('/r7.jpg')} />
+          <img alt="" src={getImage('/r7.jpg')} />
         </div>
         <div>
-          <img src={getImage('/r8.jpg')} />
+          <img alt="" src={getImage('/r8.jpg')} />
         </div>
         <div>
-          <img src={getImage('/r9.jpg')} />
+          <img alt="" src={getImage('/r9.jpg')} />
         </div>
         <div>
-          <img src={getImage('/r10.jpg')} />
+          <img alt="" src={getImage('/r10.jpg')} />
         </div>
         <div>
-          <img src={getImage('/r11.jpg')} />
+          <img alt="" src={getImage('/r11.jpg')} />
         </div>
         <div>
-          <img src={getImage('/r12.jpg')} />
+          <img alt="" src={getImage('/r12.jpg')} />
         </div>
         <div>
-          <img src={getImage('/r13.jpg')} />
+          <img alt="" src={getImage('/r13.jpg')} />
         </div>
         <div>
-          <img src={getImage('/r14.jpg')} />
+          <img alt="" src={getImage('/r14.jpg')} />
         </div>
         <div>
-          <img src={getImage('/r15.jpg')} />
+          <img alt="" src={getImage('/r15.jpg')} />
         </div>
         <div>
-          <img src={getImage('/r16.jpg')} />
+          <img alt="" src={getImage('/r16.jpg')} />
         </div>
       </Carousel>
       <p className="paragraph paragraph--margin">So why not go for it and contact <b>Martin Lee, Club Chairman, 07787805262</b>. Or call <b>Simon Bram Club Captain, on 07725 217110.</b></p>

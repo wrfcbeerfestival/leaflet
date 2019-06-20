@@ -33,7 +33,7 @@ export default {
   shellyAnswer: {
     type: 'ANSWER',
     title: 'Miss Shelly (4.2%)',
-    description: 'A refreshing Pale Ale brewed straight up with Maris Otter barley. This heavily hopped whole leaf Galena, Cascade and Liberty Hop is an exciting creation. Some say it\’s a creation so bold and unapologetic that it acts as an ode to Mary Shelley. That it\’s a companion complex enough that she could finally find a form of solace.'
+    description: 'A refreshing Pale Ale brewed straight up with Maris Otter barley. This heavily hopped whole leaf Galena, Cascade and Liberty Hop is an exciting creation. Some say it\'s a creation so bold and unapologetic that it acts as an ode to Mary Shelley. That it\'s a companion complex enough that she could finally find a form of solace.'
   },
   mrRipperAnswer: {
     type: 'ANSWER',

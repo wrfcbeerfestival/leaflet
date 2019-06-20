@@ -42,7 +42,7 @@ const brewies = {
         percent: '3.9',
         colour: 'Blonde'
       }, {
-        name: 'Responsably',
+        name: 'Responsably', colour: 'Unknown',
         notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
         percent: '5.2',
       }, {
@@ -62,7 +62,7 @@ const brewies = {
         percent: '3.9',
         colour: 'Blonde'
       }, {
-        name: 'Responsably',
+        name: 'Responsably', colour: 'Unknown',
         notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
         percent: '5.2',
       }, {
@@ -84,7 +84,7 @@ const brewies = {
         percent: '3.9',
         colour: 'Blonde'
       }, {
-        name: 'Responsably',
+        name: 'Responsably', colour: 'Unknown',
         notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
         percent: '5.2',
       }, {
@@ -104,14 +104,14 @@ const brewies = {
         percent: '3.9',
         colour: 'Blonde'
       }, {
-        name: 'Responsably',
+        name: 'Responsably', colour: 'Unknown',
         notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
         percent: '5.2',
       }, {
         name: 'Pale four',
         notes: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.',
         percent: '4.6',
-        colour: 'Pale'
+        colour: 'Porter'
       }]
     },
     '3Brewers': {
@@ -124,7 +124,7 @@ const brewies = {
         percent: '3.9',
         colour: 'Blonde'
       }, {
-        name: 'Responsably',
+        name: 'Responsably', colour: 'Unknown',
         notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
         percent: '5.2',
       }, {
@@ -144,7 +144,7 @@ const brewies = {
         percent: '3.9',
         colour: 'Blonde'
       }, {
-        name: 'Responsably',
+        name: 'Responsably', colour: 'Unknown',
         notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
         percent: '5.2',
       }, {
@@ -164,7 +164,7 @@ const brewies = {
         percent: '3.9',
         colour: 'Blonde'
       }, {
-        name: 'Responsably',
+        name: 'Responsably', colour: 'Unknown',
         notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
         percent: '5.2',
       }, {
@@ -184,7 +184,7 @@ const brewies = {
         percent: '3.9',
         colour: 'Blonde'
       }, {
-        name: 'Responsably',
+        name: 'Responsably', colour: 'Unknown',
         notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
         percent: '5.2',
       }, {
@@ -204,7 +204,7 @@ const brewies = {
         percent: '3.9',
         colour: 'Blonde'
       }, {
-        name: 'Responsably',
+        name: 'Responsably', colour: 'Unknown',
         notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
         percent: '5.2',
       }, {
@@ -224,7 +224,7 @@ const brewies = {
         percent: '3.9',
         colour: 'Blonde'
       }, {
-        name: 'Responsably',
+        name: 'Responsably', colour: 'Unknown',
         notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
         percent: '5.2',
       }, {
@@ -244,7 +244,7 @@ const brewies = {
         percent: '3.9',
         colour: 'Blonde'
       }, {
-        name: 'Responsably',
+        name: 'Responsably', colour: 'Unknown',
         notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
         percent: '5.2',
       }, {
@@ -264,7 +264,7 @@ const brewies = {
         percent: '3.9',
         colour: 'Blonde'
       }, {
-        name: 'Responsably',
+        name: 'Responsably', colour: 'Unknown',
         notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
         percent: '5.2',
       }, {
@@ -284,7 +284,7 @@ const brewies = {
         percent: '3.9',
         colour: 'Blonde'
       }, {
-        name: 'Responsably',
+        name: 'Responsably', colour: 'Unknown',
         notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
         percent: '5.2',
       }, {
@@ -304,7 +304,7 @@ const brewies = {
         percent: '3.9',
         colour: 'Blonde'
       }, {
-        name: 'Responsably',
+        name: 'Responsably', colour: 'Unknown',
         notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
         percent: '5.2',
       }, {
@@ -329,7 +329,7 @@ const brewies = {
         percent: '3.9',
         colour: 'Blonde'
       }, {
-        name: 'Responsably',
+        name: 'Responsably', colour: 'Unknown',
         notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
         percent: '5.2',
       }, {
@@ -354,7 +354,7 @@ const brewies = {
         percent: '3.9',
         colour: 'Blonde'
       }, {
-        name: 'Responsably',
+        name: 'Responsably', colour: 'Unknown',
         notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
         percent: '5.2',
       }, {
@@ -373,7 +373,7 @@ const brewies = {
         percent: '3.9',
         colour: 'Blonde'
       }, {
-        name: 'Responsably',
+        name: 'Responsably', colour: 'Unknown',
         notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
         percent: '5.2',
       }, {
@@ -388,9 +388,20 @@ const brewies = {
 
 export const getBreweryDetails = (name) => {
   if (brewies.beer[name]) {
-    return { type: 'beer', data: brewies.beer[name]}
+    return { type: 'beer', data: brewies.beer[name] }
   }
-  return { type: 'cider', data: brewies.cider[name]};
+  return { type: 'cider', data: brewies.cider[name] };
+}
+
+export const getAllBeers = () => {
+  const beerArray = []
+  Object.keys(brewies.beer).forEach(key => {
+    brewies.beer[key].list.forEach(beer => {
+      beerArray.push({ ...beer, id: key })
+    }
+    )
+  });
+  return beerArray;
 }
 
 export const getBeerBrewerys = () => brewies.beer;

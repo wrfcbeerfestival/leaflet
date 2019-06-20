@@ -1,7 +1,7 @@
 import React from 'react';
 import FilledGin from '../filled-gin.svg';
 import EmptyGin from '../empty-gin.svg';
-import { setRating, getRating, setNotes, getNotes } from '../localstorage';
+import { setRating, getRating } from '../localstorage';
 import { getGinDistills } from '../breweryDetails';
 import { getImage } from '../image';
 
@@ -20,11 +20,11 @@ class Item extends React.Component {
   }
 
   render() {
-    const { image, notes } = this.props;
+    const { image, notes, name } = this.props;
     const { rating } = this.state;
     return (<div className="product product--gin">
       <div className="product__header">
-        <img src={getImage(image)} />
+        <img alt={name} src={getImage(image)} />
       </div>
       <div className="product__extra">
         <div>{notes}</div>
@@ -32,7 +32,7 @@ class Item extends React.Component {
           {[1, 2, 3, 4, 5].map((ratingNumber) => {
             const isEmpty = ratingNumber > rating;
             const icon = isEmpty ? EmptyGin : FilledGin;
-            return <img key={ratingNumber} className={`product__rating-icon product__rating-icon--${isEmpty ? 'empty' : 'full'}`} onClick={() => { this.onRatingSelected(ratingNumber) }} src={icon} />
+            return <img alt="gin rating" key={ratingNumber} className={`product__rating-icon product__rating-icon--${isEmpty ? 'empty' : 'full'}`} onClick={() => { this.onRatingSelected(ratingNumber) }} src={icon} />
           })}
         </div>
       </div>
@@ -61,7 +61,7 @@ export default class extends React.Component {
     const list = Object.keys(this.state.data).map((id) => {
       const distill = this.state.data[id];
       const items = distill.list.map((listitem, itemKey) => <Item key={itemKey} {...listitem} id={id} />);
-      return (<section>
+      return (<section key={id}>
         <p className="brewery__desc" >{distill.description}</p>
         <div className="brewery__items">
           {items}

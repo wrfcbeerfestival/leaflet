@@ -11,7 +11,7 @@ export default () => {
       <div>
         <Link to="/contents">
           <span>
-            <img src={Home} />
+            <img alt="home" src={Home} />
           </span>
         </Link>
       </div>
@@ -19,17 +19,17 @@ export default () => {
       <div>
         <Link to="/beer">
           <span>
-            <img src={Beer} />
+            <img alt="beer list" src={Beer} />
           </span>
         </Link>
         <Link to="/cider">
           <span>
-            <img src={Cider} />
+            <img alt="cider list" src={Cider} />
           </span>
         </Link>
         <Link to="/gin">
           <span>
-            <img src={Gin} />
+            <img alt="gin list" src={Gin} />
           </span>
         </Link>
       </div>

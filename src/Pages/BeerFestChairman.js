@@ -5,7 +5,7 @@ export default () => {
   return <section className="article">
     <h1 className="article__title">Beer festival chairman</h1>
     <div>
-      <img className="image--full" src={ getImage('/jon-mcclennon.jpg')} />
+      <img alt="beer festival chairman" className="image--full" src={ getImage('/jon-mcclennon.jpg')} />
     </div>
     <div className="article__content">
       <p>Welcome to the digital leaflet! Something new that we are trying out this year. We are always trying to make our Beer & Cider festival even better and we hope this leaflet will help</p>

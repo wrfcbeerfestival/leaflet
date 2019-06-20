@@ -1,5 +1,10 @@
-Scroll to top on page change
 
-view all beers with filters text on that page
+View by colour/sweetness/percentage
+
+Sponsors page
+
+Merch page
 
 Styling / split up css
+
+performance of images, preload, service workers

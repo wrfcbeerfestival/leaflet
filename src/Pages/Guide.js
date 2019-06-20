@@ -11,8 +11,8 @@ export default () => {
         <p>
           Make Notes - It’s remarkable how forgetful one can be after a 4 hour tasting session.This program contains pages where you can make notes on those beers / ciders you discover, the digital leaflet contains ratings and a notes section under each beer.You never know, next time you are in local you might see that one you like.
       </p>
-        <p>
-          Tasting - Some things you should look for when drinking
+        <p className="subheading">
+        Tasting - Some things you should look for when drinking
       </p>
         <ol className="article__list">
           <li><b>Aroma</b> - Make a mental note of what you can smell.</li>

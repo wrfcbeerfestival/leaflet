@@ -17,7 +17,18 @@ export default () => {
   return <section>
     <h2 className="title">Cider List</h2>
     <p className="paragraph ciderlist__desc">View our selection of Ciders by brewery.</p>
+    <p className="instructions">Please note due to limited rack space, not all ciders are on at once</p>
     { list }
+    <Link to="/brewery/cider/all/colour">
+      <div className="beer-hero beer-hero--1" style={{ backgroundImage: `url(${getImage('/cider-fruit.jpg')})` }}>
+        <div className="beer-hero-text">View by sweetness</div>
+        </div>
+    </Link>
+    <Link to={`/brewery/cider/all/percent`}>
+      <div className="beer-hero beer-hero--1" style={{ backgroundImage: `url(${getImage('/beer-percentage.jpg')})` }}>
+        <div className="beer-hero-text">View by percentage</div>
+        </div>
+    </Link>
     <Link to={`/brewery/cider/all`}>
       <div className="beer-hero beer-hero--1" style={{ backgroundImage: `url(${getImage('/all-beer.jpg')})` }}>
         <div className="beer-hero-text">View all</div>
