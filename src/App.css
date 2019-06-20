@@ -210,3 +210,20 @@
   color: #1c60c7;
   text-decoration: underline;
 }
+
+.picker__answer {
+  background-color: #1c60c7; 
+  width: 320px;
+  height: 64px;
+  font-size: 24px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  color: white;
+}
+
+.picker__description {
+  margin: 12px;
+  line-height: 24px;
+  font-size: 18px;
+}

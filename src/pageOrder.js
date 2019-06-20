@@ -9,6 +9,7 @@ import Chairman from './Pages/Chairman';
 import Recruitment from './Pages/Recruitment';
 import Clint from './Pages/Clint';
 import Gin from './Pages/Gin';
+import Picker from './Pages/Picker';
 
 export const mainPageOrdering = [{
   name: '/home',
@@ -73,6 +74,10 @@ export const mainPageOrdering = [{
   name: '/gin',
   prettyName: 'Gin List',
   Component: Gin
+}, {
+  name: '/picker',
+  prettyName: 'Need help picking? Use our Picker tool',
+  Component: Picker
 }]
 
 export const findPage = (pageName) => {
