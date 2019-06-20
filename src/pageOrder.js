@@ -10,6 +10,7 @@ import Recruitment from './Pages/Recruitment';
 import Clint from './Pages/Clint';
 import Gin from './Pages/Gin';
 import Picker from './Pages/Picker';
+import Merc from './Pages/Merc';
 
 export const mainPageOrdering = [{
   name: '/home',
@@ -75,6 +76,10 @@ export const mainPageOrdering = [{
   prettyName: 'Gin List',
   Component: Gin
 }, {
+  name: '/merc',
+  prettyName: 'Get your merchandise!',
+  Component: Merc 
+},{
   name: '/picker',
   prettyName: 'Need help picking? Use our Picker tool',
   Component: Picker

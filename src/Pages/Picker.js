@@ -7,7 +7,7 @@ const Question = ({ question, answerQuestion }) => {
     <div>
       <h2 className="title">{question.title}</h2>
       {question.answers.map((answer) => {
-        return <button className="picker__answer" onClick={() => { answerQuestion(answer.nextId); }}>{answer.title}</button>
+        return <button key={answer.nextId} className="picker__answer" onClick={() => { answerQuestion(answer.nextId); }}>{answer.title}</button>
       })}
     </div>
   )
