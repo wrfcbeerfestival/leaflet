@@ -9,12 +9,15 @@
 
 
 import get from 'lodash/get';
-const getItem = () => {
 
+export const clearLocalStorage = () => {
+  localStorage.clear('wrfc-leaflet');
 }
 
-const setItem = () => {
-
+export const clearLocalStorageForBrewery = (brewery) => {
+  let data = JSON.parse(localStorage.getItem('wrfc-leaflet'));
+  delete data[brewery];
+  localStorage.setItem('wrfc-leaflet', JSON.stringify(data));
 }
 
 export const setRating = (brewery, name, rating) => {

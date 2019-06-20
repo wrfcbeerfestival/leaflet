@@ -17,13 +17,23 @@ class Item extends React.Component {
       notes: getNotes(this.props.id, this.props.name)
     }
   }
+  componentDidUpdate(prevProps) {
+    // Typical usage (don't forget to
+    if (this.props.localStorageCleared !== prevProps.localStorageCleared) {
+      this.setState({
+        rating: getRating(this.props.id, this.props.name),
+        notes: getNotes(this.props.id, this.props.name)
+      })
+    }
+  }
+
   onClick() {
     this.setState({ isOpen: !this.state.isOpen });
   }
-  
+
   onTextAreaChange(e) {
     setNotes(this.props.id, this.props.name, e.target.value);
-    this.setState({ notes: e.target.value})
+    this.setState({ notes: e.target.value })
   }
 
   onRatingSelected(rating) {
@@ -58,7 +68,7 @@ class Item extends React.Component {
 
         {notes}
 
-        <textarea placeholder={`Notes for ${name}`} value={this.state.notes} onChange={ (e) => { this.onTextAreaChange(e)}}  className="product__notes" />
+        <textarea placeholder={`Notes for ${name}`} value={this.state.notes} onChange={(e) => { this.onTextAreaChange(e) }} className="product__notes" />
       </div>}
     </div>)
   }
@@ -84,13 +94,13 @@ export default class extends React.Component {
   render() {
     const { data, type, id, hideInfo } = this.props;
     const { hideDescription } = this.state;
-    const items = data.list.map((listitem, key) => <Item key={key} {...listitem} id={id} type={type} />);
+    const items = data.list.map((listitem, key) => <Item localStorageCleared={this.props.localStorageCleared} key={key} {...listitem} id={id} type={type} />);
     const instructions = type === 'beer' ? 'Tap the beer name to see more. Tap the beer icon to rate each beer' : 'Tap the cider name to see more. Tap the apple icon to rate each cider';
     return (
       <section>
-      <h1 className="brewery__title" onClick={() => { this.onDescriptionClick()}}>{data.name}</h1>
-        { hideDescription ? null : <p className="brewery__desc" >{data.description}</p> }
-        { hideInfo ? null : <p className="instructions">{instructions}</p> }
+        <h1 className="brewery__title" onClick={() => { this.onDescriptionClick() }}>{data.name}</h1>
+        {hideDescription ? null : <p className="brewery__desc" >{data.description}</p>}
+        {hideInfo ? null : <p className="instructions">{instructions}</p>}
         <div className="brewery__items">
           {items}
         </div>

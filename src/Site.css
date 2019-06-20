@@ -6,11 +6,21 @@
 
 .back__button {
   width: 200px;
-  margin: 0 auto;
+  margin: 12px auto;
   background-color: lightblue;
   font-family: monospace;
   padding: 12px;
   text-align: center;
+}
+
+.clear__button {
+  width: 200px;
+  margin: 12px auto;
+  font-family: monospace;
+  padding: 12px;
+  text-align: center;
+  color: white;
+  background-color: crimson;
 }
 
 .paragraph {
@@ -34,4 +44,8 @@
   margin: 8px;
   font-weight: bold;
   text-align: center;
+}
+
+.bold {
+  font-weight: bold;
 }

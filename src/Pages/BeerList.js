@@ -11,17 +11,19 @@ export default () => {
     return <Link key={key} to={`/brewery/${key}`}>
       <div className="beer-hero beer-hero--1" style={{ backgroundImage: `url(${getImage(brewery.image)})` }}>
         <div className="beer-hero-text">{brewery.name}</div>
-        </div>
+      </div>
     </Link>
   })
   return <section className="beerlist">
     <h2 className="title">Beer List</h2>
     <p className="paragraph beerlist__desc">View our selection of Beers by brewery.</p>
-    { list }
-    <Link to={`/brewery/beer/all`}>
+    {list}
+    <Link to='/brewery/beer/all' onClick={() => {
+      document.body.scrollTop = document.documentElement.scrollTop = 0;
+    }} >
       <div className="beer-hero beer-hero--1" style={{ backgroundImage: `url(${getImage('/all-beer.jpg')})` }}>
         <div className="beer-hero-text">View all</div>
-        </div>
+      </div>
     </Link>
   </section>;
 }
