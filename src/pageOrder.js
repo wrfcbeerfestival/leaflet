@@ -7,6 +7,7 @@ import Contents from './Pages/Contents';
 import Advert from './Pages/Advert';
 import Chairman from './Pages/Chairman';
 import Recruitment from './Pages/Recruitment';
+import Clint from './Pages/Clint';
 
 export const mainPageOrdering = [{
   name: '/home',
@@ -33,6 +34,10 @@ export const mainPageOrdering = [{
     image: '/tring-advert.jpg',
   },
   Component: Advert
+},{
+  name: '/about-the-beer',
+  prettyName: 'Clint tells all about the beer',
+  Component: Clint
 }, {
   name: '/beer',
   prettyName: 'Beer List',
@@ -55,6 +60,13 @@ export const mainPageOrdering = [{
   Component: Advert,
   options: {
     image: '/wrfc-venue-hire.jpg'
+  }
+}, {
+  name: '/regent-club-advert',
+  prettyName: 'Regent Club Advert',
+  Component: Advert,
+  options: {
+    image: '/regent-advert.jpg'
   }
 }]
 

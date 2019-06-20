@@ -52,6 +52,12 @@ export default () => {
         <div>
           <img src={getImage('/r14.jpg')} />
         </div>
+        <div>
+          <img src={getImage('/r15.jpg')} />
+        </div>
+        <div>
+          <img src={getImage('/r16.jpg')} />
+        </div>
       </Carousel>
       <p className="paragraph paragraph--margin">So why not go for it and contact <b>Martin Lee, Club Chairman, 07787805262</b>. Or call <b>Simon Bram Club Captain, on 07725 217110.</b></p>
       <p className="paragraph paragraph--margin">Address: Watford Rugby Club, Radlett Road, Watford, Herts WD24 4LL</p>

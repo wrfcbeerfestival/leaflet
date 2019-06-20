@@ -1,5 +1,7 @@
 Scroll to top on page change
 
+Gin list
+
 view all beers with filters text on that page
 
 Styling / split up css
