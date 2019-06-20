@@ -1,4 +1,36 @@
 const brewies = {
+  gin: {
+    warner: {
+      name: 'Rub',
+      image: 'rub.jpeg',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      list: [{
+        name: 'Fanny Ebbs',
+        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
+        image: 'warner-edwards.jpeg'
+      }]
+    },
+    beefeater: {
+      name: 'Rub',
+      image: 'rub.jpeg',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      list: [{
+        name: 'Fanny Ebbs',
+        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
+        image: 'warner-edwards-eld.jpeg'
+      }]
+    },
+    gordons: {
+      name: 'Rub',
+      image: 'rub.jpeg',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      list: [{
+        name: 'Fanny Ebbs',
+        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
+        image: 'warner-edwards-dry.jpg'
+      }]
+    }
+  },
   cider: {
     lilleys: {
       name: 'Lilleys',
@@ -364,3 +396,5 @@ export const getBreweryDetails = (name) => {
 export const getBeerBrewerys = () => brewies.beer;
 
 export const getCiderBrewerys = () => brewies.cider;
+
+export const getGinDistills = () => brewies.gin;

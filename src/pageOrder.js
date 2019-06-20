@@ -8,6 +8,7 @@ import Advert from './Pages/Advert';
 import Chairman from './Pages/Chairman';
 import Recruitment from './Pages/Recruitment';
 import Clint from './Pages/Clint';
+import Gin from './Pages/Gin';
 
 export const mainPageOrdering = [{
   name: '/home',
@@ -68,6 +69,10 @@ export const mainPageOrdering = [{
   options: {
     image: '/regent-advert.jpg'
   }
+}, {
+  name: '/gin',
+  prettyName: 'Gin List',
+  Component: Gin
 }]
 
 export const findPage = (pageName) => {

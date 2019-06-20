@@ -143,6 +143,18 @@
   opacity: 0.6;
 }
 
+.product--gin {
+  display: flex;
+}
+
+.product--gin .product__header {
+  height: auto;
+}
+.product--gin .product__header img {
+  height: 157px;
+  width: 128.5px;
+}
+
 .product__notes {
   border: solid 1px lightgrey;
   width: calc(100% - 8px);
