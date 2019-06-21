@@ -37,7 +37,7 @@
 }
 
 .homepage__title {
-  font-size: 90px;
+  font-size: 50pt;
   width: 100%;
   background-image: url('/homepage-background.jpg');
   background-size: cover;
@@ -66,8 +66,8 @@
 }
 
 .homepage__title-item {
-  font-family: fantasy;
-  padding: 12px 0 0 8px;
+  font-family: cursive;
+  padding: 4px 0 4px 8px;
   color: white;
 }
 
