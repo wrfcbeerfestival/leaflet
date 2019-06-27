@@ -2,31 +2,34 @@ import React from "react";
 import { getBreweryDetails } from '../breweryDetails';
 import Brewery from '../Pages/Brewery';
 import SocialMedia from "../Components/SocialMedia";
-import { clearLocalStorageForBrewery  } from '../localstorage';
+import { clearLocalStorageForBrewery } from '../localstorage';
 
 export default class extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { showClearButton : false };
+    this.state = { showClearButton: false };
   }
   onClearStorage() {
     clearLocalStorageForBrewery(this.props.match.params.brewery);
-    this.setState({ localStorageCleared: Date.now()})
+    this.setState({ localStorageCleared: Date.now() })
   }
   showClearButton() {
-    this.setState({ 
+    this.setState({
       showClearButton: true
     })
+  }
+  onComponentDidMount() {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
   render() {
     const { data, type } = getBreweryDetails(this.props.match.params.brewery);
     return (
       <section className="desktop-max">
         {<Brewery localStorageCleared={this.state.localStorageCleared} data={data} type={type} id={this.props.match.params.brewery} />}
-        <div className="back__button" onClick={ () => { this.props.history.goBack()}}>View all breweries</div>
-        { this.state.showClearButton && <div className="clear__button" onClick={() => { this.onClearStorage() }}>Clear data for {data.name}</div>}
-        <p className="paragraph paragraph--margin clear__toggle" onClick={() => { this.showClearButton();}}>Want to your notes/ratings for <b className="bold">{data.name}</b>. Click here to reveal the button</p>
+        <div className="back__button" onClick={() => { this.props.history.goBack() }}>View all breweries</div>
+        {this.state.showClearButton && <div className="clear__button" onClick={() => { this.onClearStorage() }}>Clear data for {data.name}</div>}
+        <p className="paragraph paragraph--margin clear__toggle" onClick={() => { this.showClearButton(); }}>Want to your notes/ratings for <b className="bold">{data.name}</b>. Click here to reveal the button</p>
         <SocialMedia />
       </section>
     )

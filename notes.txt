@@ -1,6 +1,10 @@
+All beer / cider / gin
 
-Sponsors page - speak to martin
+food page
+
+google analytics
 
 Styling / split up css
 
 performance of images, preload, service workers
+
