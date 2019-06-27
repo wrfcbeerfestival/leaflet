@@ -58,6 +58,12 @@ export default () => {
         <div>
           <img alt="" src={getImage('/r16.jpg')} />
         </div>
+        <div>
+          <img alt="" src={getImage('/r17.jpg')} />
+        </div>
+        <div>
+          <img alt="" src={getImage('/r18.jpg')} />
+        </div>
       </Carousel>
       <p className="paragraph paragraph--margin">So why not go for it and contact:</p>
       <p className="paragraph paragraph--margin"><b className="bold">Martin Lee, Club Chairman, 07787805262</b></p>
