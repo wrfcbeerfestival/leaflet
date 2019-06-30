@@ -23,7 +23,6 @@ export default class extends React.Component {
   
     const groupedBeers = groupBy(getAllBeers(), sort);
     const items = Object.keys(groupedBeers).sort().map((key) => {
-      console.info(key)
       return (
         <div key={key}>
           <h1 className="brewery__title">{key + symbol}</h1>

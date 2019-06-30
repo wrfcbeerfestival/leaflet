@@ -6,7 +6,8 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import {
   HashRouter as Router,
   Switch,
-  Route
+  Route,
+  Redirect
 } from "react-router-dom";
 import StandardContainer from './Containers/Standard';
 import BreweryContainer from './Containers/Brewery';
@@ -38,7 +39,7 @@ const App = () => {
                   <Route path="/brewery/cider/all" render={(props) => (<FullList returnUrl="/cider" {...props} isBeerList={false} />)} />
                   <Route path="/brewery/:brewery" render={(props) => (<BreweryContainer returnUrl="/beer" {...props} />)} />
                   <Route path="/:page" render={(props) => (<StandardContainer {...props} />)} />
-                  <Route render={() => <div>Not Found</div>} />
+                  <Route path="*" render={() => <Redirect to="/home" /> } />
                 </Switch>
               </CSSTransition>
             </TransitionGroup>

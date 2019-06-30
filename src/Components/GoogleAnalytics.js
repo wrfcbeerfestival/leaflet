@@ -6,7 +6,6 @@ const GA_TRACKING_ID = 'UA-121835940-3';
 class GoogleAnalytics extends React.Component {
     componentWillUpdate ({ location, history }) {
         const gtag = window.gtag;
-        console.info(location, history, document.title);
         if (location.pathname === this.props.location.pathname) {
             // don't log identical link clicks (nav links likely)
             return;
