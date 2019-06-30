@@ -13,6 +13,7 @@ import BreweryContainer from './Containers/Brewery';
 import QuickLinks from './Components/QuickLinks';
 import FullList from './Pages/FullList';
 import SortedFullList from './Pages/SortedFullList';
+import GoogleAnalytics from './Components/GoogleAnalytics';
 
 const App = () => {
   const rootClassName = `app--${process.env.NODE_ENV}`
@@ -41,6 +42,7 @@ const App = () => {
                 </Switch>
               </CSSTransition>
             </TransitionGroup>
+            <GoogleAnalytics />
           </div>
         )}></Route>
       </Router>

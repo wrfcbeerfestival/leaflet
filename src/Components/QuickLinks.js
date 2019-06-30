@@ -5,11 +5,19 @@ import Beer from '../filled-beer.svg';
 import Gin from '../filled-gin.svg';
 import { Link } from 'react-router-dom';
 import '../QuickLinks.css';
+
+const onClick = (type) => { 
+  window.gtag('event', 'quick links', {
+    'event_category': 'click',
+    'event_label': type
+  });
+}
+
 export default () => {
   return (
     <div className="quicklinks">
       <div>
-        <Link to="/contents">
+        <Link to="/contents" onClick={ () => { onClick('home'); }}>
           <span>
             <img alt="home" src={Home} />
           </span>
@@ -17,17 +25,17 @@ export default () => {
       </div>
 
       <div>
-        <Link to="/beer">
+        <Link to="/beer" onClick={ () => { onClick('beer'); }}>
           <span>
             <img alt="beer list" src={Beer} />
           </span>
         </Link>
-        <Link to="/cider">
+        <Link to="/cider" onClick={ () => { onClick('cider'); }}>
           <span>
             <img alt="cider list" src={Cider} />
           </span>
         </Link>
-        <Link to="/gin">
+        <Link to="/gin" onClick={ () => { onClick('gin'); }}>
           <span>
             <img alt="gin list" src={Gin} />
           </span>

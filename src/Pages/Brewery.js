@@ -11,6 +11,7 @@ export class Item extends React.Component {
     this.onClick = this.onClick.bind(this);
     this.onRatingSelected = this.onRatingSelected.bind(this);
     this.onTextAreaChange = this.onTextAreaChange.bind(this);
+    this.onTextAreaClick = this.onTextAreaClick.bind(this);
     this.state = {
       isOpen: false,
       rating: getRating(this.props.id, this.props.name),
@@ -28,7 +29,13 @@ export class Item extends React.Component {
   }
 
   onClick() {
-    this.setState({ isOpen: !this.state.isOpen });
+    const value = !this.state.isOpen;
+    this.setState({ isOpen: value });
+    window.gtag('event', 'Toggle Details', {
+      'event_category': this.props.id,
+      'event_label': this.props.name,
+      value 
+    });
   }
 
   onTextAreaChange(e) {
@@ -36,9 +43,21 @@ export class Item extends React.Component {
     this.setState({ notes: e.target.value })
   }
 
+  onTextAreaClick() {
+    window.gtag('event', 'Text Area Click', {
+      'event_category': this.props.id,
+      'event_label': this.props.name,
+    }); 
+  }
+
   onRatingSelected(rating) {
     setRating(this.props.id, this.props.name, rating);
     this.setState({ rating })
+    window.gtag('event', 'Rating selected', {
+      'event_category': this.props.id,
+      'event_label': this.props.name,
+      'value': rating
+    });
   }
 
   render() {
@@ -68,7 +87,7 @@ export class Item extends React.Component {
 
         {notes}
 
-        <textarea placeholder={`Notes for ${name}`} value={this.state.notes} onChange={(e) => { this.onTextAreaChange(e) }} className="product__notes" />
+        <textarea placeholder={`Notes for ${name}`} value={this.state.notes} onClick={() => { this.onTextAreaClick()}} onChange={(e) => { this.onTextAreaChange(e) }} className="product__notes" />
       </div>}
     </div>)
   }
@@ -85,9 +104,15 @@ export default class extends React.Component {
   }
 
   onDescriptionClick() {
+    const value = !this.state.hideDescription;
     this.setState({
-      hideDescription: !this.state.hideDescription
-    })
+      hideDescription: value
+    });
+
+    window.gtag('event', 'Toggle Description', {
+      'event_category': this.props.id,
+      value
+    });
   }
 
   render() {

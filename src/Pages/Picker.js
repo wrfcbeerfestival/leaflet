@@ -51,23 +51,22 @@ class Picker extends Component {
   }
 
   onAnswerClick(id) {
-    // window.gtag('event', 'answer_click', {
-    //   'event_category': 'answer',
-    //   'event_label': id
-    // });
-    // window.dataLayer.push({ 'event': 'answer_click', 'next_page_id': id, 'current_title': this.state.currentView.title });
+    window.gtag('event', 'answer_click', {
+      'event_category': 'answer',
+      'event_label': id
+    });
     this.setState({
       currentView: this.state.beercider[id],
       backLinkHistory: [...this.state.backLinkHistory, id]
     })
-    // window.gtag('event', 'page_title', {
-    //   'event_category': this.state.beercider[id].type,
-    //   'event_label': this.state.beercider[id].title
-    // });
+    window.gtag('event', 'picker page', {
+      'event_category': this.state.beercider[id].type,
+      'event_label': this.state.beercider[id].title
+    });
   }
 
   onBackClick() {
-    // window.gtag('event', 'back_click', { 'event_category': 'back', 'event_label': this.state.currentView.title });
+    window.gtag('event', 'back_click', { 'event_category': 'back', 'event_label': this.state.currentView.title });
     const backLinkHistoryClone = [...this.state.backLinkHistory];
     backLinkHistoryClone.pop();
     const lastId = backLinkHistoryClone[backLinkHistoryClone.length - 1];
@@ -78,7 +77,7 @@ class Picker extends Component {
   }
 
   onStartAgain() {
-    // window.gtag('event', 'start_again_click');
+    window.gtag('event', 'start_again_click');
     this.setState({
       currentView: firstPageState,
       backLinkHistory: []

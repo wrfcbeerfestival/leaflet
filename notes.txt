@@ -4,6 +4,18 @@ food page
 
 google analytics
 
+  - Page change ( done )
+  - Beer star click ( done )
+  - Open notes ( done )
+  - Show brewery details ( done )
+  - Notes click ( done )
+  - Beer Picker ( done )
+  - Social link click ( done )
+  - Navigation button click ( done )
+  - Contents click
+  - Swiping ( done )
+  - Local storage clear
+
 Styling / split up css
 
 performance of images, preload, service workers

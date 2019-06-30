@@ -17,6 +17,11 @@ class Item extends React.Component {
   onRatingSelected(rating) {
     setRating(this.props.id, this.props.name, rating);
     this.setState({ rating })
+    window.gtag('event', 'Rating selected', {
+      'event_category': this.props.id,
+      'event_label': this.props.name,
+      'value': rating
+    });
   }
 
   render() {
@@ -54,7 +59,12 @@ export default class extends React.Component {
   }
   
   onDescriptionClick() {
-    this.setState({ hideDescription: !this.state.hideDescription })
+    const value = !this.state.hideDescription;
+    this.setState({ hideDescription: value })
+    window.gtag('event', 'Toggle Description', {
+      'event_category': this.props.id,
+      value
+    })
   }
 
   render() {

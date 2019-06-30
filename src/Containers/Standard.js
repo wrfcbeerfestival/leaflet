@@ -21,6 +21,7 @@ export default class extends React.Component {
       if (nextPage) {
         this.triggerToNextPage = false;
         document.body.scrollTop = document.documentElement.scrollTop = 0;
+        window.gtag('event', 'swipe next page')
         return this.props.history.push(nextPage.name);
       }
     }
@@ -30,6 +31,7 @@ export default class extends React.Component {
       const previousPage = getPage(this.props.match.url);
       if (previousPage) {
         document.body.scrollTop = document.documentElement.scrollTop = 0;
+        window.gtag('event', 'swipe previous page')
         return this.props.history.push(previousPage.name);
       }
     }

@@ -13,11 +13,17 @@ export default class extends React.Component {
   onClearStorage() {
     clearLocalStorageForBrewery(this.props.match.params.brewery);
     this.setState({ localStorageCleared: Date.now() })
+    window.gtag('event', 'local storage clear', {
+      'event_category': this.props.match.params.brewery,
+    });
   }
   showClearButton() {
     this.setState({
       showClearButton: true
     })
+    window.gtag('event', 'show clear button', {
+      'event_category': this.props.match.params.brewery,
+    });
   }
   onComponentDidMount() {
     document.body.scrollTop = document.documentElement.scrollTop = 0;
