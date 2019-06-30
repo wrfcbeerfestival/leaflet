@@ -13,6 +13,14 @@
   text-align: center;
 }
 
+.next__button {
+  width: 200px;
+  background-color: lightblue;
+  font-family: monospace;
+  text-align: center;
+  border: none;
+}
+
 .clear__button {
   width: 200px;
   margin: 12px auto;

@@ -54,6 +54,14 @@ export const mainPageOrdering = [{
   prettyName: 'Fancy taking up rugby?',
   Component: Recruitment
 },{
+  name: '/greene-king-advert',
+  prettyName: 'Greene King Advert',
+  Component: Advert,
+  options: {
+    image: '/fox-hounds-advert.jpg'
+  }
+},
+{
   name: '/cider',
   prettyName: 'Cider List',
   Component: CiderList
