@@ -1,6 +1,6 @@
 import React from 'react';
 import { Item as BreweryItem } from './Brewery';
-import { getAllBeers } from '../breweryDetails';
+import { getAllBeers, getAllCiders } from '../breweryDetails';
 import { clearLocalStorage } from '../localstorage';
 import SocialMedia from "../Components/SocialMedia";
 import groupBy from 'lodash/groupBy';
@@ -21,7 +21,8 @@ export default class extends React.Component {
   render() {
     const { isBeerList, history, sort, symbol = '' } = this.props;
   
-    const groupedBeers = groupBy(getAllBeers(), sort);
+    const groupedBeers = isBeerList ? groupBy(getAllBeers(), sort) : groupBy(getAllCiders(), sort);
+    console.info(groupedBeers)
     const items = Object.keys(groupedBeers).sort().map((key) => {
       return (
         <div key={key}>

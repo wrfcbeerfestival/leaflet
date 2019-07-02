@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { mainPageOrdering } from '../pageOrder';
 export default () => {
   const items = mainPageOrdering.map((item) => {
-    return <li className="contents__item" key={item.name}><Link to={item.name} onClick={() => { document.body.scrollTop = document.documentElement.scrollTop = 0; }}>{item.prettyName}</Link></li>;
+    return <li className="contents__item" key={item.name}><Link to={item.name}>{item.prettyName}</Link></li>;
   })
   return (
     <div className="contents">

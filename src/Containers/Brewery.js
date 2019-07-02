@@ -25,9 +25,6 @@ export default class extends React.Component {
       'event_category': this.props.match.params.brewery,
     });
   }
-  onComponentDidMount() {
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
-  }
   render() {
     const { data, type } = getBreweryDetails(this.props.match.params.brewery);
     return (

@@ -34,44 +34,120 @@ const brewies = {
   cider: {
     lilleys: {
       name: 'Lilleys',
-      image: 'lilleys.jpeg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      image: 'lilleys.jpg',
+      description: 'Lilley\'s Cider is a family run cider producer based in Frome, Somerset. Producing a diverse range of traditional & experimental blends of cider & perry all made with care & enthusiasm.',
       list: [{
-        name: 'Fanny Ebbs',
-        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
-        percent: '3.9',
-        colour: 'Blonde'
+        name: 'Bee Sting Perry',
+        notes: 'A medium to sweet perry (pears) oozing with subtle flavours. Has cult status and will go fast even though we bought three. ',
+        percent: '7.5',
+        colour: 'Perry'
+      }] 
+    },
+    'celtic-marches': {
+      name: 'Celtic Marches',
+      image: 'celtic-marches.png',
+      description: 'After a career in major cider manufacturing and a break to bring up her young family Susan Vaughan decided to join her brother Robert Hancocks back on the family farm in Bishops Frome Herefordshire. The family has been growing fruit and hops on the farm for over 100 years Their farming roots go back deep into Mid Wales and the Welsh borders where many of their family still farm today. They are now drawing on that heritage and the abilities acquired from a history in the cider and brewing industry to produce quality ciders on the family farm.',
+      list: [{
+        name: 'Lilly The Pink',
+        notes: 'A medium fruity cider – gorgeous pink hue – made from 100% cider apples on our Herefordshire farm – intense fruity aroma',
+        percent: '4.5',
+        colour: 'Fruity'
       }, {
-        name: 'Responsably', colour: 'Unknown',
-        notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
-        percent: '5.2',
-      }, {
-        name: 'Pale four',
-        notes: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.',
+        name: 'Slack Alice', 
+        colour: 'Medium',
+        notes: 'A medium well rounded and mellow cider with a very slight tart finish.',
         percent: '4.6',
-        colour: 'Pale'
+      }, {
+        name: 'Thundering Molly',
+        notes: 'Well rounded medium cider. Fresh and fruity with a lovely apple aroma. Gorgeous golden colour and a balanced finish.',
+        percent: '5.2',
+        colour: 'Medium'
+      }, {
+        name: 'Ruby Tuesday',
+        notes: 'Cider liberally imparted with British Raspberry Juice gives it a gorgeous colour and a wonderful taste.',
+        percent: '4.0',
+        colour: 'Fruity'
+      }, {
+        name: 'Nell Gwynee',
+        notes: 'A cider liberally imparted with orange and cinnamon. Enjoy warm in the winter as an alternative to mulled cider or wine, or cold over ice in the summer.',
+        percent: '4.0',
+        colour: 'Fruity'
+      }, {
+        name: 'Loubi Lou',
+        notes: 'Our Herefordshire Cider has been liberally imparted with Pomegranate and Rose, the orchard and the garden, giving it the quintessential taste of the English summer.',
+        percent: '4.0',
+        colour: 'Fruity'
+      }, {
+        name: 'Cuckoo Penny',
+        notes: 'A beautiful blend of Yorkshire Triangle Timperley Rhubarb Juice and our Herefordshire Cider creates the quintessential taste of the English Countryside. A medium cider with the subtle tart of rhubarb juice giving a refreshing bite at the end.',
+        percent: '4.0',
+        colour: 'Medium'
+      }, {
+        name: 'Slighly Foxed',
+        notes: 'Herefordshire Cider liberally imparted with exotic mango. A sophisticated combination providing an easy drinking taste of the tropics. Only 4% but dangerous. You\'ll forget you\'re drinking cider.',
+        percent: '4.0',
+        colour: 'Fruity'
+      }, {
+        name: 'Tutti Frutti',
+        notes: 'Herefordshire Cider liberally imparted with Cherry and Pineapple - exotic flavours to provide a unique tropical twist to Craft Cider.',
+        percent: '4.0',
+        colour: 'Fruity'
       }]
     },
-    'orchard-pig': {
-      name: 'Orchard Pig',
-      image: 'orchard-pig.jpeg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    'harrys': {
+      name: 'Harry\'s',
+      image: 'harrys-cider.png',
+      description: 'Harry’s Cider is a family business and fast-growing brand that produces traditional and sparkling ciders in the heart of Somerset ‘ciderland’. Based on the family farm in Long Sutton, Harry and his son are the farmers, growers, producers and processors, giving total control over the end product.',
       list: [{
-        name: 'Fanny Ebbs',
-        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
-        percent: '3.9',
-        colour: 'Blonde'
+        name: 'Dirty Harry',
+        notes: 'The perfect summer drink, best served chilled over ice. It has a distinct summer fruits flavour followed by a cidery aftertaste.',
+        percent: '4.0',
+        colour: 'Fruity'
       }, {
-        name: 'Responsably', colour: 'Unknown',
-        notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
-        percent: '5.2',
+        name: 'Prince Harry',
+        notes: 'This is a refreshing Ginger Cider, blended with our Dry cider it has a great balance of spicy ginger followed by a cidery aftertaste.',
+        percent: '4.0',
+        colour: 'Medium'
       }, {
-        name: 'Pale four',
-        notes: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.',
-        percent: '4.6',
-        colour: 'Pale'
+        name: 'Flash Harry',
+        notes: 'A unique cider blended with mango and lime giving a lovely initial sweetness followed by a cidery aftertaste.',
+        percent: '4.0',
+        colour: 'Fruity'
       }]
     },
+    hecks: {
+      name: 'Hecks',
+      description: 'The Hecks family have been making traditional farmhouse cider in Somerset for six generations, since 1841. In 1896, they started to sell cider from there our farm shop in Street. Making cider by blending juice from apples all grown locally in the farm’s orchards. The cider is fermented in wooden barrels and sold draught from the wood.',
+      image: 'hecks.jpg',
+      list: [{
+        name: 'Sweet',
+        notes: 'All fermented in oak barrels and sold draught from the wood. A vintage sweet, with a high percentage.',
+        percent: '6.5',
+        colour: 'Sweet'
+      }]
+    },
+    'kentish-pip': {
+      name: 'Kentish Pip',
+      description: 'A small team with a big ambition: to change the way cider is seen and consumed in the UK. Kentish pip are obsessed with flavour and quality and there goal is to combine the best ingredients with innovation, style and a pinch of tradition to produce the next generation of British Cider.',
+      image: 'kentish-pip.png',
+      list: [{
+        name: 'Pear & Bramley',
+        notes: 'A medium pyder (apples and pears) expertly blended to tantilise your taste buds.',
+        percent: '4.0',
+        colour: 'Medium'
+      }]
+    },
+    'sandford-orchards': {
+      name: 'Sandford Orchards',
+      description: 'Ground in vivid, red soil; crisscrossed by ancient orchards and bound by its own microclimate, their lush green corner of Devon is the finest place on earth to grow cider apples. They only select apples grown within 30 miles of their press.',
+      image: 'sandford-orchards.png',
+      list: [{
+        name: 'Merry Legs Perry',
+        notes: 'A real, laid back Perry crafted from the finest perry pears.  A sweet, floral nose leads to flavours of pear drops and honey with a delicate medium-sweet finish.',
+        percent: '3.8',
+        colour: 'Perry'
+      }]
+    }
   },
   beer: {
     wantsum: {
@@ -402,6 +478,16 @@ export const getAllBeers = () => {
     )
   });
   return beerArray;
+}
+export const getAllCiders = () => {
+  const ciderArray = []
+  Object.keys(brewies.cider).forEach(key => {
+    brewies.cider[key].list.forEach(cider => {
+      ciderArray.push({ ...cider, id: key })
+    }
+    )
+  });
+  return ciderArray;
 }
 
 export const getBeerBrewerys = () => brewies.beer;

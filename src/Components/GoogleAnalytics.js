@@ -10,6 +10,7 @@ class GoogleAnalytics extends React.Component {
             // don't log identical link clicks (nav links likely)
             return;
         }
+        document.body.scrollTop = document.documentElement.scrollTop = 0
 
         if (history.action === 'PUSH' &&
             typeof(gtag) === 'function') {
