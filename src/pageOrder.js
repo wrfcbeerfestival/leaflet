@@ -31,10 +31,10 @@ export const mainPageOrdering = [{
   prettyName: 'Guide to WRFC Beer & Cider Festival',
   Component: Guide
 }, {
-  name: '/tring-advert',
-  prettyName: 'Tring Advert',
+  name: '/monks-advert',
+  prettyName: 'Monks Inn',
   options: {
-    image: '/tring-advert.jpg',
+    image: '/monks.jpg',
   },
   Component: Advert
 },{
@@ -60,8 +60,7 @@ export const mainPageOrdering = [{
   options: {
     image: '/fox-hounds-advert.jpg'
   }
-},
-{
+},{
   name: '/cider',
   prettyName: 'Cider List',
   Component: CiderList

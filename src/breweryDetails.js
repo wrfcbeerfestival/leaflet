@@ -370,7 +370,7 @@ const brewies = {
     }, 
     haresfoot: {
       name: 'Haresfoot',
-      image: 'harsefoot.jpeg',
+      image: 'haresfoot.jpeg',
       description: 'Beer meticulously brewed using the finest hops and malted barley, haresfoot resurrects our brewing heritage, being the first berkhamsted brewery since 1914.',
       list: [{
         name: 'Lock Keeper',
@@ -389,7 +389,7 @@ const brewies = {
     },
     buntingford: {
       name: 'Buntingford',
-      image: 'buntingford.jpeg',
+      image: 'buntingford.jpg',
       description: 'Well where do you start? Back in the 90’s I guess when a young chap called Steve started brewing beer for a living, eventually building a small brewery in Buntingford, and lo, Buntingford Ales were born! Steve and his erstwhile partner and brewster Catherine moved to the current site, at Greys on the top of the hill at Therfield Heath, near Royston, back in the early 2000’s. After brewing awesome ales for a decade and a half, winning numerous awards including the incredible feat of a Best Bitter Gold and CBoB Silver for Twitchell,  and Category Silver for Golden Ales  for Polar Star in the 2013 Champion Beer of Britain competition, they decided to leave brewing to concentrate on their pub, The Brown Bear at Braughing, where you’ll find a warm welcome, great beer and food, at their lovely, cosy, traditional inn.',
       list: [{
         name: 'Sunstar',
