@@ -155,19 +155,15 @@ const brewies = {
       image: 'wantsum.jpeg',
       description: 'In 2009, James Sandy started brewing "Fortitude" the first of what has become an extensive range of beers all named after people or pivotal events in Kent\'s history. Today the brewery proudly produces 10 regular ales and many seasonal and special ales which are sold to pubs and bottle outlets throughout the South East of England & East Anglia Wantsum Brewery takes its name from the Wantsum Channel, the watercourse seperating the Isle of Thanet and what was the mainland of the English county of Kent.',
       list: [{
-        name: 'Fanny Ebbs',
-        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
-        percent: '3.9',
-        colour: 'Blonde'
+        name: 'More\'s IPA',
+        notes: 'A Tawny bitter with American hops. Munich, double roasted crystal and chocolate malt give a rich tawny colour and lay a strong malty foundation. Simcoe and Mosaic hops add tropical and citrus fruit notes.',
+        percent: '3.5',
+        colour: 'Tawny'
       }, {
-        name: 'Responsably', colour: 'Unknown',
-        notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
-        percent: '5.2',
-      }, {
-        name: 'Pale four',
-        notes: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.',
-        percent: '4.6',
-        colour: 'Pale'
+        name: '1381', 
+        colour: 'Gold',
+        notes: 'The year of the Peasants Revolt. A golden IPA combining pale and crystal malts with Williamette and Centenial hops to give delicate citrus and herbal aromas.',
+        percent: '3.8',
       }]
     },
     chiltern: {
@@ -175,19 +171,20 @@ const brewies = {
       image: 'chiltern.jpeg',
       description: 'The oldest independent brewery in the Chiltern Hills and Buckinghamshire, located on an old working farm in the Chiltern Hills. Their brewery shop not only sells their full range of beers, but also locally made ciders, wines, condiments along with a range of products such as beer bread, malt fudge, beer cheese and fruit cake that are all made using their own beer.',
       list: [{
-        name: 'Fanny Ebbs',
-        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
+        name: 'Session IPA',
+        notes: 'Golden colour, citrus aroma and delicious mango flavours',
         percent: '3.9',
-        colour: 'Blonde'
+        colour: 'Gold'
       }, {
-        name: 'Responsably', colour: 'Unknown',
-        notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
-        percent: '5.2',
+        name: 'Pale Ale',
+        colour: 'Pale',
+        notes: 'Designed as an aperitif or as a drink on its own. Relatively light in colour, with a creamy smoothness, it has a good definition on the palate and a refreshing, cleansing finish.',
+        percent: '3.7',
       }, {
-        name: 'Pale four',
-        notes: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.',
-        percent: '4.6',
-        colour: 'Porter'
+        name: 'Beechwood Bitter',
+        notes: 'Mid amber colour with a rich butter-toffee aroma. Fruity and slightly nutty. Premium quality pale ale malt, with an extra proportion of crystal malt, and increased hops, gives this beer its renowned \'nutty\' flavour and punch.',
+        percent: '4.3',
+        colour: 'Amber'
       }]
     },
     '3Brewers': {
@@ -195,59 +192,20 @@ const brewies = {
       image: '3Brewers.jpeg',
       description: 'From St Albans, 3Brewers use local ingredients, including water from their very own borehole. Passionate about producing high quality beers with a minimum of fuss and pretense, 3Brewers are dedicated to providing radically better beer.',
       list: [{
-        name: 'Fanny Ebbs',
-        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
-        percent: '3.9',
-        colour: 'Blonde'
+        name: 'Ruby Mild',
+        notes: 'Dark ruby in colour this smooth and creamy Mild combines a malty sweetness with a touch of liquorice bitterness to make a beautifully balanced ale.',
+        percent: '3.6',
+        colour: 'Dark'
       }, {
-        name: 'Responsably', colour: 'Unknown',
-        notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
-        percent: '5.2',
+        name: 'Blonde',
+        notes: 'Our superb new Blonde Ale is 4.2 % abv and light golden in colour. It\'s brewed with a big pile of Mosaic hops giving the beer a wonderful hoppy aroma and a refreshing smack of fruity citrussy flavours.',
+        colour: 'Blonde',
+        percent: '4.2',
       }, {
-        name: 'Pale four',
-        notes: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.',
-        percent: '4.6',
-        colour: 'Pale'
-      }]
-    },
-    vale: {
-      name: 'Vale',
-      image: 'vale.png',
-      description: 'Located in Brill, Vale Brewery is a firm festival favourite, having featured for the last 5 years in the  WRFC Beer Festival. Brewing since 1995, Vale has a core range of 8 different beers ranging from golden to porters, along with a range of specialist seasonal specials.',
-      list: [{
-        name: 'Fanny Ebbs',
-        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
-        percent: '3.9',
-        colour: 'Blonde'
-      }, {
-        name: 'Responsably', colour: 'Unknown',
-        notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
-        percent: '5.2',
-      }, {
-        name: 'Pale four',
-        notes: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.',
-        percent: '4.6',
-        colour: 'Pale'
-      }]
-    },
-    abc: {
-      name: 'ABC',
-      image: 'abc.jpg',
-      description: 'Sister brewery to Vale, Aylsebury Brewhouse Co. was born in 2011 and only brew specialty beers. That means that once they’re drunk, they’re gone. That means that what you’re sampling today is a limited edition! Make sure you get some before it vanishes.',
-      list: [{
-        name: 'Fanny Ebbs',
-        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
-        percent: '3.9',
-        colour: 'Blonde'
-      }, {
-        name: 'Responsably', colour: 'Unknown',
-        notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
-        percent: '5.2',
-      }, {
-        name: 'Pale four',
-        notes: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.',
-        percent: '4.6',
-        colour: 'Pale'
+        name: 'Special',
+        notes: 'Old school boozy. We use chocolate malt to give it a deep copper colour and the finest English hops give the ale a hint of berries. It’s a well balanced, smooth and moreish ale.',
+        percent: '4.8',
+        colour: 'Copper'
       }]
     },
     titanic: {
@@ -255,19 +213,10 @@ const brewies = {
       image: 'titanic.jpg',
       description: 'A bit further afield than a lot of the other breweries, Titanic is based in Stoke, Staffordshire and was founded in 1985. One of the favourite beers each time it is on is undoubtably Plum Porter, one of the few dark beers that everyone seems to agree can be drunk on a boiling hot summers day! A true success story that if you brew high quality beer, people will keep returning to the product, Titanic started out brewing only 7 barrels a year to now brewing over 4 million. One taste and you can see why.',
       list: [{
-        name: 'Fanny Ebbs',
-        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
-        percent: '3.9',
-        colour: 'Blonde'
-      }, {
-        name: 'Responsably', colour: 'Unknown',
-        notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
-        percent: '5.2',
-      }, {
-        name: 'Pale four',
-        notes: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.',
-        percent: '4.6',
-        colour: 'Pale'
+        name: 'Plum Porter',
+        notes: 'This beer is dark strong and well rounded; the richness of such a rotund beer is brought to an even keel by the late addition of Goldings hops and natural plum flavouring',
+        percent: '4.9',
+        colour: 'Dark'
       }]
     },
     salopian: {
@@ -275,59 +224,10 @@ const brewies = {
       image: 'salopian.jpeg',
       description: 'Did you know that Salopian means “Of Shrewsbury”? At the time of founding (1995) it was the smallest brewery in the country not attached to a pub, with only a 2 barrel brewlength. This has now increased to 50 barrels due to continual success with their beers. Originally brewing a more traditional midlands style beer, they have bucked tradition and now brew a more modern, hop led style of beer.',
       list: [{
-        name: 'Fanny Ebbs',
-        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
-        percent: '3.9',
+        name: 'Oracle',
+        notes: 'A crisp, sparklingly sunflower gold ale with a striking hop profile. Dry and refreshing with a long citrus aromatic finish.',
+        percent: '4.0',
         colour: 'Blonde'
-      }, {
-        name: 'Responsably', colour: 'Unknown',
-        notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
-        percent: '5.2',
-      }, {
-        name: 'Pale four',
-        notes: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.',
-        percent: '4.6',
-        colour: 'Pale'
-      }]
-    },
-    dbc: {
-      name: 'DBC',
-      image: 'dbc.jpg',
-      description: 'Dorset Brewing Company Limited was founded in 1996 along the Jurassic Coast – you can probably tell this from the logo of a few of their beers. Brewing a range of core beers DB have always been a welcome addition to the WRFC beer festival line up. A pint of Chesil always slips down nicely.',
-      list: [{
-        name: 'Fanny Ebbs',
-        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
-        percent: '3.9',
-        colour: 'Blonde'
-      }, {
-        name: 'Responsably', colour: 'Unknown',
-        notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
-        percent: '5.2',
-      }, {
-        name: 'Pale four',
-        notes: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.',
-        percent: '4.6',
-        colour: 'Pale'
-      }]
-    },
-    oakham: {
-      name: 'Oakham',
-      image: 'oakham.jpeg',
-      description: 'Oakham ales closed up shop in 1995, but was resurrected on Friday 13th of all days! Luckily this doesn’t seem to have had any adverse effects, with awards pouring through their doors every year, even brewing the champion golden ale at the Great British Beer Festival (Citra).',
-      list: [{
-        name: 'Fanny Ebbs',
-        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
-        percent: '3.9',
-        colour: 'Blonde'
-      }, {
-        name: 'Responsably', colour: 'Unknown',
-        notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
-        percent: '5.2',
-      }, {
-        name: 'Pale four',
-        notes: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.',
-        percent: '4.6',
-        colour: 'Pale'
       }]
     },
     rebellion: {
@@ -335,19 +235,15 @@ const brewies = {
       image: 'rebellion.jpg',
       description: 'The story of the Rebellion Brewery starts in 1987 with the closure of the Marlow based Thomas Wethered Brewery. Two friends, Tim Coombes and Mark Gloyens, had gone through school together at Sir William Borlase, at a time when the old Wethered brewery was in full production with the smell and noise from the brewery clearly marking Marlow out to locals and visitors alike as a brewing town. Having discussed the idea to set up in business together earlier in their careers, and watching the old brewery close, the idea started to take shape of reviving Marlow tradition in 1991. After a couple of years of planning, research and failed attempts to secure small premises on the old brewery site, which was owned by Whitbreads, the Rebellion Brewery was established on the Rose Industrial Estate in Marlow Bottom in April 1993. In 1999 the brewery moved to its current premises on Bencombe Farm, occupying the old grainstore and other redundant farm buildings.',
       list: [{
-        name: 'Fanny Ebbs',
-        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
-        percent: '3.9',
-        colour: 'Blonde'
-      }, {
-        name: 'Responsably', colour: 'Unknown',
-        notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
-        percent: '5.2',
-      }, {
-        name: 'Pale four',
-        notes: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.',
+        name: 'Roasted Nuts',
+        notes: 'A deep ruby, complex and flavoursome beer, packed with intense and distinctive malt & hop character.',
         percent: '4.6',
-        colour: 'Pale'
+        colour: 'Ruby Brown'
+      }, {
+        name: 'Barrell Roll',
+        colour: 'Brown',
+        notes: 'A Tawny bitter with American hops. Munich, double roasted crystal and chocolate malt give a rich tawny colour and lay a strong malty foundation. Simcoe and Mosaic hops add tropical and citrus fruit notes.',
+        percent: '4.2',
       }]
     },
     'windsor-and-eton': {
@@ -355,39 +251,25 @@ const brewies = {
       image: 'windsor-and-eton.png',
       description: 'Windsor and Eton are already famous for many things. The castle, college, river, racecourse and of course the Royal connections. In 2010 the four of us wanted to add beer to the list. In fact we had a wild idea to make beer the top attraction. So we brought brewing back to the heart of Windsor. Eight years on we remain a ‘beer led’ brewery making outstanding beers of every single style and character. We offer a warm welcome to everyone from beer newcomer to expert, locals to visitors, the smallest club to the biggest pub and the local shop to the top supermarket. We are proud to be part of the revolution in beer making throughout the world. As founder members of the London Brewers Alliance, we have helped grow the number of the Capital’s breweries from 11 in 2010 to over 90 today. Together we are bringing great choice and quality to London drinkers.',
       list: [{
-        name: 'Fanny Ebbs',
-        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
-        percent: '3.9',
-        colour: 'Blonde'
+        name: 'Wasteland',
+        notes: 'A double IPA with 10 different hops including the best of America and the new world. A beer to be savoured from the moment the aroma hits you until the last resinous drop. Be Careful',
+        percent: '10.0',
+        colour: 'IPA'
       }, {
-        name: 'Responsably', colour: 'Unknown',
-        notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
-        percent: '5.2',
+        name: 'Independance',
+        colour: 'Pale',
+        notes: 'Independence is a 4% American Pale vigorously hopped and bursting with zesty fruity flavours.',
+        percent: '4.0',
       }, {
-        name: 'Pale four',
-        notes: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.',
-        percent: '4.6',
-        colour: 'Pale'
-      }]
-    },
-    'hairy-dog': {
-      name: 'Hairy Dog',
-      image: 'hairy-dog.jpeg',
-      description: 'Hairy Dog Brewery, the heart of Sussex craft beer. We brew at More House Farm overlooking the South Downs National Park and our beers reflect our surroundings. Naturally our beer range includes the classics as well an ever growing range of new and exciting brews encompassing the passion and considerable expertise of head brewer Russell Lee. Take a look at his profile on the team page to learn why he is our very own beer hero. We use ingredients from Sussex wherever possible and believe wholeheartedly in sustainability. We think this gives our beer a unique position amongst the many craft breweries in this beautiful county of ours. Our beer also tastes absolutely fantastic. From the bright and crisp Pure Bred pilsner lager with its distinctly summery taste to our Far Fetched pale ale with its aromatic English hop taste, Russell’s brilliance shines brightly within each one',
-      list: [{
-        name: 'Fanny Ebbs',
-        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
-        percent: '3.9',
-        colour: 'Blonde'
+        name: 'Knight of the Garter',
+        notes: 'Golden Ale, brewed with American Amarillo whole leaf hops giving a distinctive fresh citrus aroma reminiscent of cut grapefruit.',
+        percent: '3.8',
+        colour: 'Gold'
       }, {
-        name: 'Responsably', colour: 'Unknown',
-        notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
-        percent: '5.2',
-      }, {
-        name: 'Pale four',
-        notes: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.',
-        percent: '4.6',
-        colour: 'Pale'
+        name: 'Conqueror',
+        notes: 'Conqueror is a rich, complex and very distinctive ale. Packed with 5 speciality malts for a wonderful combination of roasted flavours and unlike a stout, this beer packs a mighty punch of flavour derived from Summit and Cascade hops.',
+        percent: '4.0',
+        colour: 'Black IPA'
       }]
     },
     tring: {
@@ -395,19 +277,10 @@ const brewies = {
       image: 'tring.jpg',
       description: 'The Tring Brewery Company was founded in 1992, reviving the traditional art of brewing in the picturesque West Hertfordshire market town of Tring. This was a town that, although steeped in brewing history, had been without a brewery for over 50 years. The locals were thirsty.',
       list: [{
-        name: 'Wrens',
-        notes: 'An extra pale malt base provides the ideal clean canvas for the spectacular US big hitters Mosaic, Citra and Simcoe hops. Expect pungent tropical, mango and citrus flavours.',
-        percent: '4',
-        colour: 'Pale'
-      }, {
-        name: 'Fanny Ebbs',
-        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
-        percent: '3.9',
-        colour: 'Blonde'
-      }, {
-        name: 'Responsably', colour: 'Unknown',
-        notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
-        percent: '5.2',
+        name: 'Jimbob',
+        notes: 'Low in alcohol but plenty of flavour describes this little amber beer. The use of Dextrin malt provides body and the platform to balance out potent Australian Galaxy hops.',
+        percent: '3.4',
+        colour: 'Amber'
       }, {
         name: 'Pale four',
         notes: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.',
@@ -415,48 +288,146 @@ const brewies = {
         colour: 'Pale'
       }]
     },
-    'paradigm': {
+    paradigm: {
       name: 'Paradigm',
       image: 'paradigm.jpg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      description: 'Based in Sarratt in Herts we started brewing in early 2015. Hand-crafted real ales from beautiful sarratt village in hertfordshire, england. brewed traditionally using the finest hops and malted barley plus a lifelong passion for proper beer and just a hint of irony.',
       list: [{
-        name: 'Wrens',
-        notes: 'An extra pale malt base provides the ideal clean canvas for the spectacular US big hitters Mosaic, Citra and Simcoe hops. Expect pungent tropical, mango and citrus flavours.',
-        percent: '4',
-        colour: 'Pale'
-      }, {
-        name: 'Fanny Ebbs',
-        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
+        name: 'Reach Out',
+        notes: 'A single hop ale made from Columbus in the boil. Deep gold colour, sweet initial taste, refreshing bitterness to follow',
         percent: '3.9',
-        colour: 'Blonde'
+        colour: 'Pale'
       }, {
-        name: 'Responsably', colour: 'Unknown',
-        notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
+        name: 'Blue Sky Thinking',
+        notes: '',
+        percent: '4.0',
+        colour: 'Pale'
+      }, {
+        name: 'Win Win',
+        notes: 'A best bitter using five malts. lovingly made with hops from Kent and the US with a bitterness that sneaks up and grabs you.',
+        colour: 'Copper',
+        percent: '4.2',
+      }, {
+        name: 'Heads up',
+        notes: 'Mosaic Pale Ale. A very hoppy pale ale made with four different pale malts, exclusively using Mosaic hops throughout the brewing process to give the characteristic blueberry, and to a degree orange marmalady flavour',
+        percent: '4.1',
+        colour: 'Pale'
+      }]
+    },
+    rudgate: {
+      name: 'Rudgate',
+      image: 'rudgate.png',
+      description: 'Rudgate Brewery was established in 1992. The brewery is situated at the heart of Yorkshire in the Vale of York. The original brewery was situated in the former ammunition building of RAF Marston Moor Airfield which was home to the Halifax bombers that helped defend our country during World War 2. The name comes from the old Roman road of `Rudgate’ which runs through the airfield. This road led the Vikings along our vale defeating the Romans in their steps. This road and its history is what instigated the main theme of Vikings for the brewery.',
+      list: [{
+        name: 'Ruby Mild',
+        notes: 'Multi-award-winning ruby mild ale Tasting Notes Nutty, deeply rich and satisfying ruby ale.',
+        colour: 'Dark',
+        percent: '4.4'
+      }]
+    },
+    beerblefish: {
+      name: 'Beerblefish',
+      image: 'beerblefish.png',
+      description: 'Launched their first beer in the autumn of 2015, started off brewing in a shared co-operative brewery in Bermondsey, and moved to their own premises in Edmonton, North London in late summer 2016. Beerblefish Brewing is committed to keeping its beers vegan. It is not necessary to include isinglass or other animal products in our beers - these additives do not add anything to the taste of the beer and simply stop some people from being able to enjoy it. Also conscious of the impact of brewing on our environment and are always looking for ways to reuse our by-products, including our spent grain and our used hops. Their name is also so much fun to say',
+      list: [{
+        name: 'Brett Only IPA',
+        notes: '',
+        colour: 'IPA',
+        percent: 'TBC'
+      }]
+    },
+    'new-river': {
+      name: 'New River',
+      image: 'new-river.png',
+      description: 'New River Brewery was born out of a desire to enable drinkers to experience locally brewed, fresh and flavoursome craft beers. Opened in summer 2015 on the banks of the New River in Hoddesdon, Hertfordshire and have since been brewing a steady stream of delicious beer.',
+      list: [{
+        name: 'Lost River',
+        percent: '4.0',
+        colour: 'Blonde',
+        notes: 'Named in celebration of our historic \'lost\' river, this dry, delicately hopped blonde is perfect company to chill out with on a lazy summer\'s afternoon.',
+      }, {
+        name: 'Isle of Rye',
         percent: '5.2',
+        colour: 'Amber',
+        notes: 'With the nearby Rye House located in an area formerly known as the Isle of Rye, this light amber rye pale ale has distinctive aromas of orange and mango, a smooth mouthfeel and a long peppery finish.'
       }, {
-        name: 'Pale four',
-        notes: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.',
+        name: 'Five Inch Drop',
         percent: '4.6',
-        colour: 'Pale'
-      }, {
-        name: 'Wrens',
-        notes: 'An extra pale malt base provides the ideal clean canvas for the spectacular US big hitters Mosaic, Citra and Simcoe hops. Expect pungent tropical, mango and citrus flavours.',
-        percent: '4',
-        colour: 'Pale'
-      }, {
-        name: 'Fanny Ebbs',
-        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
+        notes: 'Inspired by the New River\'s gentle gradient, Five-Inch Drop is a fine India Pale Ale made with selected malts and hops from the UK, New Zealand and the USA creating fresh citrus and pine needle flavours.',
+        colour: 'Blonde'
+      }]
+    },
+    farr: {
+      name: 'Farr',
+      image: 'farr.jpeg',
+      description: 'Farr Brew was founded on the principles of creating great tasting real ales brewed with craft and a commitment to quality. The vision has seen their beers stocked in a great and growing range of top quality beer shops and brilliant pubs. We also regularly attend events across Hertfordshire selling our wares and offering free samples to quench the thirsts of the masses all served up by ‘The Best Bar Staff, by Farr’. 2015 was a busy year for Farr Brew; we supplied beer to the St Albans Beer Festival and CAMRA’s AGM. Our ‘Most Potent Porter, by Farr’ was chosen by acclaimed beer writer Roger Protz to be featured in a private tasting event.',
+      list: [{
+        name: 'Black Listed',
+        percent: '4.5',
+        notes: 'Brewed with three types of malt and a considered combination of homegrown British & imported American hops for a well rounded, punchy flavour.',
+        colour: 'Dark'
+      }]
+    }, 
+    haresfoot: {
+      name: 'Haresfoot',
+      image: 'harsefoot.jpeg',
+      description: 'Beer meticulously brewed using the finest hops and malted barley, haresfoot resurrects our brewing heritage, being the first berkhamsted brewery since 1914.',
+      list: [{
+        name: 'Lock Keeper',
         percent: '3.9',
-        colour: 'Blonde'
+        notes: 'A traditional mid-dark copper sweet session bitter using all English hops and malted barley.',
+        colour: 'Cooper'
       }, {
-        name: 'Responsably', colour: 'Unknown',
-        notes: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon , guava orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last years festival in Watford. ',
-        percent: '5.2',
+        name: 'New Moon',
+        notes: 'Not to be confused with the full moon, that makes a regular apperance at the 7\'s',
       }, {
-        name: 'Pale four',
-        notes: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.',
-        percent: '4.6',
-        colour: 'Pale'
+        name: 'Dragons Bain',
+        notes: 'A flavoursome red beer from one of our local brewers. Can you tame the dragon',
+        colour: 'Red',
+        perecent: '4.5'
+      }]
+    },
+    buntingford: {
+      name: 'Buntingford',
+      image: 'buntingford.jpeg',
+      description: 'Well where do you start? Back in the 90’s I guess when a young chap called Steve started brewing beer for a living, eventually building a small brewery in Buntingford, and lo, Buntingford Ales were born! Steve and his erstwhile partner and brewster Catherine moved to the current site, at Greys on the top of the hill at Therfield Heath, near Royston, back in the early 2000’s. After brewing awesome ales for a decade and a half, winning numerous awards including the incredible feat of a Best Bitter Gold and CBoB Silver for Twitchell,  and Category Silver for Golden Ales  for Polar Star in the 2013 Champion Beer of Britain competition, they decided to leave brewing to concentrate on their pub, The Brown Bear at Braughing, where you’ll find a warm welcome, great beer and food, at their lovely, cosy, traditional inn.',
+      list: [{
+        name: 'Sunstar',
+        percent: '4.1',
+        notes: 'Bright golden with a good hop kick',
+        colour: 'Gold'
+      }]
+    },
+    amberales: {
+      name: 'Amber Ales',
+      image: 'amber-ale.png',
+      description: 'Brewed for the few, from our tiny five barrel plant in the Amber Valley, Derbyshire, we specialise in full-flavoured traditionally styled ale with a modern twist. We brew beer that we like to drink and we have been fortunate to win many accolades for our beer both locally and nationally.',
+      list: [{
+        name: 'Ripper',
+        notes: 'Rye IPA.Spicy golden ale with a touch of rye, featuring a ton of columbus hops and dry hopped with citra and cascade for a citrus-packed flavour explosion.',
+        colour: 'Gold',
+        percent: '4.8'
+      }]
+    },
+    'popes-yard': {
+      name: 'Popes Yard',
+      image: 'popes-yard.png',
+      description: 'Small batches of increasingly wild beers brewed in Frogmore Mill, Apsley',
+      list: [{
+        name: 'Quatermaster',
+        notes: 'Best Bitter - Brewed with a touch of amber and crystal malt, British Bramling Cross and Australian Galaxy hops. Four malts, four hop additions and 4.4% make this one of our most popular traditional beers.',
+        colour: 'Copper',
+        percent: '4.4'
+      }, {
+        name: 'King Street Dusk',
+        notes: 'Rich copper-coloured lager with subtle notes of toffee, biscuit and dark fruit balanced with a herbal bitterness and aroma from noble hops.',
+        colour: 'Dark',
+        percent: '4.2'
+      }, {
+        name: 'Lacerta US',
+        notes: 'Golden, hazy Pale Ale with aromas of pineapple, nectarine and pear.',
+        colour: 'Pale',
+        percent: '3.9'
       }]
     }
   }
