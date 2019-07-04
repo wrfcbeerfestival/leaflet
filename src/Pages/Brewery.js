@@ -65,7 +65,7 @@ export class Item extends React.Component {
     const { isOpen, rating } = this.state;
     return (<div className="product">
       <div className="product__header">
-        <span className="product__header-title" onClick={() => { this.onClick(); }}>{name}
+        <span className="product__header-title" onClick={() => { this.onClick(); }}><span className="bold">{name}</span>
           {percent && <span>{' - '}{percent}%</span>}
         </span>
         <span className="product__rating">
@@ -83,9 +83,8 @@ export class Item extends React.Component {
       </div>
       {isOpen && <div className="product__extra">
 
-        {colour && <span>{colour}</span>}
-
-        {notes}
+        {colour && <span className="bold">{ this.props.type === 'cider' ? 'Sweetness:' : 'Colour:'} {colour}</span>}
+        <p>{notes}</p>
 
         <textarea placeholder={`Notes for ${name}`} value={this.state.notes} onClick={() => { this.onTextAreaClick()}} onChange={(e) => { this.onTextAreaChange(e) }} className="product__notes" />
       </div>}

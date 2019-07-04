@@ -149,14 +149,17 @@
 
 .product--gin {
   display: flex;
+  margin: 12px 0;
 }
 
 .product--gin .product__header {
   height: auto;
 }
 .product--gin .product__header img {
-  height: 157px;
-  width: 128.5px;
+  width: 160px;
+}
+.product--gin .product__extra {
+  padding: 8px;
 }
 
 .product__notes {

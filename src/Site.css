@@ -41,6 +41,9 @@
 .paragraph--margin {
   margin: 8px;
 }
+.paragraph--margin-24 {
+  margin-top: 24px;
+}
 
 .instructions {
   background-color: lightblue;

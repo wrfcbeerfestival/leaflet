@@ -1,33 +1,20 @@
 const brewies = {
   gin: {
     warner: {
-      name: 'Rub',
-      image: 'rub.jpeg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      name: 'Warner',
+      description: 'We started in 2012 on our beautiful family farm, with no idea what we were getting ourselves into. We began with the things that matter most and a dream to save the world from mediocre gin. We ended up stripping the industry back to its roots: we became gin farmers. We draw water from our spring, grow the botanicals, and collect fresh honey from our own beehives. We try to keep things local and, as custodians of the land, we harvest with a respect for nature and the community. As we go, we try to give back more than we take: re-sow, replant, rebuild.',
       list: [{
-        name: 'Fanny Ebbs',
-        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
-        image: 'warner-edwards.jpeg'
-      }]
-    },
-    beefeater: {
-      name: 'Rub',
-      image: 'rub.jpeg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      list: [{
-        name: 'Fanny Ebbs',
-        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
-        image: 'warner-edwards-eld.jpeg'
-      }]
-    },
-    gordons: {
-      name: 'Rub',
-      image: 'rub.jpeg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      list: [{
-        name: 'Fanny Ebbs',
-        notes: 'Amazingly crisp with very low bitterness and late citrus hop aroma from a combination of Saaz and Cascade varieties.',
-        image: 'warner-edwards-dry.jpg'
+        name: 'Rubarb',
+        notes: 'Inspired by a crop of rhubarb originally grown in Queen Victoria’s own kitchen garden, this vibrant pink gin has changed the flavoured gin category and ignited the pink gin boom! With fresh rhubarb juice in every bottle, this truly is a craft gin like no other. ',
+        image: 'warner-rhubarb.png'
+      },{
+        name: 'Honey',
+        notes: 'Released in partnership with the Royal Horticultural Society to protect our pollinators, Warner\'s Honeybee Gin is crafted with 28 botanicals, including lavender, rose and a dollop of honey from our farm’s own beehives.',
+        image: 'warner-honey.png'
+      },{
+        name: 'Elderflower',
+        notes: 'Inspired by Tom\'s mum, Adele, this is a unique recipe. Once a year, our Dream Team head out into the surrounding countryside to handpick the elderflower for this year\'s harvest. With around 300 fresh, individual elderflowers in every bottle, this is a craft gin like no other. From field to gin in a single day. ',
+        image: 'warner-elderflower.png'
       }]
     }
   },
@@ -41,7 +28,7 @@ const brewies = {
         notes: 'A medium to sweet perry (pears) oozing with subtle flavours. Has cult status and will go fast even though we bought three. ',
         percent: '7.5',
         colour: 'Perry'
-      }] 
+      }]
     },
     'celtic-marches': {
       name: 'Celtic Marches',
@@ -53,7 +40,7 @@ const brewies = {
         percent: '4.5',
         colour: 'Fruity'
       }, {
-        name: 'Slack Alice', 
+        name: 'Slack Alice',
         colour: 'Medium',
         notes: 'A medium well rounded and mellow cider with a very slight tart finish.',
         percent: '4.6',
@@ -160,7 +147,7 @@ const brewies = {
         percent: '3.5',
         colour: 'Tawny'
       }, {
-        name: '1381', 
+        name: '1381',
         colour: 'Gold',
         notes: 'The year of the Peasants Revolt. A golden IPA combining pale and crystal malts with Williamette and Centenial hops to give delicate citrus and herbal aromas.',
         percent: '3.8',
@@ -367,10 +354,10 @@ const brewies = {
         notes: 'Brewed with three types of malt and a considered combination of homegrown British & imported American hops for a well rounded, punchy flavour.',
         colour: 'Dark'
       }]
-    }, 
+    },
     haresfoot: {
       name: 'Haresfoot',
-      image: 'haresfoot.jpeg',
+      image: 'haresfoot.jpg',
       description: 'Beer meticulously brewed using the finest hops and malted barley, haresfoot resurrects our brewing heritage, being the first berkhamsted brewery since 1914.',
       list: [{
         name: 'Lock Keeper',

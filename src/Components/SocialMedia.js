@@ -6,7 +6,7 @@ import '../SocialMedia.css';
 export default () => {
   return (
     <div className="social-media">
-      <h3 className="social-media__title">Follow Watford Rugby Club on:</h3>
+      <h3 className="social-media__title">Follow Watford Rugby Club</h3>
       <div className="social-media__icons">
         <a href="//facebook.com/watfordrugbyclub" onClick={() => {
           window.gtag('event', 'social media', {

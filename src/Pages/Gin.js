@@ -72,6 +72,7 @@ export default class extends React.Component {
       const distill = this.state.data[id];
       const items = distill.list.map((listitem, itemKey) => <Item key={itemKey} {...listitem} id={id} />);
       return (<section key={id}>
+        <h1 className="brewery__title">{distill.name}</h1>
         <p className="brewery__desc" >{distill.description}</p>
         <div className="brewery__items">
           {items}

@@ -11,6 +11,9 @@ import Clint from './Pages/Clint';
 import Gin from './Pages/Gin';
 import Picker from './Pages/Picker';
 import Merc from './Pages/Merc';
+import Camra from './Pages/Camra';
+import FancyDressRugby from './Pages/FancyDressRugby'
+import GreeneKing from './Pages/GreeneKing';
 
 export const mainPageOrdering = [{
   name: '/home',
@@ -31,7 +34,7 @@ export const mainPageOrdering = [{
   prettyName: 'Guide to WRFC Beer & Cider Festival',
   Component: Guide
 }, {
-  name: '/monks-advert',
+  name: '/monks',
   prettyName: 'Monks Inn',
   options: {
     image: '/monks.jpg',
@@ -54,12 +57,13 @@ export const mainPageOrdering = [{
   prettyName: 'Fancy taking up rugby?',
   Component: Recruitment
 },{
-  name: '/greene-king-advert',
-  prettyName: 'Greene King Advert',
-  Component: Advert,
-  options: {
-    image: '/fox-hounds-advert.jpg'
-  }
+  name: '/greene-king',
+  prettyName: 'Greene King',
+  Component: GreeneKing
+}, {
+  name: '/fancy-dress-rugby',
+  prettyName: 'Saturday Fancy Dress Rugby',
+  Component: FancyDressRugby
 },{
   name: '/cider',
   prettyName: 'Cider List',
@@ -72,8 +76,8 @@ export const mainPageOrdering = [{
     image: '/wrfc-venue-hire.jpg'
   }
 }, {
-  name: '/regent-club-advert',
-  prettyName: 'Regent Club Advert',
+  name: '/regent-club',
+  prettyName: 'Regent Club',
   Component: Advert,
   options: {
     image: '/regent-advert.jpg'
@@ -86,7 +90,11 @@ export const mainPageOrdering = [{
   name: '/merc',
   prettyName: 'Get your merchandise!',
   Component: Merc 
-},{
+}, {
+  name: '/camra',
+  prettyName: 'CAMRA',
+  Component: Camra
+}, {
   name: '/picker',
   prettyName: 'Need help picking? Use our Picker tool',
   Component: Picker
