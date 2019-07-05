@@ -13,12 +13,21 @@
   text-align: center;
 }
 
+.back__button--link {
+  background-color: #1c60c7;;
+}
+
 .next__button {
   width: 200px;
   background-color: lightblue;
   font-family: monospace;
   text-align: center;
   border: none;
+}
+
+.next__button--link {
+  background-color: #1c60c7;;
+  color: white;
 }
 
 .clear__button {
@@ -69,4 +78,9 @@
   line-height: 24px;
   font-weight: bold;
   text-align: center;
+}
+
+.bottom-border {
+  padding-top: 8px;
+  padding-bottom: 14px;
 }

@@ -1,223 +1,205 @@
 export default {
   beerStart: {
     type: 'QUESTION',
-    title: 'Something Exclusive to our event?',
+    title: 'You\'re stranded at sea, do you let your beloved on to the door?',
     answers: [{
-      title: 'Yes',
-      nextId: 'responsablyAnswer'
+      title: 'Of course',
+      breweryId: 'titanic',
+      productId: 'plum-porter'
     }, {
       title: 'No',
-      nextId: 'animalQuestion'
+      nextId: 'doYouKnowTheAnswer'
     }]
   },
-  responsablyAnswer: {
-    type: 'ANSWER',
-    title: 'Responsably',
-    description: 'South African Hop Exclusive for Clint. Meaty tropical festival, with hints of Blueberry, goosebury, melon, guava, orange and plum. Offspring of the popular Bitter Boer and Zulu Tropic from last year\'s festival in Watford.'
-  },
-  mantaRayAnswer: {
-    type: 'ANSWER',
-    title: 'Manta Ray (4.6%)',
-    description: 'Brewed with pilsner malts this crisp craft lager is triple hopped with kasbek, chinnook and makatu. Glides down the throat far too easily.'
-  },
-  alligatorAnswer: {
-    type: 'ANSWER',
-    title: 'Alligator (4.6%)',
-    description: 'Brewed with all pale malts and loaded with our brewer\'s favourite hop, Azacca.  Hitting you straight off with the tastes of mangos, lychees, citrus and pine, with a clean crisp malt bill lurking in the background. So full of tropical flavours you’ll think you really are in the tropics.'
-  },
-  newtonAnswer: {
-    type: 'ANSWER',
-    title: 'Sir Newton (3.8%)',
-    description: 'A classic Golden Ale brewed as a hybrid, craft, traditional bitter. A calculated blend of Maris Otter and Crystal malts; balanced by whole leaf Challenger, Target, Celeia and Cascade. An Ale crafted with detail down to the last molecule. Our Golden Ale is adjusted to perfection and inspired by the man who understood the variables of balance best, Sir Newton. A man who himself has confessed, was inspired the great Watling Street to begin with.'
-  },
-  shellyAnswer: {
-    type: 'ANSWER',
-    title: 'Miss Shelly (4.2%)',
-    description: 'A refreshing Pale Ale brewed straight up with Maris Otter barley. This heavily hopped whole leaf Galena, Cascade and Liberty Hop is an exciting creation. Some say it\'s a creation so bold and unapologetic that it acts as an ode to Mary Shelley. That it\'s a companion complex enough that she could finally find a form of solace.'
-  },
-  mrRipperAnswer: {
-    type: 'ANSWER',
-    title: 'Mr Ripper (4.5%)',
-    description: 'A heavily hopped blood Red Ale, with colours pulling through from Crystal Rye. An Ale with rich notes of whole leaf First Gold, Admiral, Pilot and Savinski Golding. This Ale has enough heart even for MR Ripper, the shadow of these parts. Watling Street Red Ale, the infamous ale for the infamous character.'
-  },
-  uncleDamnAnswer: {
-    type: 'ANSWER',
-    title: 'Uncle Damn (3.7%)',
-    description: 'This Session Pale is bursting with tropical grapefruit and citrus flavours. Packed with Liberty, Mosaic and citra hops.'
-  },
-  boudiccaAnswer: {
-    type: 'ANSWER',
-    title: 'Queen Boudica (4.2%)',
-    description: 'A traditional English Ale with a blend of Maris Otter, Crystal, wheat and chocolate malts. An Ale treated with care and finesse so as to ensure the rich undertones of toffee take centre stage. A famous Premium Ale whose confidence to be rebellious is inspired by the famous Celtic Inceni Rebel Queen, Queen Boudicea.'
-  },
-  watTylerAnswer: {
-    type: 'ANSWER',
-    title: 'Wat Tyler (4.8%)',
-    description: 'Cascade and mosaic hops define this citrus punchy pale. "Watch" out though it drinks like juice.'
-  },
-  infernoAnswer: {
-    type: 'ANSWER',
-    title: 'Inferno (4.0%)',
-    description: 'With Sterling, Amarillo, Centennial, Cascade, Chinook hops. A light golden beer with a big personality, bursting with fruity hop flavours, citrus notes and a refreshing finish.'
-  },
-  fireflyAnswer: {
-    type: 'ANSWER',
-    title: 'Firefly (4.0%)',
-    description: 'Citrus, melon & papaya jump from the glass, followed by a light bread & biscuit palate on first taste. A blend of Cascade, Ekuanot & Mandarina Bavaria hops then provide a super refreshing citrus & blackcurrant lingering taste.'
-  },
-  paleFourAnswer: {
-    type: 'ANSWER',
-    title: 'Pale Four (4.6%)',
-    description: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.'
-  },
-  classicEnglishAleAnswer: {
-    type: 'ANSWER',
-    title: 'Classic English Ale (4.0%)',
-    description: 'A light hoppy aroma and a rich and rounded malty taste balanced by subtle hoppiness, to give a supremely clean, smooth and refreshing ale. '
-  },
-  nakedLadiesAnswer: {
-    type: 'ANSWER',
-    title: 'Naked Ladies (4.4%)',
-    description: 'Outstanding, glorious, hoppy golden ale using Herkules, Celeia and Chinook hops for full-flavoured satisfaction. Inspired by the statues of water nymphs in York House gardens in Twickenham, known locally as the “Naked Ladies”'
-  },
-  wolfAnswer: {
-    type: 'ANSWER',
-    title: 'Wolf (3.8%)',
-    description: 'A Straw coloured pale that showcases one of the most exciting and recent Slovenian hops on the market; Styrian Wolf. Expect intense flavours of citrus and berries and a smooth bitterness.'
-  },
-  threeHogsAnswer: {
-    type: 'ANSWER',
-    title: 'Three Hogs (4.0%)',
-    description: 'Refreshingly hoppy this seasonal beer isn\'t even on the website. It comes with a little bitterness crossed with hint sweetness. A session beer in anyones book.'
-  },
-  blackListedAnswer: {
-    type: 'ANSWER',
-    title: 'Black Listed (4.5%)',
-    description: 'Brewed with three types of malt and a considered combination of homegrown British & imported American hops for a well rounded, punchy flavour.'
-  },
-  animalQuestion: {
+  doYouKnowTheAnswer: {
     type: 'QUESTION',
-    title: 'The time old question, Manta Ray v Alligator. You decide!',
+    title: 'Do you already know the answer?',
     answers: [{
-      title: 'Manta Rays for the win',
-      nextId: 'mantaRayAnswer'
+      title: 'I have always known',
+      breweryId: 'salopian',
+      productId: 'oracle'
     }, {
-      title: 'Alligators all day long',
-      nextId: 'alligatorAnswer'
+      title: 'You haven\'t asked me a question?!',
+      breweryId: 'paradigm',
+      productId: 'heads-up'
     }, {
-      title: 'They both suck!',
-      nextId: 'englishQuestion'
+      title: '42',
+      breweryId: 'paradigm',
+      productId: 'blue-sky-thinking'
+    }, {
+      title: 'No....',
+      nextId: 'anythingToDoTomorrow'
     }]
   },
-  englishQuestion: {
+  anythingToDoTomorrow: {
     type: 'QUESTION',
-    title: 'Do you know classic english characters?',
+    title: 'Do you have anything to do tomorrow, that requires you to move?',
     answers: [{
-      title: 'Yes, I have very good knowledge',
-      nextId: 'intellectualsQuestion'
-    }, {
-      title: 'I know the Queen...',
-      nextId: 'whatDidYouThinkAboutTheRecentHeatwaveQuestion'
-    }]
-  },
-  intellectualsQuestion: {
-    type: 'QUESTION',
-    title: 'Fan of Intellectuals?',
-    answers: [{
-      title: 'Yes',
-      nextId: 'appleFromTreeQuestion'
-    }, {
       title: 'No',
-      nextId: 'agreeWithRebelsQuestion'
+      breweryId: 'windsor-and-eton',
+      productId: 'wasteland'
+    }, {
+      title: 'Unfortunatley yes',
+      nextId: 'whatsYourIdealHoliday'
     }]
   },
-  appleFromTreeQuestion: {
+  whatsYourIdealHoliday: {
     type: 'QUESTION',
-    title: 'Do you ever get hit on the head by an apple and wonder why?',
+    title: 'What\'s your ideal holiday?',
     answers: [{
-      title: 'Yes and it hurt',
-      nextId: 'newtonAnswer'
+      title: 'Off the beaten track',
+      breweryId: 'new-river',
+      productId: 'lost-river'
     }, {
-      title: 'No',
-      nextId: 'shellyAnswer'
+      title: 'A City break',
+      breweryId: 'popes-yard',
+      productId: 'king-street-dusk'
+    }, {
+      title: 'Somewhere without tourists',
+      breweryId: 'new-river',
+      productId: 'isle-of-rye'
+    }, {
+      title: 'Hot and sunny',
+      breweryId: 'buntingford',
+      productId: 'sunstar'
+    }, {
+      title: 'Somewhere with a bar',
+      nextId: 'goldOrSilver'
     }]
   },
-  agreeWithRebelsQuestion: {
+  goldOrSilver: {
     type: 'QUESTION',
-    title: 'Do you agree with Rebels',
+    title: 'Gold or Silver',
     answers: [{
-      title: 'No, the empire did nothing wrong',
-      nextId: 'serialKillerQuestion'
+      title: 'Gold',
+      breweryId: 'haresfoot',
+      productId: 'dragons-bain'
     }, {
-      title: 'Yes',
-      nextId: 'girlsKnowHowToRebelQuestion'
+      title: 'Silver',
+      breweryId: 'haresfoot',
+      productId: 'new-moon'
+    }, {
+      title: 'Is Beer an option?',
+      nextId: 'winAtAllCosts'
     }]
   },
-  serialKillerQuestion: {
+  winAtAllCosts: {
     type: 'QUESTION',
-    title: 'Serial killers in victorian London always get a bad press?',
+    title: 'Would you prefer your team to win at all costs, or win with grace and dignity',
     answers: [{
-      title: 'Yes',
-      nextId: 'mrRipperAnswer'
+      title: 'At all costs',
+      breweryId: 'windsor-and-eton',
+      productId: 'conqueror'
     }, {
-      title: 'No',
-      nextId: 'uncleDamnAnswer'
+      title: 'With grace and dignity',
+      breweryId: 'windsor-and-eton',
+      productId: 'knight-of-the-garter'
+    }, {
+      title: 'As long as both teams have fun',
+      nextId: 'jackTheRipper'
     }]
   },
-  girlsKnowHowToRebelQuestion: {
+  jackTheRipper: {
     type: 'QUESTION',
-    title: 'Girls know how to rebel properly right?',
+    title: 'Who was the best Jack?',
     answers: [{
-      title: 'Yes, girls just wanna have fun!',
-      nextId: 'boudiccaAnswer'
+      title: 'Jack the ripper',
+      breweryId: 'amberales',
+      productId: 'ripper'
     }, {
-      title: 'No',
-      nextId: 'watTylerAnswer'
+      title: 'Jack the lad',
+      breweryId: 'tring',
+      productId: 'jimbob'
+    }, {
+      title: 'Jack is a terrible name',
+      nextId: 'glassHalfEmptyOrFull'
+    }, {
+      title: 'Sorry but Brett is better then Jack',
+      breweryId: 'beerblefish',
+      productId: 'brett-only-ipa'
     }]
   },
-  whatDidYouThinkAboutTheRecentHeatwaveQuestion: {
+  glassHalfEmptyOrFull: {
     type: 'QUESTION',
-    title: 'What did you think about the recent heatwave?',
+    title: 'Glass half empty or glass half full?',
     answers: [{
-      title: 'Loved every minute',
-      nextId: 'infernoAnswer'
+      title: 'Half full',
+      breweryId: 'wantsum',
+      productId: 'mores-ipa'
     }, {
-      title: 'It was fun for a while, then I couldn\'t sleep',
-      nextId: 'fireflyAnswer'
+      title: 'Half Empty',
+      nextId: 'cleanThePalate',
     }, {
-      title: 'I complained about it the whole time',
-      nextId: 'stapleOfTheBeerFestivalQuestion'
+      title: 'Also as its still got half a beer in its fines',
+      breweryId: 'paradigm',
+      productId: 'win-win'
     }]
   },
-  stapleOfTheBeerFestivalQuestion: {
+  cleanThePalate: {
     type: 'QUESTION',
-    title: 'Pick one of our regular brewers',
+    title: 'Do you need something to clean the palate',
     answers: [{
-      title: 'Tring',
-      nextId: 'paleFourAnswer'
+      title: 'Yes please',
+      breweryId: 'chiltern',
+      productId: 'pale-ale'
     }, {
-      title: '3 Brewers',
-      nextId: 'classicEnglishAleAnswer'
-    }, {
-      title: 'Twickenham',
-      nextId: 'nakedLadiesAnswer'
-    }, {
-      title: 'Want a new beer to this festival?',
-      nextId: 'newBeerForFestivalQuestion'
+      title: 'I\'m only just starting',
+      nextId: 'pickAFlavour'
     }]
   },
-  newBeerForFestivalQuestion: {
+  pickAFlavour: {
     type: 'QUESTION',
-    title: 'Pick of our new brewers',
+    title: 'Pick a flavour',
     answers: [{
-      title: 'Aylesbury Brewhouse Co',
-      nextId: 'wolfAnswer'
+      title: 'Rich toffee aroma',
+      breweryId: 'chiltern',
+      productId: 'beechwood-bitter'
     }, {
-      title: 'Hogs Back',
-      nextId: 'threeHogsAnswer'
+      title: 'Chocolate',
+      breweryId: '3Brewers',
+      productId: 'special' 
     }, {
-      title: 'Farr',
-      nextId: 'blackListedAnswer'
+      title: 'I\'m hopping for joy',
+      breweryId: 'tring',
+      productId: 'pale-four'
+    }, {
+      title: 'I\'m a bit nutty',
+      breweryId: 'rudgate',
+      productId: 'ruby-mild'
+    }, {
+      title: 'Pineapple, nectarine and pear',
+      breweryId: 'popes-yard',
+      productId: 'lacerta-us'
+    }, {
+      title: 'Can I do it by colour?',
+      nextId: 'pickAColour'
     }]
-  }
+  },
+  pickAColour: {
+    type: 'QUESTION',
+    title: 'Blondes, Brunettes or Red Heads',
+    answers: [{
+      title: 'Blonde',
+      breweryId: '3Brewers',
+      productId: 'blonde'
+    }, {
+      title: 'Brunettes',
+      breweryId: 'rebellion',
+      productId: 'barrell-roll'
+    }, {
+      title: 'Red Heads',
+      breweryId: 'rebellion',
+      productId: 'Roasted Nuts'
+    }, {
+      title: 'Black like the night',
+      breweryId: 'farr',
+      productId: 'black-listed'
+    }, {
+      title: 'I prefer a silver fox',
+      breweryId: 'wantsum',
+      productId: '1381'
+    }]
+
+  },
+
 }

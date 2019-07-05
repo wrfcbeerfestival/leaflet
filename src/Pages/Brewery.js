@@ -13,7 +13,7 @@ export class Item extends React.Component {
     this.onTextAreaChange = this.onTextAreaChange.bind(this);
     this.onTextAreaClick = this.onTextAreaClick.bind(this);
     this.state = {
-      isOpen: false,
+      isOpen: props.isOpen,
       rating: getRating(this.props.id, this.props.name),
       notes: getNotes(this.props.id, this.props.name)
     }
