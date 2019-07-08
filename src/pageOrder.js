@@ -14,6 +14,7 @@ import Merc from './Pages/Merc';
 import Camra from './Pages/Camra';
 import FancyDressRugby from './Pages/FancyDressRugby'
 import GreeneKing from './Pages/GreeneKing';
+import Food from './Pages/Food';
 
 export const mainPageOrdering = [{
   name: '/home',
@@ -86,7 +87,12 @@ export const mainPageOrdering = [{
   name: '/gin',
   prettyName: 'Gin List',
   Component: Gin
-}, {
+}, 
+{
+  name: '/food',
+  prettyName: 'Food Menu',
+  Component: Food
+},{
   name: '/merc',
   prettyName: 'Get your merchandise!',
   Component: Merc 

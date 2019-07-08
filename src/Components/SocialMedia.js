@@ -7,6 +7,7 @@ export default () => {
   return (
     <div className="social-media">
       <h3 className="social-media__title">Follow Watford Rugby Club</h3>
+      <p className="social-media__hashtag">Use the hashtag <b className="bold">#wrfcbeerfestival</b></p>
       <div className="social-media__icons">
         <a href="//facebook.com/watfordrugbyclub" onClick={() => {
           window.gtag('event', 'social media', {

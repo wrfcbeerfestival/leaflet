@@ -127,10 +127,10 @@ export default {
       breweryId: 'wantsum',
       productId: 'mores-ipa'
     }, {
-      title: 'Half Empty',
+      title: 'Half empty',
       nextId: 'cleanThePalate',
     }, {
-      title: 'Also as its still got half a beer in its fines',
+      title: 'Also as its still got half a beer in its fine',
       breweryId: 'paradigm',
       productId: 'win-win'
     }]

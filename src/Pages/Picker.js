@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import beer from '../beer-picker.js';
-import cider from '../cider-picker.js';
 import { Item } from '../Pages/Brewery';
 import { getProductById, getBreweryName } from '../breweryDetails';
 import { Link } from 'react-router-dom';
@@ -26,13 +25,10 @@ const Answer = ({ answer, onBackClick }) => {
 
 const firstPageState = {
   type: 'QUESTION',
-  title: 'Which would you prefer?',
+  title: 'Click \'Beer me\' to start',
   answers: [{
-    title: 'Beer',
+    title: 'Beer me',
     nextId: 'beerStart'
-  }, {
-    title: 'Cider (Still in development)',
-    nextId: 'ciderStart'
   }]
 }
 class Picker extends Component {
@@ -42,7 +38,6 @@ class Picker extends Component {
     this.state = {
       currentView: firstPageState,
       beercider: {
-        ...cider,
         ...beer
       },
       backLinkHistory: []

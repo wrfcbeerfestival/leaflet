@@ -157,6 +157,7 @@
 }
 .product--gin .product__header img {
   width: 160px;
+  height: 320px;
 }
 .product--gin .product__extra {
   padding: 8px;
@@ -233,6 +234,10 @@
   margin: 12px;
   line-height: 24px;
   font-size: 18px;
+}
+
+.food b {
+  color: #e66796;
 }
 
 @media (min-width: 1024px) {
