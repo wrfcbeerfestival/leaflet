@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "36d1ff73fe9af8addc505f1e916d0ccd",
+    "revision": "ad6b436c9a29e1a5f5a8fb34076eaebe",
     "url": "/leaflet/index.html"
   },
   {
-    "revision": "7358d00b07a5761a2d5b",
+    "revision": "499aad1e3b39cd2294a2",
     "url": "/leaflet/static/css/2.3c1ddb0a.chunk.css"
   },
   {
-    "revision": "2f8ab9e2b31484896af0",
-    "url": "/leaflet/static/css/main.2abfda5d.chunk.css"
+    "revision": "742aad67e4b2a50b8cd2",
+    "url": "/leaflet/static/css/main.6cfe5444.chunk.css"
   },
   {
-    "revision": "7358d00b07a5761a2d5b",
-    "url": "/leaflet/static/js/2.397e2244.chunk.js"
+    "revision": "499aad1e3b39cd2294a2",
+    "url": "/leaflet/static/js/2.06192b35.chunk.js"
   },
   {
-    "revision": "2f8ab9e2b31484896af0",
-    "url": "/leaflet/static/js/main.d0000704.chunk.js"
+    "revision": "742aad67e4b2a50b8cd2",
+    "url": "/leaflet/static/js/main.ea5282e5.chunk.js"
   },
   {
     "revision": "daf8075e4d168bc24d0b",
     "url": "/leaflet/static/js/runtime~main.005ef40c.js"
+  },
+  {
+    "revision": "486d87f1f8036077bcbab2310252c76f",
+    "url": "/leaflet/static/media/burger.486d87f1.svg"
   },
   {
     "revision": "f29ea1295c605cc5988a93f619fa1104",
