@@ -20,3 +20,8 @@
 .social-media img {
   height: 22px;
 }
+
+.social-media__hashtag {
+  margin: 6px 0px;
+  text-align: center;
+}
