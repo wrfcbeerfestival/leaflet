@@ -117,7 +117,8 @@ export default class extends React.Component {
   render() {
     const { data, type, id, hideInfo } = this.props;
     const { hideDescription } = this.state;
-    const items = data.list.map((listitem, key) => <Item localStorageCleared={this.props.localStorageCleared} key={key} {...listitem} id={id} type={type} />);
+    const list = data.list.filter((item) => { return item.available });
+    const items = list.map((listitem, key) => <Item localStorageCleared={this.props.localStorageCleared} key={key} {...listitem} id={id} type={type} />);
     const instructions = type === 'beer' ? 'Tap the beer name to see more. Tap the beer icon to rate each beer' : 'Tap the cider name to see more. Tap the apple icon to rate each cider';
     return (
       <section>

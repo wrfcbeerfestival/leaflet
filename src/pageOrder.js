@@ -7,8 +7,6 @@ import Contents from './Pages/Contents';
 import Advert from './Pages/Advert';
 import Chairman from './Pages/Chairman';
 import Recruitment from './Pages/Recruitment';
-import Clint from './Pages/Clint';
-import Gin from './Pages/Gin';
 import Picker from './Pages/Picker';
 import Merc from './Pages/Merc';
 import Camra from './Pages/Camra';
@@ -34,17 +32,6 @@ export const mainPageOrdering = [{
   name: '/guide',
   prettyName: 'Guide to WRFC Beer & Cider Festival',
   Component: Guide
-}, {
-  name: '/monks',
-  prettyName: 'Monks Inn',
-  options: {
-    image: '/monks.jpg',
-  },
-  Component: Advert
-},{
-  name: '/about-the-beer',
-  prettyName: 'Clint tells all about the beer',
-  Component: Clint
 }, {
   name: '/beer',
   prettyName: 'Beer List',
@@ -83,10 +70,6 @@ export const mainPageOrdering = [{
   options: {
     image: '/regent-advert.jpg'
   }
-}, {
-  name: '/gin',
-  prettyName: 'Gin List',
-  Component: Gin
 }, 
 {
   name: '/food',

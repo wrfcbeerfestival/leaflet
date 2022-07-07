@@ -6,6 +6,7 @@ import { getImage } from '../image'
 
 export default () => {
   const breweries = getBeerBrewerys();
+  console.info(breweries);
   const list = Object.keys(breweries).map((key) => {
     const brewery = breweries[key]
     return <Link key={key} to={`/brewery/${key}`}>

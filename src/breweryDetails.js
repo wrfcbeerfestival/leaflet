@@ -20,6 +20,7 @@ const brewies = {
   },
   cider: {
     lilleys: {
+      available: true,
       name: 'Lilleys',
       image: 'lilleys.jpg',
       description: 'Lilley\'s Cider is a family run cider producer based in Frome, Somerset. Producing a diverse range of traditional & experimental blends of cider & perry all made with care & enthusiasm.',
@@ -31,6 +32,7 @@ const brewies = {
       }]
     },
     'celtic-marches': {
+      available: false,
       name: 'Celtic Marches',
       image: 'celtic-marches.png',
       description: 'After a career in major cider manufacturing and a break to bring up her young family Susan Vaughan decided to join her brother Robert Hancocks back on the family farm in Bishops Frome Herefordshire. The family has been growing fruit and hops on the farm for over 100 years Their farming roots go back deep into Mid Wales and the Welsh borders where many of their family still farm today. They are now drawing on that heritage and the abilities acquired from a history in the cider and brewing industry to produce quality ciders on the family farm.',
@@ -82,6 +84,7 @@ const brewies = {
       }]
     },
     'harrys': {
+      available: false,
       name: 'Harry\'s',
       image: 'harrys-cider.png',
       description: 'Harry’s Cider is a family business and fast-growing brand that produces traditional and sparkling ciders in the heart of Somerset ‘ciderland’. Based on the family farm in Long Sutton, Harry and his son are the farmers, growers, producers and processors, giving total control over the end product.',
@@ -103,6 +106,7 @@ const brewies = {
       }]
     },
     hecks: {
+      available: false,
       name: 'Hecks',
       description: 'The Hecks family have been making traditional farmhouse cider in Somerset for six generations, since 1841. In 1896, they started to sell cider from there our farm shop in Street. Making cider by blending juice from apples all grown locally in the farm’s orchards. The cider is fermented in wooden barrels and sold draught from the wood.',
       image: 'hecks.jpg',
@@ -114,6 +118,7 @@ const brewies = {
       }]
     },
     'kentish-pip': {
+      available: false,
       name: 'Kentish Pip',
       description: 'A small team with a big ambition: to change the way cider is seen and consumed in the UK. Kentish pip are obsessed with flavour and quality and there goal is to combine the best ingredients with innovation, style and a pinch of tradition to produce the next generation of British Cider.',
       image: 'kentish-pip.png',
@@ -125,6 +130,7 @@ const brewies = {
       }]
     },
     'sandford-orchards': {
+      available: false,
       name: 'Sandford Orchards',
       description: 'Ground in vivid, red soil; crisscrossed by ancient orchards and bound by its own microclimate, their lush green corner of Devon is the finest place on earth to grow cider apples. They only select apples grown within 30 miles of their press.',
       image: 'sandford-orchards.png',
@@ -138,6 +144,7 @@ const brewies = {
   },
   beer: {
     wantsum: {
+      available: false,
       name: 'Wantsum',
       image: 'wantsum.jpeg',
       description: 'In 2009, James Sandy started brewing "Fortitude" the first of what has become an extensive range of beers all named after people or pivotal events in Kent\'s history. Today the brewery proudly produces 10 regular ales and many seasonal and special ales which are sold to pubs and bottle outlets throughout the South East of England & East Anglia Wantsum Brewery takes its name from the Wantsum Channel, the watercourse seperating the Isle of Thanet and what was the mainland of the English county of Kent.',
@@ -156,6 +163,7 @@ const brewies = {
       }]
     },
     chiltern: {
+      available: false,
       name: 'Chiltern',
       image: 'chiltern.jpeg',
       description: 'The oldest independent brewery in the Chiltern Hills and Buckinghamshire, located on an old working farm in the Chiltern Hills. Their brewery shop not only sells their full range of beers, but also locally made ciders, wines, condiments along with a range of products such as beer bread, malt fudge, beer cheese and fruit cake that are all made using their own beer.',
@@ -179,41 +187,55 @@ const brewies = {
       }]
     },
     '3Brewers': {
+      available: false,
       name: '3Brewers',
       image: '3Brewers.jpeg',
       description: 'From St Albans, 3Brewers use local ingredients, including water from their very own borehole. Passionate about producing high quality beers with a minimum of fuss and pretense, 3Brewers are dedicated to providing radically better beer.',
       list: [{
+        available: false,
         name: 'Ruby Mild',
         notes: 'Dark ruby in colour this smooth and creamy Mild combines a malty sweetness with a touch of liquorice bitterness to make a beautifully balanced ale.',
         percent: '3.6',
         colour: 'Dark'
       }, {
-        id: 'blonde', 
-        name: 'Blonde',
+        available: true,
+        id: 'golden-english', 
+        name: 'Golden English',
         notes: 'Our superb new Blonde Ale is 4.2 % abv and light golden in colour. It\'s brewed with a big pile of Mosaic hops giving the beer a wonderful hoppy aroma and a refreshing smack of fruity citrussy flavours.',
         colour: 'Blonde',
-        percent: '4.2',
+        percent: '3.8',
       }, {
+        available: true,
         id: 'special',
-        name: 'Special',
+        name: 'Special English',
         notes: 'Old school boozy. We use chocolate malt to give it a deep copper colour and the finest English hops give the ale a hint of berries. It’s a well balanced, smooth and moreish ale.',
         percent: '4.8',
         colour: 'Copper'
       }]
     },
     titanic: {
+      available: true,
       name: 'Titanic',
       image: 'titanic.jpg',
       description: 'A bit further afield than a lot of the other breweries, Titanic is based in Stoke, Staffordshire and was founded in 1985. One of the favourite beers each time it is on is undoubtably Plum Porter, one of the few dark beers that everyone seems to agree can be drunk on a boiling hot summers day! A true success story that if you brew high quality beer, people will keep returning to the product, Titanic started out brewing only 7 barrels a year to now brewing over 4 million. One taste and you can see why.',
       list: [{
+        available: true,
         id: 'plum-porter',
         name: 'Plum Porter',
         notes: 'This beer is dark strong and well rounded; the richness of such a rotund beer is brought to an even keel by the late addition of Goldings hops and natural plum flavouring',
         percent: '4.9',
         colour: 'Dark'
+      }, {
+        available: true,
+        id: 'raspberry-pale',
+        name: 'Raspberry Pale',
+        notes: '',
+        percent: '4.7',
+        colour: 'Pale'
       }]
     },
     salopian: {
+      available: false,
       name: 'Salopian',
       image: 'salopian.jpeg',
       description: 'Did you know that Salopian means “Of Shrewsbury”? At the time of founding (1995) it was the smallest brewery in the country not attached to a pub, with only a 2 barrel brewlength. This has now increased to 50 barrels due to continual success with their beers. Originally brewing a more traditional midlands style beer, they have bucked tradition and now brew a more modern, hop led style of beer.',
@@ -226,6 +248,7 @@ const brewies = {
       }]
     },
     rebellion: {
+      available: false,
       name: 'Rebellion',
       image: 'rebellion.jpg',
       description: 'The story of the Rebellion Brewery starts in 1987 with the closure of the Marlow based Thomas Wethered Brewery. Two friends, Tim Coombes and Mark Gloyens, had gone through school together at Sir William Borlase, at a time when the old Wethered brewery was in full production with the smell and noise from the brewery clearly marking Marlow out to locals and visitors alike as a brewing town. Having discussed the idea to set up in business together earlier in their careers, and watching the old brewery close, the idea started to take shape of reviving Marlow tradition in 1991. After a couple of years of planning, research and failed attempts to secure small premises on the old brewery site, which was owned by Whitbreads, the Rebellion Brewery was established on the Rose Industrial Estate in Marlow Bottom in April 1993. In 1999 the brewery moved to its current premises on Bencombe Farm, occupying the old grainstore and other redundant farm buildings.',
@@ -244,6 +267,7 @@ const brewies = {
       }]
     },
     'windsor-and-eton': {
+      available: false,
       name: 'Windsor and Eton',
       image: 'windsor-and-eton.png',
       description: 'Windsor and Eton are already famous for many things. The castle, college, river, racecourse and of course the Royal connections. In 2010 the four of us wanted to add beer to the list. In fact we had a wild idea to make beer the top attraction. So we brought brewing back to the heart of Windsor. Eight years on we remain a ‘beer led’ brewery making outstanding beers of every single style and character. We offer a warm welcome to everyone from beer newcomer to expert, locals to visitors, the smallest club to the biggest pub and the local shop to the top supermarket. We are proud to be part of the revolution in beer making throughout the world. As founder members of the London Brewers Alliance, we have helped grow the number of the Capital’s breweries from 11 in 2010 to over 90 today. Together we are bringing great choice and quality to London drinkers.',
@@ -274,24 +298,50 @@ const brewies = {
       }]
     },
     tring: {
+      available: true,
       name: 'Tring',
       image: 'tring.jpg',
       description: 'The Tring Brewery Company was founded in 1992, reviving the traditional art of brewing in the picturesque West Hertfordshire market town of Tring. This was a town that, although steeped in brewing history, had been without a brewery for over 50 years. The locals were thirsty.',
       list: [{
+        available: false,
         id: 'jimbob',
         name: 'Jimbob',
         notes: 'Low in alcohol but plenty of flavour describes this little amber beer. The use of Dextrin malt provides body and the platform to balance out potent Australian Galaxy hops.',
         percent: '3.4',
         colour: 'Amber'
       }, {
+        available: true,
         id: 'pale-four',
         name: 'Pale four',
         notes: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.',
         percent: '4.6',
         colour: 'Pale'
-      }]
+      },{
+        available: true,
+        id: 'side-pocket',
+        name: 'Side Pocket',
+        notes: '',
+        percent: '3.6',
+        colour: 'Pale'
+      }, {
+        available: true,
+        id: 'little-bird',
+        name: 'Little bird',
+        notes: '',
+        percent: '3.3',
+        colour: 'Pale'
+      }, {
+        available: true,
+        id: 'drop-bard',
+        name: 'Drop bar',
+        notes: '',
+        percent: '4.0',
+        colour: 'Pale'
+      },
+    ]
     },
     paradigm: {
+      available: false,
       name: 'Paradigm',
       image: 'paradigm.jpg',
       description: 'Based in Sarratt in Herts we started brewing in early 2015. Hand-crafted real ales from beautiful sarratt village in hertfordshire, england. brewed traditionally using the finest hops and malted barley plus a lifelong passion for proper beer and just a hint of irony.',
@@ -321,6 +371,7 @@ const brewies = {
       }]
     },
     rudgate: {
+      available: false,
       name: 'Rudgate',
       image: 'rudgate.png',
       description: 'Rudgate Brewery was established in 1992. The brewery is situated at the heart of Yorkshire in the Vale of York. The original brewery was situated in the former ammunition building of RAF Marston Moor Airfield which was home to the Halifax bombers that helped defend our country during World War 2. The name comes from the old Roman road of `Rudgate’ which runs through the airfield. This road led the Vikings along our vale defeating the Romans in their steps. This road and its history is what instigated the main theme of Vikings for the brewery.',
@@ -333,18 +384,28 @@ const brewies = {
       }]
     },
     beerblefish: {
+      available: true,
       name: 'Beerblefish',
       image: 'beerblefish.png',
       description: 'Launched their first beer in the autumn of 2015, started off brewing in a shared co-operative brewery in Bermondsey, and moved to their own premises in Edmonton, North London in late summer 2016. Beerblefish Brewing is committed to keeping its beers vegan. It is not necessary to include isinglass or other animal products in our beers - these additives do not add anything to the taste of the beer and simply stop some people from being able to enjoy it. Also conscious of the impact of brewing on our environment and are always looking for ways to reuse our by-products, including our spent grain and our used hops. Their name is also so much fun to say',
       list: [{
+        available: false,
         id: 'brett-only-ipa',
         name: 'Brett Only IPA',
         notes: 'The little brother of Beerblefish\'s "hoppy session barley wine", this one-off beer was only fermented using the "wild" yeast of Brettanomyces Clauseni. Expect a BIG malt profile balanced with a firm bitterness as well ass a touch of sour and a nice fruitiness.',
         colour: 'IPA',
         percent: 'TBC'
+      },{
+        available: true,
+        id: 'pan-galaltic',
+        name: 'Pan Galaltic',
+        notes: '',
+        percent: '4.6',
+        colour: 'Pale'
       }]
     },
     'new-river': {
+      available: false,
       name: 'New River',
       image: 'new-river.png',
       description: 'New River Brewery was born out of a desire to enable drinkers to experience locally brewed, fresh and flavoursome craft beers. Opened in summer 2015 on the banks of the New River in Hoddesdon, Hertfordshire and have since been brewing a steady stream of delicious beer.',
@@ -368,6 +429,7 @@ const brewies = {
       }]
     },
     farr: {
+      available: false,
       name: 'Farr',
       image: 'farr.jpeg',
       description: 'Farr Brew was founded on the principles of creating great tasting real ales brewed with craft and a commitment to quality. The vision has seen their beers stocked in a great and growing range of top quality beer shops and brilliant pubs. We also regularly attend events across Hertfordshire selling our wares and offering free samples to quench the thirsts of the masses all served up by ‘The Best Bar Staff, by Farr’. 2015 was a busy year for Farr Brew; we supplied beer to the St Albans Beer Festival and CAMRA’s AGM. Our ‘Most Potent Porter, by Farr’ was chosen by acclaimed beer writer Roger Protz to be featured in a private tasting event.',
@@ -380,6 +442,7 @@ const brewies = {
       }]
     },
     haresfoot: {
+      available: false,
       name: 'Haresfoot',
       image: 'haresfoot.jpg',
       description: 'Beer meticulously brewed using the finest hops and malted barley, haresfoot resurrects our brewing heritage, being the first berkhamsted brewery since 1914.',
@@ -401,6 +464,7 @@ const brewies = {
       }]
     },
     buntingford: {
+      available: false,
       name: 'Buntingford',
       image: 'buntingford.jpg',
       description: 'Well where do you start? Back in the 90’s I guess when a young chap called Steve started brewing beer for a living, eventually building a small brewery in Buntingford, and lo, Buntingford Ales were born! Steve and his erstwhile partner and brewster Catherine moved to the current site, at Greys on the top of the hill at Therfield Heath, near Royston, back in the early 2000’s. After brewing awesome ales for a decade and a half, winning numerous awards including the incredible feat of a Best Bitter Gold and CBoB Silver for Twitchell,  and Category Silver for Golden Ales  for Polar Star in the 2013 Champion Beer of Britain competition, they decided to leave brewing to concentrate on their pub, The Brown Bear at Braughing, where you’ll find a warm welcome, great beer and food, at their lovely, cosy, traditional inn.',
@@ -413,6 +477,7 @@ const brewies = {
       }]
     },
     amberales: {
+      available: false,
       name: 'Amber Ales',
       image: 'amber-ale.png',
       description: 'Brewed for the few, from our tiny five barrel plant in the Amber Valley, Derbyshire, we specialise in full-flavoured traditionally styled ale with a modern twist. We brew beer that we like to drink and we have been fortunate to win many accolades for our beer both locally and nationally.',
@@ -425,30 +490,258 @@ const brewies = {
       }]
     },
     'popes-yard': {
+      available: true,
       name: 'Popes Yard',
       image: 'popes-yard.png',
       description: 'Small batches of increasingly wild beers brewed in Frogmore Mill, Apsley',
       list: [{
+        available: false,
         name: 'Quatermaster',
         notes: 'Best Bitter - Brewed with a touch of amber and crystal malt, British Bramling Cross and Australian Galaxy hops. Four malts, four hop additions and 4.4% make this one of our most popular traditional beers.',
         colour: 'Copper',
         percent: '4.4'
       }, {
         id: 'king-steet-dusk',
+        available: false,
         name: 'King Street Dusk',
         notes: 'Rich copper-coloured lager with subtle notes of toffee, biscuit and dark fruit balanced with a herbal bitterness and aroma from noble hops.',
         colour: 'Dark',
         percent: '4.2'
       }, {
         id: 'lacerta-us',
+        available: false,
         name: 'Lacerta US',
         notes: 'Golden, hazy Pale Ale with aromas of pineapple, nectarine and pear.',
         colour: 'Pale',
         percent: '3.9'
+      }, {
+        available: true,
+        id: 'sun-spot',
+        name: 'Sun Spot',
+        notes: '',
+        percent: '4.0',
+        colour: 'Pale'
+      }, {
+        available: true,
+        id: 'skywave',
+        name: 'Skywave',
+        notes: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.',
+        percent: '4',
+          colour: 'Pale'
       }]
+    }, 
+    'xt': {
+      available: true,
+      name: 'XT',
+      image: 'xt.png',
+      description: 'XT Brewing Co is an innovative, independent brewery crafting a wide range of exceptional beers',
+      list: [{
+          available: true,
+          id: 'three',
+          name: 'Three',
+          notes: '',
+          percent: '4.0',
+          colour: 'Pale'
+        }, {
+            available: true,
+            id: 'music-man',
+            name: 'Music Man',
+            notes: '',
+            percent: '4.2',
+            colour: 'Pale'
+        }, {
+          available: true,
+          id: 'pangolin',
+          name: 'pangolin',
+          notes: '',
+          percent: '4.6',
+          colour: 'Pale'
+        }, {
+          available: true,
+          id: 'aardwolf',
+          name: 'Aardwolf',
+          notes: '',
+          percent: '4.6',
+          colour: 'Pale'
+        }]
+    },
+    'vale': {
+      available: true,
+      name: 'Vale',
+      image: 'Vale.png',
+      description: 'In 1995 Vale was founded to bring beautiful ales packed full of flavour to the people of Buckinghamshire.',
+      list: [{
+        available: true,
+        id: 'brill-gold',
+        name: 'Brill gold',
+        notes: '',
+        percent: '3.5',
+        colour: 'Pale' 
+      }, {
+        available: true,
+        id: 'black-swan',
+        name: 'Black Swan',
+        notes: '',
+        percent: '3.9',
+        colour: 'Pale'
+      }]
+    },
+    'neptune': {
+      available: true,
+      name: 'Neptune',
+      image: 'Neptune.png',
+      description: 'An independent brewery making modern beers, inspired by tradition, since 2015.',
+      list: [{
+        available: true,
+        id: 'guppy',
+        name: 'Guppy',
+        notes: '',
+        percent: '4.7',
+        colour: 'Pale'
+      },{
+        available: true,
+        id: 'mosaic',
+        name: 'Mosaic',
+        notes: '',
+        percent: '4.5',
+        colour: 'Pale'
+      }, {
+        available: true,
+        id: 'abyss',
+        name: 'abyss',
+        notes: '',
+        percent: '5.0',
+        colour: 'Pale'
+      }, {
+        available: true,
+        id: 'medusas-gaze',
+        name: 'Medusas Gaze',
+        notes: '',
+        percent: '7.0',
+        colour: 'Pale'
+      }, {
+        available: true,
+        id: 'seven-seas-of-rye',
+        name: 'Seven Seas Of Rye',
+        notes: '',
+        percent: '6.1',
+        colour: 'Pale'
+      }, {
+        available: true,
+        id: 'forecast-endeavour',
+        name: 'Forecast Endeavour',
+        notes: '',
+        percent: '3.9',
+        colour: 'Pale'
+      }]
+    },
+    'goffs': {
+      available: true,
+      name: 'Goffs',
+      image: 'goffs.png',
+      description: 'The Cotswold’s leading craft beer micro-brewery. Home to Joster, White Knight and Tournament Ale.',
+      list: [{
+        available: true,
+        id: 'black-knight',
+        name: 'Black Knight',
+        notes: '',
+        percent: '5.3',
+        colour: 'Pale'
+      }]
+    },
+    'listers': {
+      available: true,
+      name: 'Listers',
+      image: 'listers.png',
+      description: 'Lister’s beers are brewed by the sea in the beautiful West Sussex countryside using English Maris Otter barley and the finest whole leaf hops',
+      list: [{
+        available: true,
+        id: 'listers-ipa',
+        name: 'Listers IPA',
+        notes: '',
+        percent: '4.3',
+        colour: 'Pale'
+      }]
+    },
+    'dunham-massey': {
+      available: true,
+      name: 'Dunham Massey',
+      image: 'dunham-massey.png',
+      description: 'We are a family run brewery located in the village of Dunham Massey brewing multi-award winning traditional North Western style real ale',
+      list: [{
+        available: true,
+        id: 'chocolate-cherry',
+        name: 'Chocolate Cherry',
+        notes: '',
+        percent: '3.8',
+        colour: 'Pale'
+      },{
+        available: true,
+        id: 'blossom-honey',
+        name: 'Blossom Honey',
+        notes: '',
+        percent: '4.3',
+        colour: 'Pale'
+      }]
+    },
+    'cellar-head': {
+      available: true,
+      name: 'Cellar head',
+      image: 'cellar-head.png',
+      description: 'We are a family run brewery located in the village of Dunham Massey brewing multi-award winning traditional North Western style real ale',
+      list: [{
+        available: true,
+        id: 'hop-project',
+        name: 'Hop Project',
+        notes: '',
+        percent: '4.8',
+        colour: 'Pale'
+      },{
+        available: true,
+        id: 'session-pale',
+        name: 'Session Pale',
+        notes: '',
+        percent: '3.8',
+        colour: 'Pale'
+      }]
+    },
+    'blue-monkey': {
+      available: true,
+      name: 'Blue Monkey',
+      image: 'blue-monkey.png',
+      description: 'Blue Monkey Brewery is based in Nottingham and brew more than a dozen different types of beer including',
+      list: [{
+        available: true,
+        id: 'bg-sips',
+        name: 'BG Sips',
+        notes: '',
+        percent: '4.0',
+        colour: 'Pale'
+      }],
     }
   }
 }
+
+
+export const getBeerBrewerys = () => {
+  const brewerys = Object.keys(brewies.beer).reduce((acc, value) => {
+    if (brewies.beer[value].available) {
+      return { ...acc, [value]: brewies.beer[value] }
+    }
+    return acc
+  }, {})
+  return brewerys;
+};
+
+export const getCiderBrewerys = () => {
+  const brewerys = Object.keys(brewies.cider).reduce((acc, value) => {
+    if (brewies.cider[value].available) {
+      return { ...acc, [value]: brewies.cider[value] }
+    }
+    return acc
+  }, {})
+  return brewerys;
+};
 
 export const getBreweryDetails = (name) => {
   if (brewies.beer[name]) {
@@ -459,7 +752,7 @@ export const getBreweryDetails = (name) => {
 
 export const getAllBeers = () => {
   const beerArray = []
-  Object.keys(brewies.beer).forEach(key => {
+  Object.keys(getBeerBrewerys()).forEach(key => {
     brewies.beer[key].list.forEach(beer => {
       beerArray.push({ ...beer, id: key })
     }
@@ -469,7 +762,7 @@ export const getAllBeers = () => {
 }
 export const getAllCiders = () => {
   const ciderArray = []
-  Object.keys(brewies.cider).forEach(key => {
+  Object.keys(getCiderBrewerys()).forEach(key => {
     brewies.cider[key].list.forEach(cider => {
       ciderArray.push({ ...cider, id: key })
     }
@@ -498,8 +791,6 @@ export const getBreweryName = breweryId => {
   }
 }
 
-export const getBeerBrewerys = () => brewies.beer;
 
-export const getCiderBrewerys = () => brewies.cider;
 
 export const getGinDistills = () => brewies.gin;
