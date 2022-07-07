@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a3adf17636d8c45ebbbff7dc29be2c38",
+    "revision": "c8167a2130864ef0d065bc74fe766eb6",
     "url": "/leaflet/index.html"
   },
   {
-    "revision": "499aad1e3b39cd2294a2",
+    "revision": "efed9ba4f050757b7d56",
     "url": "/leaflet/static/css/2.3c1ddb0a.chunk.css"
   },
   {
-    "revision": "8dc2b13053bd43b70ed4",
-    "url": "/leaflet/static/css/main.9c1f897d.chunk.css"
+    "revision": "e11c22216af5c51ddce7",
+    "url": "/leaflet/static/css/main.4ee3aba7.chunk.css"
   },
   {
-    "revision": "499aad1e3b39cd2294a2",
-    "url": "/leaflet/static/js/2.06192b35.chunk.js"
+    "revision": "efed9ba4f050757b7d56",
+    "url": "/leaflet/static/js/2.71ec7d7c.chunk.js"
   },
   {
-    "revision": "8dc2b13053bd43b70ed4",
-    "url": "/leaflet/static/js/main.6d9d41a7.chunk.js"
+    "revision": "e11c22216af5c51ddce7",
+    "url": "/leaflet/static/js/main.840aac54.chunk.js"
   },
   {
     "revision": "daf8075e4d168bc24d0b",
@@ -36,10 +36,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/leaflet/static/media/empty-beer.88b4fb36.svg"
   },
   {
-    "revision": "fd3ea7968104f78aee69b2d90da5f983",
-    "url": "/leaflet/static/media/empty-gin.fd3ea796.svg"
-  },
-  {
     "revision": "b9173756331f75b544efeff99854be94",
     "url": "/leaflet/static/media/facebook.b9173756.svg"
   },
@@ -50,10 +46,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a7a2fb8438c8aefac53b2d69b9458dd2",
     "url": "/leaflet/static/media/filled-beer.a7a2fb84.svg"
-  },
-  {
-    "revision": "8aa70dc3fd6133db553217ae62c17e24",
-    "url": "/leaflet/static/media/filled-gin.8aa70dc3.svg"
   },
   {
     "revision": "af9e72bb7926f3e86f24d5039b0d2cc5",
