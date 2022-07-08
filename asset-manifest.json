@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/leaflet/static/css/main.1932cb3c.chunk.css",
+    "main.css": "/leaflet/static/css/main.d6fa4cbb.chunk.css",
     "main.js": "/leaflet/static/js/main.8eb35175.chunk.js",
     "main.js.map": "/leaflet/static/js/main.8eb35175.chunk.js.map",
     "runtime~main.js": "/leaflet/static/js/runtime~main.005ef40c.js",
@@ -9,10 +9,10 @@
     "static/js/2.71ec7d7c.chunk.js": "/leaflet/static/js/2.71ec7d7c.chunk.js",
     "static/js/2.71ec7d7c.chunk.js.map": "/leaflet/static/js/2.71ec7d7c.chunk.js.map",
     "index.html": "/leaflet/index.html",
-    "precache-manifest.416d625e73bb02f94bea465207584cdd.js": "/leaflet/precache-manifest.416d625e73bb02f94bea465207584cdd.js",
+    "precache-manifest.7f223661dfbac0f9457db8fe87c6c2ea.js": "/leaflet/precache-manifest.7f223661dfbac0f9457db8fe87c6c2ea.js",
     "service-worker.js": "/leaflet/service-worker.js",
     "static/css/2.3c1ddb0a.chunk.css.map": "/leaflet/static/css/2.3c1ddb0a.chunk.css.map",
-    "static/css/main.1932cb3c.chunk.css.map": "/leaflet/static/css/main.1932cb3c.chunk.css.map",
+    "static/css/main.d6fa4cbb.chunk.css.map": "/leaflet/static/css/main.d6fa4cbb.chunk.css.map",
     "static/media/burger.svg": "/leaflet/static/media/burger.486d87f1.svg",
     "static/media/empty-apple.svg": "/leaflet/static/media/empty-apple.f29ea129.svg",
     "static/media/empty-beer.svg": "/leaflet/static/media/empty-beer.88b4fb36.svg",

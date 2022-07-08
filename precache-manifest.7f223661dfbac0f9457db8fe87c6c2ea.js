@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2645dec81fa06843c9e87e5f49881552",
+    "revision": "a2111fb0175f8306385649d988851b03",
     "url": "/leaflet/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/leaflet/static/css/2.3c1ddb0a.chunk.css"
   },
   {
-    "revision": "bfeb6241ecd58cb94253",
-    "url": "/leaflet/static/css/main.1932cb3c.chunk.css"
+    "revision": "b2207f2caacd59375a8e",
+    "url": "/leaflet/static/css/main.d6fa4cbb.chunk.css"
   },
   {
     "revision": "efed9ba4f050757b7d56",
     "url": "/leaflet/static/js/2.71ec7d7c.chunk.js"
   },
   {
-    "revision": "bfeb6241ecd58cb94253",
+    "revision": "b2207f2caacd59375a8e",
     "url": "/leaflet/static/js/main.8eb35175.chunk.js"
   },
   {
