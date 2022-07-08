@@ -7,7 +7,7 @@ export default () => {
   return (
     <div className="social-media">
       <h3 className="social-media__title">Like what we are doing?</h3>
-      <p className="social-media__hashtag"><a href="https://www.justgiving.com/crowdfunding/watford-rugby-club-2022">Donate here</a></p>
+      <p className="social-media__hashtag"><button className="social-media__button"><a href="https://www.justgiving.com/crowdfunding/watford-rugby-club-2022">Donate here</a></button></p>
       <br />
       <h3 className="social-media__title">Follow Watford Rugby Club</h3>
       <p className="social-media__hashtag">Use the hashtag <b className="bold">#wrfcbeerfestival</b></p>

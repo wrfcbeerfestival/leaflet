@@ -229,7 +229,7 @@ const brewies = {
         available: true,
         id: 'raspberry-pale',
         name: 'Raspberry Pale',
-        notes: '',
+        notes: 'This wonderfully fruity wheat beer is refreshingly and light. We’ve worked hard to ensure the raspberry flavours bounce off the hops perfectly to result in a unique, balanced beer.',
         percent: '4.7',
         colour: 'Pale'
       }]
@@ -320,21 +320,21 @@ const brewies = {
         available: true,
         id: 'side-pocket',
         name: 'Side Pocket',
-        notes: '',
+        notes: 'Toad in a bottle. Unmistakable citrus and floral notes from only the best American Cascade hops balanced with a crisp dry finish make this straw coloured ale a fantastic session beer',
         percent: '3.6',
-        colour: 'Pale'
+        colour: 'Golden'
       }, {
         available: true,
         id: 'little-bird',
         name: 'Little bird',
-        notes: '',
+        notes: 'Little in strength, big on flavour. A table beer with a solid backbone courtesy of Munich and Vienna malts. Hop flavour is built and layered by the addition of hops throughout the boil. Dry hopping with Amarillo adds the final touch.',
         percent: '3.3',
-        colour: 'Pale'
+        colour: 'Amber'
       }, {
         available: true,
         id: 'drop-bard',
         name: 'Drop bar',
-        notes: '',
+        notes: 'This is a beer to drink all night long and all year round. A slower, low temperature fermentation and dry hopping with Mosaic yields crisp flavours, subtle bitterness and a gentle floral, tropical fruit aroma.',
         percent: '4.0',
         colour: 'Pale'
       },
@@ -399,7 +399,7 @@ const brewies = {
         available: true,
         id: 'pan-galaltic',
         name: 'Pan Galaltic',
-        notes: '',
+        notes: 'Pan Galactic Pale Ale is a bright, smooth and fruity pale named partly for the gargleblaster of Douglas Adams fame, but also in honour of the Galaxy hops that make up a large part of its hop bill. Gluten Free',
         percent: '4.6',
         colour: 'Pale'
       }]
@@ -518,16 +518,16 @@ const brewies = {
         available: true,
         id: 'sun-spot',
         name: 'Sun Spot',
-        notes: '',
+        notes: 'Summery Session Pale Ale. Aromas and flavours of grapefruit, lemon, tropical fruit and blackcurrant combine with a malty sweetness and a complex bitterness. Dry-hopped with Olicana, Endeavour and Keyworth‘s Early',
         percent: '4.0',
         colour: 'Pale'
       }, {
         available: true,
         id: 'skywave',
         name: 'Skywave',
-        notes: 'Hops, hops and more hops, although this is not just another one dimensional ‘lupin fest’. Cara, Munich and Rye Crystal malts provide a robust base for this punchy American West Coast IPA style beer.',
-        percent: '4',
-          colour: 'Pale'
+        notes: 'Refreshing Pale Ale with aromas and flavours of peach, passionfruit and pear. Hints of caramel combine with a biscuity sweetness from the Maris Otter malt and a good bitter finish',
+        percent: '4.0',
+        colour: 'Pale'
       }]
     }, 
     'xt': {
@@ -539,30 +539,37 @@ const brewies = {
           available: true,
           id: 'three',
           name: 'Three',
-          notes: '',
+          notes: 'An American style IPA – packed with Chinook, Columbus and Cascade hops from the American North West – crisp, clean and refreshing with a lasting hoppy bite',
           percent: '4.0',
-          colour: 'Pale'
+          colour: 'IPA'
         }, {
             available: true,
             id: 'music-man',
             name: 'Music Man',
-            notes: '',
+            notes: 'I am the music man, I come from down your way. This beer will leave you signing',
             percent: '4.2',
             colour: 'Pale'
-        }, {
+        }]
+    },
+    'animal': {
+      available: true,
+      name: 'Animal',
+      image: 'animal.png',
+      description: 'In addition to their wide range of XT beers they also make a very special limited edition range of ‘Animal Brewing Company’ beers - these are unique recipes and trial new ingredients and brewing techniques.',
+      list: [{
           available: true,
           id: 'pangolin',
-          name: 'pangolin',
-          notes: '',
+          name: 'Pangolin',
+          notes: 'A ruby red Bitter, with rich, fruity, earthy malt and caramel notes.',
           percent: '4.6',
-          colour: 'Pale'
+          colour: 'Ruby'
         }, {
           available: true,
           id: 'aardwolf',
           name: 'Aardwolf',
-          notes: '',
+          notes: 'All Noble German Hops. Tetnang and hallertaur make up a refreshing and crisp golden ale with notes of stone ruit and white grape dryness.',
           percent: '4.6',
-          colour: 'Pale'
+          colour: 'Gold'
         }]
     },
     'vale': {
@@ -574,16 +581,16 @@ const brewies = {
         available: true,
         id: 'brill-gold',
         name: 'Brill gold',
-        notes: '',
+        notes: 'A refreshing golden ale with hints of orange zest and a deep caramel finish.',
         percent: '3.5',
-        colour: 'Pale' 
+        colour: 'Gold' 
       }, {
         available: true,
         id: 'black-swan',
         name: 'Black Swan',
-        notes: '',
+        notes: 'Dark and smooth with hints of chocolate and coffee on the nose and a soft rounded malt finish.',
         percent: '3.9',
-        colour: 'Pale'
+        colour: 'Dark'
       }]
     },
     'neptune': {
@@ -595,44 +602,44 @@ const brewies = {
         available: true,
         id: 'guppy',
         name: 'Guppy',
-        notes: '',
+        notes: 'House pale ale, Normally exclusive to the neptune taproom, but making a guest apperance at our event',
         percent: '4.7',
         colour: 'Pale'
       },{
         available: true,
         id: 'mosaic',
         name: 'Mosaic',
-        notes: '',
+        notes: 'A delicious juicy single hop pale ale with tropical flavours of ripe mango, blueberries and citrus fruits.',
         percent: '4.5',
-        colour: 'Pale'
+        colour: 'Gold'
       }, {
         available: true,
         id: 'abyss',
-        name: 'abyss',
-        notes: '',
+        name: 'Abyss',
+        notes: 'A smooth, yet full bodied 5% triple oatmeal stout with flavours of chocolate and roasted coffee. ',
         percent: '5.0',
-        colour: 'Pale'
+        colour: 'Dark'
       }, {
         available: true,
         id: 'medusas-gaze',
         name: 'Medusas Gaze',
-        notes: '',
+        notes: 'Annual brew of Medusa\'s Gaze. Rich and opulent with flavours of caramel & coffee. Hopped this year with Cluster',
         percent: '7.0',
-        colour: 'Pale'
+        colour: 'Dark'
       }, {
         available: true,
         id: 'seven-seas-of-rye',
         name: 'Seven Seas Of Rye',
-        notes: '',
+        notes: 'This IPA showcases the earthy spiciness of rye with flavours of lemon, lime and grapefruit with hints of sage.',
         percent: '6.1',
-        colour: 'Pale'
+        colour: 'IPA'
       }, {
         available: true,
         id: 'forecast-endeavour',
         name: 'Forecast Endeavour',
-        notes: '',
+        notes: 'Forecast is our sessionable English bitter, celebrating the best of English hops, with a different hop showcased in each new edition',
         percent: '3.9',
-        colour: 'Pale'
+        colour: 'Blonde'
       }]
     },
     'goffs': {
@@ -644,9 +651,9 @@ const brewies = {
         available: true,
         id: 'black-knight',
         name: 'Black Knight',
-        notes: '',
+        notes: 'A very dark ruby red tinted beer with powerful chocolate malt aromas and a hint of vanilla. Very smooth, very rich dry malt flavours with a subtle hoppiness. A classic porter',
         percent: '5.3',
-        colour: 'Pale'
+        colour: 'Dark Ruby'
       }]
     },
     'listers': {
@@ -658,9 +665,9 @@ const brewies = {
         available: true,
         id: 'listers-ipa',
         name: 'Listers IPA',
-        notes: '',
+        notes: 'Traditionally, India Pale Ales were heavily hopped to help survive the long hot journey to the sub-continent. A traditional style IPA but not over-hopped.',
         percent: '4.3',
-        colour: 'Pale'
+        colour: 'Amber'
       }]
     },
     'dunham-massey': {
@@ -672,16 +679,16 @@ const brewies = {
         available: true,
         id: 'chocolate-cherry',
         name: 'Chocolate Cherry',
-        notes: '',
+        notes: 'Chocolate Cherry is a multi-award winning speciality mild. Champion Speciality Beer of Britain 2012. It has all the class of Dunham Dark, with a dry hint of cherry that cuts through the malt flavours.',
         percent: '3.8',
-        colour: 'Pale'
+        colour: 'Dark'
       },{
         available: true,
         id: 'blossom-honey',
         name: 'Blossom Honey',
-        notes: '',
+        notes: 'Duerr\'s Blossom Honey Beer is an award winning seasonal beer. Light, refreshing and bitter-sweet, made with lashings of Duerr\'s Blossom Honey',
         percent: '4.3',
-        colour: 'Pale'
+        colour: 'Straw'
       }]
     },
     'cellar-head': {
@@ -693,16 +700,16 @@ const brewies = {
         available: true,
         id: 'hop-project',
         name: 'Hop Project',
-        notes: '',
+        notes: 'A natural haze and vegan friendly',
         percent: '4.8',
         colour: 'Pale'
       },{
         available: true,
         id: 'session-pale',
         name: 'Session Pale',
-        notes: '',
+        notes: 'Refreshing and uplifting, this straw coloured fresh pale ale has tropical fruit and sweet floral aromas with the intense flavour of gooseberry and green grapes with a light honeyed sweetness leaving a crisp punch and a dry, clean finish. Delicious and awakening',
         percent: '3.8',
-        colour: 'Pale'
+        colour: 'Straw'
       }]
     },
     'blue-monkey': {
@@ -714,7 +721,7 @@ const brewies = {
         available: true,
         id: 'bg-sips',
         name: 'BG Sips',
-        notes: '',
+        notes: 'We stuff 20 kilograms of the legendary ‘Brewers Gold’ hops into every small scale batch we brew, to create this beautifully pale and intensely hoppy beer. These wonderful hops impart enticing tropical fruit aromas and a lovely thirst quenching bitterness.',
         percent: '4.0',
         colour: 'Pale'
       }],

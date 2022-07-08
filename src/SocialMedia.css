@@ -25,3 +25,18 @@
   margin: 6px 0px;
   text-align: center;
 }
+
+.social-media__button {
+  background-color: #1c60c7;
+  border-radius: 5px;
+  color: black;
+  width: 350px;
+  border-color: #1c60c7;
+}
+
+.social-media__button a {
+  line-height: 45px;
+  font-size: 26px;
+  font-weight: bold;
+  color: white
+}

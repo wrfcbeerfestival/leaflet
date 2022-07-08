@@ -67,7 +67,8 @@ export default () => {
       </Carousel>
       <p className="paragraph paragraph--margin">So why not go for it and contact:</p>
       <p className="paragraph paragraph--margin"><b className="bold">Martin Lee, Club Chairman, 07787805262</b></p>
-      <p className="paragraph paragraph--margin"><b className="bold">Simon Bram, Club Captain, on 07725 217110.</b></p>
+      <p className="paragraph paragraph--margin"><b className="bold">Simon Bram, Director of Rugby, on 07725 217110.</b></p>
+      <p className="paragraph paragraph--margin"><b className="bold">Ian Griffiths, Junior and Girls, on 07802 892276.</b></p>
       <p className="paragraph paragraph--margin">Address: Watford Rugby Club, Radlett Road, Watford, Herts WD24 4LL</p>
       <p className="paragraph paragraph--margin"><a href="www.watfordrfc.co.uk">Website</a></p>
       

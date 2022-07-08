@@ -48,10 +48,6 @@ export const mainPageOrdering = [{
   name: '/greene-king',
   prettyName: 'Greene King',
   Component: GreeneKing
-}, {
-  name: '/fancy-dress-rugby',
-  prettyName: 'Saturday Fancy Dress Rugby',
-  Component: FancyDressRugby
 },{
   name: '/cider',
   prettyName: 'Cider List',
